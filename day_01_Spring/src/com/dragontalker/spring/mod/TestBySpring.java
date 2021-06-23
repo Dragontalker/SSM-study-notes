@@ -1,6 +1,5 @@
 package com.dragontalker.spring.mod;
 
-import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 public class TestBySpring {
