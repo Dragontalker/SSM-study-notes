@@ -13,5 +13,8 @@ public class TestBySpring {
 		
 		// 获取Bean对象
 		Person person = ac.getBean("person", Person.class);
+		person.setId(1001);
+		person.setName("张三");
+		System.out.println(person);
 	}
 }
