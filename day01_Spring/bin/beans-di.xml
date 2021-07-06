@@ -40,5 +40,11 @@
 		<property name="name" value="张三三" />
 		<property name="age" value="23" />
 		<property name="sex" value="男" />
+		<property name="teacher" ref="teacher" />
+	</bean>
+	
+	<bean id="teacher" class="com.dragontalker.spring.di.Teacher">
+		<property name="tId" value="10000" />
+		<property name="name" value="小明" />
 	</bean>
 </beans>
