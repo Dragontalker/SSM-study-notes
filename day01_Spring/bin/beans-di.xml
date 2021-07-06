@@ -34,4 +34,11 @@
 		  p:name="赵六"
 		  p:age="26"
 		  p:sex="男" />
+		  
+	<bean id="s5" class="com.dragontalker.spring.di.Student">
+		<property name="id" value="10055" />
+		<property name="name" value="张三三" />
+		<property name="age" value="23" />
+		<property name="sex" value="男" />
+	</bean>
 </beans>
