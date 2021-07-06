@@ -9,6 +9,11 @@
 		class: 此对象所属类的全限定名
 	-->
 	<bean id="person" class="com.dragontalker.spring.mod.Person">
+		<!-- 
+			<property>: 为对象的某个属性赋值
+			name: 属性名
+			value: 属性值
+		-->
 		<property name="id" value="1111" />
 		<property name="name" value="小明" />
 	</bean>
