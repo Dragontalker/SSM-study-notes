@@ -25,4 +25,11 @@
 		<constructor-arg value="90" type="java.lang.Double" />
 		<constructor-arg value="女" />
 	</bean>
+	
+	<bean id="s4"
+		  class="com.dragontalker.spring.di.Student"
+		  p:id="10033"
+		  p:name="赵六"
+		  p:age="26"
+		  p:sex="男" />
 </beans>
