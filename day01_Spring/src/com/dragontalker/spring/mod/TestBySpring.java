@@ -10,5 +10,8 @@ public class TestBySpring {
 		// 初始化容器
 		ApplicationContext ac = 
 				new ClassPathXmlApplicationContext("applicationContext.xml");
+		
+		// 获取Bean对象
+		Person person = ac.getBean("person", Person.class);
 	}
 }
