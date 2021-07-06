@@ -5,6 +5,8 @@ public class Test {
 	public static void main(String[] args) {
 		
 		Person person = new Person();
-		System.out.println("person");
+		person.setId(1001);
+		person.setName("张三");
+		System.out.println(person);
 	}
 }
