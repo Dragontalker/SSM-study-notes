@@ -49,4 +49,17 @@
 		<property name="id" value="10000" />
 		<property name="name" value="小明" />
 	</bean>
+	
+	<bean id="s6" class="com.dragontalker.spring.di.Student">
+		<property name="id" value="10066" />
+		<property name="name" value="崔八" />
+		<property name="age" value="18" />
+		<property name="sex" value="男" />
+		<property name="teacher">
+			<bean id="tt" class="com.dragontalker.spring.di.Teacher">
+				<property name="id" value="2222"/>
+				<property name="name" value="admin" />
+			</bean>
+		</property>
+	</bean>
 </beans>
