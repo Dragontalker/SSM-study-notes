@@ -5,10 +5,10 @@
 
 	<!-- 
 		<bean>: 定义spring所管理的一个对象
-		id: 该对象的唯一标示, 注意: 不能重复
+		id: 该对象的唯一标示, 注意: 不能重复, 在通过类型获取bean的过程中可以不设置
 		class: 此对象所属类的全限定名
 	-->
-	<bean id="person" class="com.dragontalker.spring.mod.Person">
+	<bean id="personOne" class="com.dragontalker.spring.mod.Person">
 		<!-- 
 			<property>: 为对象的某个属性赋值
 			name: 属性名
@@ -16,5 +16,10 @@
 		-->
 		<property name="id" value="1111" />
 		<property name="name" value="小明" />
+	</bean>
+	
+	<bean id="personTwo" class="com.dragontalker.spring.mod.Person">
+		<property name="id" value="2222" />
+		<property name="name" value="小红" />
 	</bean>
 </beans>
