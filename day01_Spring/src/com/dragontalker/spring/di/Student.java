@@ -10,6 +10,8 @@ public class Student {
 	
 	private String sex;
 	
+	private Double score;
+	
 	public Student() {}
 
 	public Student(Integer id, String name, Integer age, String sex) {
@@ -17,6 +19,13 @@ public class Student {
 		this.name = name;
 		this.age = age;
 		this.sex = sex;
+	}
+
+	public Student(Integer id, String name, String sex, Double score) {
+		this.id = id;
+		this.name = name;
+		this.sex = sex;
+		this.score = score;
 	}
 
 	public Integer getId() {
@@ -51,9 +60,17 @@ public class Student {
 		this.sex = sex;
 	}
 
+	public Double getScore() {
+		return score;
+	}
+
+	public void setScore(Double score) {
+		this.score = score;
+	}
+
 	@Override
 	public String toString() {
-		return "Student [id=" + id + ", name=" + name + ", age=" + age + ", sex=" + sex + "]";
+		return "Student [id=" + id + ", name=" + name + ", age=" + age + ", sex=" + sex + ", score=" + score + "]";
 	}
-	
+
 }
