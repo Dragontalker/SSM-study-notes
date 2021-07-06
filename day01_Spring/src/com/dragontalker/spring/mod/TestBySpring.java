@@ -1,6 +1,6 @@
 package com.dragontalker.spring.mod;
 
-import org.springframework.context.ApplicationContext;
+
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 public class TestBySpring {
@@ -12,8 +12,11 @@ public class TestBySpring {
 				new ClassPathXmlApplicationContext("applicationContext.xml");
 		
 		// 通过getBean()获取Bean对象
-		Person person = ac.getBean("person", Person.class);
-		System.out.println(person);
+		Person person1 = ac.getBean("personOne", Person.class);
+		Person person2 = ac.getBean("personTwo", Person.class);
+		
+		System.out.println(person1);
+		System.out.println(person2);
 		
 		ac.close();
 	}
