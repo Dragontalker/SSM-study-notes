@@ -4,4 +4,10 @@
 	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
 
+	<bean id="s1" class="com.dragontalker.spring.di.Student">
+		<property name="id" value="10010"></property>
+		<property name="name" value="张三"></property>
+		<property name="age" value="23"></property>
+		<property name="sex" value="男"></property>
+	</bean>
 </beans>
