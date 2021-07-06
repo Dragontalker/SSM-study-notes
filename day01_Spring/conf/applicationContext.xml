@@ -3,5 +3,8 @@
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-	<bean id="person" class="com.dragontalker.spring.mod.Person"></bean>
+	<bean id="person" class="com.dragontalker.spring.mod.Person">
+		<property name="id" value="1111" />
+		<property name="name" value="小明" />
+	</bean>
 </beans>
