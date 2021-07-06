@@ -8,13 +8,13 @@ public class TestBySpring {
 	public static void main(String[] args) {
 		
 		// 初始化容器
-		ApplicationContext ac = 
+		ClassPathXmlApplicationContext ac = 
 				new ClassPathXmlApplicationContext("applicationContext.xml");
 		
 		// 通过getBean()获取Bean对象
 		Person person = ac.getBean("person", Person.class);
 		System.out.println(person);
 		
-		
+		ac.close();
 	}
 }
