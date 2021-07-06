@@ -12,6 +12,8 @@ public class Student {
 	
 	private Double score;
 	
+	private Teacher teacher;
+	
 	public Student() {}
 
 	public Student(Integer id, String name, Integer age, String sex) {
@@ -68,9 +70,18 @@ public class Student {
 		this.score = score;
 	}
 
+	public Teacher getTeacher() {
+		return teacher;
+	}
+
+	public void setTeacher(Teacher teacher) {
+		this.teacher = teacher;
+	}
+
 	@Override
 	public String toString() {
-		return "Student [id=" + id + ", name=" + name + ", age=" + age + ", sex=" + sex + ", score=" + score + "]";
+		return "Student [id=" + id + ", name=" + name + ", age=" + age + ", sex=" + sex + ", score=" + score
+				+ ", teacher=" + teacher + "]";
 	}
 
 }
