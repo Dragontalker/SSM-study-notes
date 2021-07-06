@@ -14,5 +14,7 @@ public class TestBySpring {
 		// 通过getBean()获取Bean对象
 		Person person = ac.getBean("person", Person.class);
 		System.out.println(person);
+		
+		
 	}
 }

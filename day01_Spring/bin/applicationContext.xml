@@ -3,6 +3,11 @@
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
+	<!-- 
+		<bean>: 定义spring所管理的一个对象
+		id: 该对象的唯一标示, 注意: 不能重复
+		class: 此对象所属类的全限定名
+	-->
 	<bean id="person" class="com.dragontalker.spring.mod.Person">
 		<property name="id" value="1111" />
 		<property name="name" value="小明" />
