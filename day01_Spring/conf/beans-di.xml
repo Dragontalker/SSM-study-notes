@@ -33,7 +33,8 @@
 		  p:id="10033"
 		  p:name="赵六"
 		  p:age="26"
-		  p:sex="男" />
+		  p:sex="男"
+		  p:teacher-ref="teacher" />
 		  
 	<bean id="s5" class="com.dragontalker.spring.di.Student">
 		<property name="id" value="10055" />
@@ -44,7 +45,7 @@
 	</bean>
 	
 	<bean id="teacher" class="com.dragontalker.spring.di.Teacher">
-		<property name="tId" value="10000" />
+		<property name="id" value="10000" />
 		<property name="name" value="小明" />
 	</bean>
 </beans>

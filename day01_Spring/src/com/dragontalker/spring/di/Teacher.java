@@ -2,16 +2,16 @@ package com.dragontalker.spring.di;
 
 public class Teacher {
 
-	private Integer tId;
+	private Integer id;
 	
 	private String name;
 
-	public Integer gettId() {
-		return tId;
+	public Integer getId() {
+		return id;
 	}
 
-	public void settId(Integer tId) {
-		this.tId = tId;
+	public void setId(Integer id) {
+		this.id = id;
 	}
 
 	public String getName() {
@@ -24,7 +24,7 @@ public class Teacher {
 
 	@Override
 	public String toString() {
-		return "Teacher [tId=" + tId + ", name=" + name + "]";
+		return "Teacher [id=" + id + ", name=" + name + "]";
 	}
 	
 }
