@@ -17,4 +17,11 @@
 		<constructor-arg value="24" />
 		<constructor-arg value="女" />
 	</bean>
+	
+	<bean id="s3" class="com.dragontalker.spring.di.Student">
+		<constructor-arg value="10022" />
+		<constructor-arg value="王五" />
+		<constructor-arg value="90" />
+		<constructor-arg value="女" />
+	</bean>
 </beans>
