@@ -8,6 +8,7 @@ public class TestBySpring {
 	public static void main(String[] args) {
 		
 		// 初始化容器
-		ApplicationContext ac = new ClassPathXmlApplicationContext();
+		ApplicationContext ac = 
+				new ClassPathXmlApplicationContext("applicationContext.xml");
 	}
 }
