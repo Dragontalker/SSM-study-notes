@@ -9,8 +9,11 @@ public class Test {
 		ClassPathXmlApplicationContext ac = 
 				new ClassPathXmlApplicationContext("beans-di.xml");
 		
-		Student student = ac.getBean("s1", Student.class);
-		System.out.println(student);
+		Student s1 = ac.getBean("s1", Student.class);
+		Student s2 = ac.getBean("s2", Student.class);
+		
+		System.out.println(s1);
+		System.out.println(s2);
 		
 		ac.close();
 	}
