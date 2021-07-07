@@ -13,7 +13,7 @@
 	-->
 	<context:component-scan base-package="com.dragontalker.ioc.userMod" use-default-filters="false">
 		<context:include-filter type="annotation" expression="org.springframework.stereotype.Controller"/>
-		<context:include-filter type="annotation" expression="org.springframework.stereotype.Repository"/>
+		<context:include-filter type="assignable" expression="com.dragontalker.ioc.userMod.dao.UserDao"/>
 		<context:include-filter type="annotation" expression="org.springframework.stereotype.Service"/>
 	</context:component-scan>
 	
