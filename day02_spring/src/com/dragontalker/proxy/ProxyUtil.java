@@ -11,14 +11,15 @@ public class ProxyUtil {
 	public Object getProxy() {
 		
 		ClassLoader loader = this.getClass().getClassLoader();
-		Class[] interfaces = mathImpl.getClass().getInterfaces();
+		Class<?>[] interfaces = mathImpl.getClass().getInterfaces();
 		
 		return Proxy.newProxyInstance(loader, interfaces, new InvocationHandler() {
 			
 			@Override
 			public Object invoke(Object proxy, Method method, Object[] args) throws Throwable {
-				// TODO Auto-generated method stub
-				return null;
+				System.out.println(">> Method called: " + method);
+				System.out.println(">> Arguments: " + args);
+				return method.invoke(mathImpl, args);
 			}
 		});
 	}
