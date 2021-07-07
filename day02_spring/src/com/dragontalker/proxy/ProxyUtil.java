@@ -26,7 +26,7 @@ public class ProxyUtil {
 				
 				Object result = method.invoke(mathImpl, args);
 
-				MyLogger.afer(method.getName(), result.toString());
+				MyLogger.after(method.getName(), result.toString());
 				
 				return result;
 			}
