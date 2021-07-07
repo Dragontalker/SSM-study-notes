@@ -9,6 +9,7 @@
 		<context:component-scan>: 扫描组件, 即在设置的包下面, 对加上注解的类自动装配
 		组件: 指spring中管理的bean
 		作为spring的组件进行加载: 会自动在spring的配置文件中生成相对应的bean
+			这些bean的id会以类的首字母小写为值
 	-->
 	<context:component-scan base-package="com.dragontalker.ioc.userMod" />
 	
