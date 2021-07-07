@@ -8,6 +8,7 @@
 	<enableImports><![CDATA[false]]></enableImports>
 	<configs>
 		<config>conf/scope.xml</config>
+		<config>conf/life.xml</config>
 	</configs>
 	<autoconfigs>
 	</autoconfigs>
