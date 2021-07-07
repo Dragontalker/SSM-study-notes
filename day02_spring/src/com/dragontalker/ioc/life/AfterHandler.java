@@ -7,8 +7,15 @@ public class AfterHandler implements BeanPostProcessor{
 
 	@Override
 	public Object postProcessAfterInitialization(Object bean, String beanName) throws BeansException {
-
-		return null;
+		Person person = (Person) bean;
+		
+		if (person.getSex().equals("男")) {
+			person.setName("张无忌");
+		} else {
+			person.setName("赵敏");
+		}
+		
+		return person;
 	}
 
 	@Override
