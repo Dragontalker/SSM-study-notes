@@ -40,4 +40,8 @@ public class Person {
 	public void init() {
 		System.out.println("3. init() called...");
 	}
+	
+	public void detroy() {
+		System.out.println("5. destroy() called...");
+	}
 }
