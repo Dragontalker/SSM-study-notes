@@ -11,7 +11,7 @@
 		作为spring的组件进行加载: 会自动在spring的配置文件中生成相对应的bean
 			这些bean的id会以类的首字母小写为值
 	-->
-	<context:component-scan base-package="com.dragontalker.ioc.userMod">
+	<context:component-scan base-package="com.dragontalker.ioc.userMod" use-default-filters="false">
 		<context:include-filter type="annotation" expression="org.springframework.stereotype.Controller"/>
 	</context:component-scan>
 	
