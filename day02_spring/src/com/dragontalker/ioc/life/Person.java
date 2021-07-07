@@ -37,6 +37,11 @@ public class Person {
 		this.name = name;
 	}
 	
+	@Override
+	public String toString() {
+		return "4. ready to use...";
+	}
+
 	public void init() {
 		System.out.println("3. init() called...");
 	}
