@@ -1,28 +1,28 @@
 package com.dragontalker.proxy;
 
-public class MathImpl implements MathInterface {
+public class MathImpl implements Math {
 
 	@Override
-	public int add(int i, int j) {
-		int result = i + j;
+	public double add(double i, double j) {
+		double result = i + j;
 		return result;
 	}
 
 	@Override
-	public int sub(int i, int j) {
-		int result = i - j;
+	public double sub(double i, double j) {
+		double result = i - j;
 		return result;
 	}
 
 	@Override
-	public int mul(int i, int j) {
-		int result = i * j;
+	public double mul(double i, double j) {
+		double result = i * j;
 		return result;
 	}
 
 	@Override
-	public int div(int i, int j) {
-		int result = i / j;
+	public double div(double i, double j) {
+		double result = i / j;
 		return result;
 	}
 
