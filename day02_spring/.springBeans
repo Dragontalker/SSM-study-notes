@@ -11,6 +11,7 @@
 		<config>conf/life.xml</config>
 		<config>conf/datasource.xml</config>
 		<config>conf/auto.xml</config>
+		<config>conf/user.xml</config>
 	</configs>
 	<autoconfigs>
 	</autoconfigs>
