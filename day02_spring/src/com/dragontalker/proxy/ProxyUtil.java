@@ -19,7 +19,11 @@ public class ProxyUtil {
 			public Object invoke(Object proxy, Method method, Object[] args) throws Throwable {
 				System.out.println(">> Method called: " + method);
 				System.out.println(">> Arguments: " + args);
-				return method.invoke(mathImpl, args);
+				
+				Object result = method.invoke(mathImpl, args);
+				System.out.println(">> Result: " + result);
+				
+				return result;
 			}
 		});
 	}
