@@ -1,6 +1,6 @@
 package com.dragontalker.ioc.auto;
 
-public class Car {
+public class Car extends CarExtend{
 	
 	private Integer cid;
 	

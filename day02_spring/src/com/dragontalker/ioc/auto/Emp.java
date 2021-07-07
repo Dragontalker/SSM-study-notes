@@ -6,7 +6,7 @@ public class Emp {
 	
 	private String ename;
 	
-	private Car car;
+	private CarExtend car;
 	
 	private Dept dept;
 
@@ -26,7 +26,7 @@ public class Emp {
 		this.ename = ename;
 	}
 
-	public Car getCar() {
+	public CarExtend getCar() {
 		return car;
 	}
 

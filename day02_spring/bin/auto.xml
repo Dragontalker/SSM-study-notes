@@ -4,7 +4,7 @@
 	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
 
-	<bean id="emp" class="com.dragontalker.ioc.auto.Emp" autowire="byName">
+	<bean id="emp" class="com.dragontalker.ioc.auto.Emp" autowire="byType">
 		<property name="eid" value="1001" />
 		<property name="ename" value="张三" />
 	</bean>
