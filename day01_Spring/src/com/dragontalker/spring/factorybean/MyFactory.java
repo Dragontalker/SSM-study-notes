@@ -16,13 +16,11 @@ public class MyFactory implements FactoryBean<Car> {
 
 	@Override
 	public Class<?> getObjectType() {
-		// TODO Auto-generated method stub
-		return null;
+		return Car.class;
 	}
 
 	@Override
 	public boolean isSingleton() {
-		// TODO Auto-generated method stub
 		return false;
 	}
 
