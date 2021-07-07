@@ -8,7 +8,7 @@ public class Teacher {
 	
 	private String name;
 	
-	private List<Student> students;
+	private List<String> classes;
 
 	public Integer getId() {
 		return id;
@@ -26,17 +26,17 @@ public class Teacher {
 		this.name = name;
 	}
 
-	public List<Student> getStudents() {
-		return students;
+	public List<String> getClasses() {
+		return classes;
 	}
 
-	public void setStudents(List<Student> students) {
-		this.students = students;
+	public void setClasses(List<String> classes) {
+		this.classes = classes;
 	}
 
 	@Override
 	public String toString() {
-		return "Teacher [id=" + id + ", name=" + name + ", students=" + students + "]";
+		return "Teacher [id=" + id + ", name=" + name + ", classes=" + classes + "]";
 	}
 
 }
