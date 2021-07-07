@@ -117,10 +117,8 @@
 	</bean>
 	
 	<util:list id="students">
-		<list>
-			<ref bean="s4" />
-			<ref bean="s5" />
-			<ref bean="s6" />
-		</list>
+		<ref bean="s4" />
+		<ref bean="s5" />
+		<ref bean="s6" />
 	</util:list>
 </beans>
