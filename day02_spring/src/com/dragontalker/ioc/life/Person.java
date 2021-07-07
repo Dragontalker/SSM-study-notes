@@ -37,9 +37,11 @@ public class Person {
 		this.name = name;
 	}
 	
+
 	@Override
 	public String toString() {
-		return "4. ready to use...";
+		System.out.println("4. ready to use...");
+		return "Person [id=" + id + ", sex=" + sex + ", name=" + name + "]";
 	}
 
 	public void init() {
