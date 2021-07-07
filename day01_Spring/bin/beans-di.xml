@@ -64,13 +64,25 @@
 	</bean>
 	
 	<bean id="t1" class="com.dragontalker.spring.di.Teacher">
-		<property name="id" value="0000" />
+		<property name="id" value="100001" />
 		<property name="name" value="佟刚" />
 		<property name="classes">
 			<list>
 				<value>A</value>
 				<value>B</value>
 				<value>C</value>
+			</list>
+		</property>
+	</bean>
+	
+	<bean id="t2" class="com.dragontalker.spring.di.Teacher">
+		<property name="id" value="100002" />
+		<property name="name" value="婷姐" />
+		<property name="students">
+			<list>
+				<ref bean="s1" />
+				<ref bean="s2" />
+				<ref bean="s3" />
 			</list>
 		</property>
 	</bean>
