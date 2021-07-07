@@ -8,6 +8,10 @@ public class ProxyUtil {
 	
 	private Math mathImpl;
 	
+	public ProxyUtil(Math mathImpl) {
+		this.mathImpl = mathImpl;
+	}
+
 	public Object getProxy() {
 		
 		ClassLoader loader = this.getClass().getClassLoader();
