@@ -4,7 +4,7 @@
 	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
 
-	<bean id="student" class="com.dragontalker.ioc.scope.Student" scope="singleton">
+	<bean id="student" class="com.dragontalker.ioc.scope.Student" scope="prototype">
 		<property name="id" value="1001" />
 		<property name="name" value="张三" />
 	</bean>
