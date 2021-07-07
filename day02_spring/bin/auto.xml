@@ -7,6 +7,7 @@
 	<bean id="emp" class="com.dragontalker.ioc.auto.Emp">
 		<property name="eid" value="1001" />
 		<property name="ename" value="张三" />
+		<property name="car" ref="car" />
 	</bean>
 	
 	<bean id="car" class="com.dragontalker.ioc.auto.Car">
