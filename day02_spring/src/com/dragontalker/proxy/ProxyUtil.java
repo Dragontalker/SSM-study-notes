@@ -3,6 +3,7 @@ package com.dragontalker.proxy;
 import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.Method;
 import java.lang.reflect.Proxy;
+import java.util.Arrays;
 
 public class ProxyUtil {
 	
@@ -21,11 +22,11 @@ public class ProxyUtil {
 			
 			@Override
 			public Object invoke(Object proxy, Method method, Object[] args) throws Throwable {
-				System.out.println(">> Method called: " + method);
-				System.out.println(">> Arguments: " + args);
+				MyLogger.before(method.getName(), Arrays.toString(args));
 				
 				Object result = method.invoke(mathImpl, args);
-				System.out.println(">> Result: " + result);
+
+				MyLogger.afer(method.getName(), result.toString());
 				
 				return result;
 			}
