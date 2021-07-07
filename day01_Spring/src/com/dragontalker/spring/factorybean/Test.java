@@ -1,6 +1,5 @@
 package com.dragontalker.spring.factorybean;
 
-import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 public class Test {
@@ -9,5 +8,9 @@ public class Test {
 		
 		ClassPathXmlApplicationContext ac = 
 				new ClassPathXmlApplicationContext("factory-bean.xml");
+		
+		Object object = ac.getBean("factory");
+		
+		System.out.println(object);
 	}
 }
