@@ -8,8 +8,10 @@ public class MyFactory implements FactoryBean<Car> {
 
 	@Override
 	public Car getObject() throws Exception {
-		// TODO Auto-generated method stub
-		return null;
+		Car car = new Car();
+		car.setBrand("奥迪");
+		car.setPrice(200000.0);
+		return car;
 	}
 
 	@Override
@@ -23,7 +25,5 @@ public class MyFactory implements FactoryBean<Car> {
 		// TODO Auto-generated method stub
 		return false;
 	}
-
-	
 
 }
