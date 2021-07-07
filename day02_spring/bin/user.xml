@@ -19,13 +19,7 @@
 		
 		切记： 一个<context:component-scan>中可以出现多个include/exclude, 但是两个不能同时出现
 	-->
-	<context:component-scan base-package="com.dragontalker.ioc.userMod" use-default-filters="true">
-		<!--  <context:include-filter type="annotation" expression="org.springframework.stereotype.Controller"/>
-		<context:include-filter type="assignable" expression="com.dragontalker.ioc.userMod.dao.UserDao"/>
-		<context:include-filter type="annotation" expression="org.springframework.stereotype.Service"/> -->
-		
-		<context:exclude-filter type="annotation" expression="org.springframework.stereotype.Repository"/>
-	</context:component-scan>
+	<context:component-scan base-package="com.dragontalker.ioc.userMod" />
 	
 	
 </beans>
