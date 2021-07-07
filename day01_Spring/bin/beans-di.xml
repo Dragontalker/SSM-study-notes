@@ -113,12 +113,14 @@
 	<bean id="t4" class="com.dragontalker.spring.di.Teacher">
 		<property name="id" value="100004" />
 		<property name="name" value="root" />
-		<property name="students">
-			
-		</property>
+		<property name="students" ref="students" />
 	</bean>
 	
-	<util:list>
-		
+	<util:list id="students">
+		<list>
+			<ref bean="s4" />
+			<ref bean="s5" />
+			<ref bean="s6" />
+		</list>
 	</util:list>
 </beans>
