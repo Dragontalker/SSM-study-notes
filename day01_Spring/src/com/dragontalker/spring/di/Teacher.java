@@ -1,6 +1,7 @@
 package com.dragontalker.spring.di;
 
 import java.util.List;
+import java.util.Map;
 
 public class Teacher {
 
@@ -11,6 +12,8 @@ public class Teacher {
 	private List<String> classes;
 	
 	private List<Student> students;
+	
+	private Map<String, String> bossMap;
 
 	public Integer getId() {
 		return id;
@@ -44,9 +47,18 @@ public class Teacher {
 		this.students = students;
 	}
 
+	public Map<String, String> getBossMap() {
+		return bossMap;
+	}
+
+	public void setBossMap(Map<String, String> bossMap) {
+		this.bossMap = bossMap;
+	}
+
 	@Override
 	public String toString() {
-		return "Teacher [id=" + id + ", name=" + name + ", classes=" + classes + ", students=" + students + "]";
+		return "Teacher [id=" + id + ", name=" + name + ", classes=" + classes + ", students=" + students + ", bossMap="
+				+ bossMap + "]";
 	}
 
 }
