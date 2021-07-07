@@ -87,7 +87,7 @@
 		</property>
 	</bean>
 	
-	<bean id="t2" class="com.dragontalker.spring.di.Teacher">
+	<bean id="t3" class="com.dragontalker.spring.di.Teacher">
 		<property name="id" value="100003" />
 		<property name="name" value="admin" />
 		<property name="bossMap">
@@ -97,6 +97,12 @@
 						<value>10001</value>
 					</key>
 					<value>佟刚</value>
+				</entry>
+				<entry>
+					<key>
+						<value>10002</value>
+					</key>
+					<value>陈老师</value>
 				</entry>
 			</map>
 		</property>
