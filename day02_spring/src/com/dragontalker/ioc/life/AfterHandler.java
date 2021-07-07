@@ -6,14 +6,14 @@ import org.springframework.beans.factory.config.BeanPostProcessor;
 public class AfterHandler implements BeanPostProcessor{
 
 	@Override
-	public Object postProcessAfterInitialization(Object arg0, String arg1) throws BeansException {
-		// TODO Auto-generated method stub
+	public Object postProcessAfterInitialization(Object bean, String beanName) throws BeansException {
+
 		return null;
 	}
 
 	@Override
-	public Object postProcessBeforeInitialization(Object arg0, String arg1) throws BeansException {
-		// TODO Auto-generated method stub
+	public Object postProcessBeforeInitialization(Object bean, String beanName) throws BeansException {
+
 		return null;
 	}
 
