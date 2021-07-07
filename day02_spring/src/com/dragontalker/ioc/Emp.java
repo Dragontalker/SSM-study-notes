@@ -6,4 +6,7 @@ public class Emp {
 	
 	private String ename;
 	
+	private Car car;
+	
+	private Dept dept;
 }
