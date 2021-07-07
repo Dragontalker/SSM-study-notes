@@ -5,7 +5,33 @@
   <link rel="self" href="https://spring.io/blog.atom" />
   <id>http://spring.io/blog.atom</id>
   <icon>https://spring.io/favicon.ico</icon>
-  <updated>2021-07-06T17:00:00Z</updated>
+  <updated>2021-07-07T01:42:00Z</updated>
+  <entry>
+    <title>This Week in Spring - July 6th, 2021</title>
+    <link rel="alternate" href="https://spring.io/blog/2021/07/06/this-week-in-spring-july-6th-2021" />
+    <category term="engineering" label="Engineering" />
+    <author>
+      <name>Josh Long</name>
+    </author>
+    <id>tag:spring.io,2021-07-06:4489</id>
+    <updated>2021-07-07T01:42:00Z</updated>
+    <content type="html">&lt;p&gt;Hi, Spring fans! Welcome to another installment of &lt;em&gt;This Week in Spring&lt;/em&gt;! We&amp;rsquo;re in July already! That blows my mind - we&amp;rsquo;re closer to 2022 than 2020 at this point. I don&amp;rsquo;t wanna jinx it, but this year seems markedly better than last year, and I hope it stays that way. Anyway, friends, let&amp;rsquo;s get on with the roundup!&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href="https://spring.io/blog/2021/07/01/a-bootiful-podcast-benjamin-wilms-founder-of-the-chaos-monkey-for-spring-boot-and-steadybit-a-company-to-help-you-build-more-robust-software"&gt;A Bootiful Podcast: Benjamin Wilms, founder of the Chaos Monkey for Spring Boot and Steadybit, a company to help you build more robust software&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://blog.frankel.ch/blockhound-how-it-works/"&gt;BlockHound: how it works&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://reflectoring.io/spring-camel/"&gt;Getting Started with Apache Camel and Spring Boot&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://twitter.com/graalvm/status/1409910276015726594?s=12"&gt;GraalVM on Twitter&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://spring.io/blog/2021/07/06/hello-spring-graphql"&gt;Hello, Spring GraphQL&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://spring.io/blog/2021/07/06/introducing-spring-graphql"&gt;Introducing Spring GraphQL&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://twitter.com/maciejwalkowiak/status/1411993364820594690?s=12"&gt;Maciej Walkowiak on Twitter&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://spring.io/blog/2021/06/30/spring-tips-spring-retrosocket"&gt;Spring Tips: Spring Retrosocket&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://spring.io/blog/2021/07/01/use-new-relic-to-effortlessly-monitor-applications-and-dependencies-in-azure-spring-cloud"&gt;Use New Relic to effortlessly monitor applications and dependencies in Azure Spring Cloud&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://twitter.com/JavaAtMicrosoft/status/1410621720998727683"&gt;Detect, Diagnose and Resolve Issues Faster in Spring Boot applications using @NewRelic across your Azure Spring Cloud instances. &lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://twitter.com/VMware/status/1412437133680332802"&gt;Register for @SpringOne today. https://t.co/2Imy31RPwz https://t.co/nVXiILvyOH http://bit.ly/SpringOne21TW VMwareTanzu SpringOne&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;This project - &lt;a href="https://github.com/mhewedy/spring-data-jpa-mongodb-expressions"&gt;mhewedy/spring-data-jpa-mongodb-expressions&lt;/a&gt; - adds MongoDB query expressions to Spring Data JPA. This&amp;rsquo;ll be a win for so many JavaScript clients that like to build queries using MongoDB expressions!&lt;/li&gt;
+&lt;/ul&gt;
+&lt;!-- rendered by Sagan Renderer Service --&gt;</content>
+  </entry>
   <entry>
     <title>Introducing Spring GraphQL</title>
     <link rel="alternate" href="https://spring.io/blog/2021/07/06/introducing-spring-graphql" />
@@ -559,19 +585,6 @@ public class GreetingService {
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;!-- rendered by Sagan Renderer Service --&gt;</content>
-  </entry>
-  <entry>
-    <title>A Bootiful Podcast: Redgate technical lead for the Flyway team Mikiel Agutu on database migrations and continuous delivery</title>
-    <link rel="alternate" href="https://spring.io/blog/2021/06/10/a-bootiful-podcast-redgate-technical-lead-for-the-flyway-team-mikiel-agutu-on-database-migrations-and-continuous-delivery" />
-    <category term="engineering" label="Engineering" />
-    <author>
-      <name>Josh Long</name>
-    </author>
-    <id>tag:spring.io,2021-06-11:4467</id>
-    <updated>2021-06-10T22:00:00Z</updated>
-    <content type="html">&lt;p&gt;Hi, Spring fans! In this installment, Josh Long (&lt;a href="https://twitter.com/starbuxman"&gt;@starbuxman&lt;/a&gt;) talks to Mikiel Agutu, technical lead for the Flyway team at Redgate software about database migrations and continuous delivery. &lt;/p&gt;
-&lt;iframe title="Redgate technical lead for the Flyway team Mikiel Agutu on database migrations and continuous delivery" allowtransparency="true" height="150" width="100%" style="border: none; min-width: min(100%, 430px);" scrolling="no" data-name="pb-iframe-player" src="https://www.podbean.com/player-v2/?i=bema8-105fc59-pb&amp;from=pb6admin&amp;share=1&amp;download=1&amp;rtl=0&amp;fonts=Arial&amp;skin=1&amp;btn-skin=7"&gt;&lt;/iframe&gt;
 &lt;!-- rendered by Sagan Renderer Service --&gt;</content>
   </entry>
 </feed>

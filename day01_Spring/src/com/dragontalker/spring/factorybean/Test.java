@@ -12,5 +12,7 @@ public class Test {
 		Object object = ac.getBean("factory");
 		
 		System.out.println(object);
+		
+		ac.close();
 	}
 }

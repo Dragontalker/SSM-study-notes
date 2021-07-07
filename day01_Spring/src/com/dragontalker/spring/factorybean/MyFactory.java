@@ -1,8 +1,6 @@
 package com.dragontalker.spring.factorybean;
 
 import org.springframework.beans.factory.FactoryBean;
-import org.springframework.cglib.proxy.Callback;
-import org.springframework.cglib.proxy.Factory;
 
 public class MyFactory implements FactoryBean<Car> {
 
