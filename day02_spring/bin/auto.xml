@@ -8,4 +8,9 @@
 		<property name="eid" value="1001" />
 		<property name="ename" value="张三" />
 	</bean>
+	
+	<bean id="car" class="com.dragontalker.ioc.auto.Car">
+		<property name="cid" value="666666"/>
+		<property name="cname" value="霸道" />
+	</bean>
 </beans>
