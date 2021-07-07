@@ -13,7 +13,7 @@ public class Test {
 		ClassPathXmlApplicationContext context = 
 				new ClassPathXmlApplicationContext("datasource.xml");
 		
-		DruidDataSource bean = context.getBean("dataSource", DruidDataSource.class);
+		DruidDataSource bean = context.getBean("datasource", DruidDataSource.class);
 		
 		System.out.println(bean.getConnection());
 		
