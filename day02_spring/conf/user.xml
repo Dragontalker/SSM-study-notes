@@ -16,6 +16,8 @@
 		
 		<context:exclude-filter>: 在设定的包结构下, 再次通过注解或类型具体排除到某个或某几个类
 		注意: 在使用包含时, 一定要将user-default-filters="true", 将默认的过滤(即扫描包下所有的类)开启
+		
+		切记： 一个<context:component-scan>中可以出现多个include/exclude, 但是两个不能同时出现
 	-->
 	<context:component-scan base-package="com.dragontalker.ioc.userMod" use-default-filters="true">
 		<!--  <context:include-filter type="annotation" expression="org.springframework.stereotype.Controller"/>
