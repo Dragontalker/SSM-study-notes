@@ -2,8 +2,8 @@ package com.dragontalker.ioc;
 
 public class Emp {
 
-	private Integer id;
+	private Integer eid;
 	
-	private String name;
+	private String ename;
 	
 }
