@@ -6,11 +6,8 @@ public class Student {
 	
 	private String name;
 	
-	public Student() {}
-
-	public Student(Integer id, String name) {
-		this.id = id;
-		this.name = name;
+	public Student() {
+		System.out.println("Constructor Student() called....");
 	}
 
 	public Integer getId() {
@@ -27,11 +24,6 @@ public class Student {
 
 	public void setName(String name) {
 		this.name = name;
-	}
-
-	@Override
-	public String toString() {
-		return "Student [id=" + id + ", name=" + name + "]";
 	}
 
 }
