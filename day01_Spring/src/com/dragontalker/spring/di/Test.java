@@ -16,12 +16,18 @@ public class Test {
 		Student s5 = ac.getBean("s5", Student.class);
 		Student s6 = ac.getBean("s6", Student.class);
 		
+		
 		System.out.println(s1);
 		System.out.println(s2);
 		System.out.println(s3);
 		System.out.println(s4);
 		System.out.println(s5);
 		System.out.println(s6);
+		
+		Teacher t1 = ac.getBean("t1", Teacher.class);
+		
+		System.out.println(t1);
+				
 		
 		ac.close();
 	}
