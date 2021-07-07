@@ -37,4 +37,7 @@ public class Person {
 		this.name = name;
 	}
 	
+	public void init() {
+		System.out.println("3. init() called...");
+	}
 }
