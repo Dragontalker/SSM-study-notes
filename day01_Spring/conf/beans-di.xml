@@ -86,4 +86,19 @@
 			</list>
 		</property>
 	</bean>
+	
+	<bean id="t2" class="com.dragontalker.spring.di.Teacher">
+		<property name="id" value="100003" />
+		<property name="name" value="admin" />
+		<property name="bossMap">
+			<map>
+				<entry>
+					<key>
+						<value>10001</value>
+					</key>
+					<value>佟刚</value>
+				</entry>
+			</map>
+		</property>
+	</bean>
 </beans>
