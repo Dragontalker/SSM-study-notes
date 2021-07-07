@@ -41,5 +41,10 @@ public class Emp {
 	public void setDept(Dept dept) {
 		this.dept = dept;
 	}
+
+	@Override
+	public String toString() {
+		return "Emp [eid=" + eid + ", ename=" + ename + ", car=" + car + ", dept=" + dept + "]";
+	}
 	
 }
