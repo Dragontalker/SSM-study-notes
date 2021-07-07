@@ -9,6 +9,10 @@ public class Test {
 		ClassPathXmlApplicationContext context = 
 				new ClassPathXmlApplicationContext("scope.xml");
 		
+		Student student = context.getBean("student", Student.class);
+		
+		System.out.println(student);
+		
 		context.close();
 	}
 }
