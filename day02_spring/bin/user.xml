@@ -14,10 +14,12 @@
 		<context:include-filter>: 在设定的包结构下, 再次通过注解或类型具体包含到某个或某几个类
 		注意: 在使用包含时, 一定要将user-default-filters="false", 将默认的过滤(即扫描包下所有的类)关闭
 	-->
-	<context:component-scan base-package="com.dragontalker.ioc.userMod" use-default-filters="false">
-		<context:include-filter type="annotation" expression="org.springframework.stereotype.Controller"/>
+	<context:component-scan base-package="com.dragontalker.ioc.userMod" use-default-filters="true">
+		<!--  <context:include-filter type="annotation" expression="org.springframework.stereotype.Controller"/>
 		<context:include-filter type="assignable" expression="com.dragontalker.ioc.userMod.dao.UserDao"/>
-		<context:include-filter type="annotation" expression="org.springframework.stereotype.Service"/>
+		<context:include-filter type="annotation" expression="org.springframework.stereotype.Service"/> -->
+		
+		<context:exclude-filter type="annotation" expression="org.springframework.stereotype.Repository"/>
 	</context:component-scan>
 	
 	
