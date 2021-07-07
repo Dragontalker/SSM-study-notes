@@ -4,8 +4,9 @@ public class MathProxyTest {
 
 	public static void main(String[] args) {
 		
-		ProxyUtil proxy = new ProxyUtil();
-		Object obj = proxy.getProxy();
-		obj.
+		ProxyUtil proxy = new ProxyUtil(new MathImpl());
+		Math proxyObj = (Math) proxy.getProxy();
+		proxyObj.div(1.0, 1.0);
+		
 	}
 }
