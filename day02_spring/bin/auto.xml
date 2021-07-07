@@ -4,11 +4,9 @@
 	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
 
-	<bean id="emp" class="com.dragontalker.ioc.auto.Emp">
+	<bean id="emp" class="com.dragontalker.ioc.auto.Emp" autowire="byName">
 		<property name="eid" value="1001" />
 		<property name="ename" value="张三" />
-		<property name="car" ref="car" />
-		<property name="dept" ref="dept" />
 	</bean>
 	
 	<bean id="car" class="com.dragontalker.ioc.auto.Car">
