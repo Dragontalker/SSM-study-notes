@@ -1,4 +1,4 @@
-package com.dragontalker.ioc;
+package com.dragontalker.ioc.auto;
 
 public class Emp {
 

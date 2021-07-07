@@ -10,6 +10,7 @@
 		<config>conf/scope.xml</config>
 		<config>conf/life.xml</config>
 		<config>conf/datasource.xml</config>
+		<config>conf/auto.xml</config>
 	</configs>
 	<autoconfigs>
 	</autoconfigs>
