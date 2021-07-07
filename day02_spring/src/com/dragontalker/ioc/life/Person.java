@@ -46,7 +46,7 @@ public class Person {
 		System.out.println("3. init() called...");
 	}
 	
-	public void detroy() {
+	public void destroy() {
 		System.out.println("5. destroy() called...");
 	}
 }
