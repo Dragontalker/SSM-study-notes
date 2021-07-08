@@ -32,7 +32,7 @@ public class RESTController {
 	@RequestMapping(value = "/testREST/{id}", method = RequestMethod.DELETE)
 	public String testPutREST(@PathVariable Integer id) {
 		
-		System.out.println(">> DELETE: id=" = id);
+		System.out.println(">> DELETE: id=" + id);
 		return "test";
 	}
 	
