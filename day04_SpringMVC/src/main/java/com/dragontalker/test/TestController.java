@@ -1,6 +1,7 @@
-package day04_SpringMVC;
+package com.dragontalker.test;
 
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
 public class TestController {
@@ -8,7 +9,8 @@ public class TestController {
 	/**
 	 * 假设: http://localhost:8080/day04_SpringMVC/hello
 	 */
-	public String hello() {
+	@RequestMapping("hello")
+	public String helloWorld() {
 		
 		System.out.println("Hello world!");
 		
