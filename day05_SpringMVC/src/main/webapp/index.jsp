@@ -6,7 +6,6 @@
 		<meta charset="UTF-8">
 		<title>Home</title>
 	</head>
-	
 	<body>
 	
 		Day 05 - Spring MVC
@@ -34,6 +33,10 @@
 			<input type="hidden" name="_method" value="DELETE" />
 			<input type="submit" value="DELETE测试" />
 		</form>
+		
+		<input type="submit" value="AJAX测试" onclick="test()"/>
+		
+		
 	
 	</body>
 </html>
