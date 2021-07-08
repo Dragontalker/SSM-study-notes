@@ -50,8 +50,8 @@ public class MyLoggerAspect {
 		System.out.println(">> result = " + result);
 	}
 	
-	@AfterThrowing(value = "execution(* com.dragontalker.spring.aop.*.*(..))")
-	public void afterThrowing() {
-		System.out.println(">> afterThrowing() called...");
+	@AfterThrowing(value = "execution(* com.dragontalker.spring.aop.*.*(..))", throwing="exception")
+	public void afterThrowing(Exception exception) {
+		System.out.println(">> afterThrowing() called... the Exception is: " + exception);
 	}
 }
