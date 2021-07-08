@@ -34,8 +34,10 @@ public class MyLoggerAspect {
 		System.out.println(">> afterMethod() called...");
 	}
 	
-	@AfterReturning(value = "execution(* com.dragontalker.spring.aop.*.*(..))")
-	public void afterReturning() {
+	@AfterReturning(value = "execution(* com.dragontalker.spring.aop.*.*(..))", returning = "result")
+	public void afterReturning(JoinPoint joinPoint, Object result) {
+		
 		System.out.println(">> afterReturning() called...");
+		System.out.println(">> result = " + result);
 	}
 }
