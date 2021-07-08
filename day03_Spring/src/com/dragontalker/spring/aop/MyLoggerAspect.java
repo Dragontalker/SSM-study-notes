@@ -51,8 +51,11 @@ public class MyLoggerAspect {
 	}
 	
 	/**
-	 * @AfterThrowing: 将方法标注为异常通知
+	 * @AfterThrowing: 将方法标注为异常通知（Exception)
 	 * @param exception
+	 * 异常通知（Exception): 作用于当方法抛出异常时
+	 * 可通过throwing设置接收方法返回的异常信息
+	 * 在参数列表中可通过具体的异常类型, 来对指定的异常信息进行操作
 	 */
 	@AfterThrowing(value = "execution(* com.dragontalker.spring.aop.*.*(..))", throwing="exception")
 	public void afterThrowing(Exception exception) {
