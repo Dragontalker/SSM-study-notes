@@ -24,7 +24,7 @@ public class MyLoggerAspect {
 		System.out.println(">> Arugments: " + Arrays.toString(args));
 	}
 	
-	@After(value = "exection()")
+	@After(value = "exection(* com.dragontalker.spring.aop.*.*(..))")
 	public void afterMethod() {
 		
 	}
