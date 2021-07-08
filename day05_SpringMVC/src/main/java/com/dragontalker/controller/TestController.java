@@ -32,4 +32,9 @@ public class TestController {
 		
 		return "test";
 	}
+	
+	@RequestMapping("testREST")
+	public String testREST() {
+		
+	}
 }
