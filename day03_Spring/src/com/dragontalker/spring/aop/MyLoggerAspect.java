@@ -6,6 +6,7 @@ import org.aspectj.lang.JoinPoint;
 import org.aspectj.lang.annotation.After;
 import org.aspectj.lang.annotation.AfterReturning;
 import org.aspectj.lang.annotation.AfterThrowing;
+import org.aspectj.lang.annotation.Around;
 import org.aspectj.lang.annotation.Aspect;
 import org.aspectj.lang.annotation.Before;
 import org.springframework.stereotype.Component;
@@ -60,5 +61,10 @@ public class MyLoggerAspect {
 	@AfterThrowing(value = "execution(* com.dragontalker.spring.aop.*.*(..))", throwing="exception")
 	public void afterThrowing(Exception exception) {
 		System.out.println(">> afterThrowing() called... the Exception is: " + exception);
+	}
+	
+	@Around(value = "execution(* com.dragontalker.spring.aop.*.*(..))")
+	public void aroundMethod() {
+		
 	}
 }
