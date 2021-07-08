@@ -12,6 +12,6 @@ public class MyLoggerAspect {
 	 */
 	@Before(value = "execution(public int day03_Spring.spring.aop.MathImpl.add(int, int))")
 	public void beforeMethod() {
-		
+		System.out.println(">> 方法执行之前...");
 	}
 }
