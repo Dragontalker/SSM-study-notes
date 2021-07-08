@@ -17,6 +17,9 @@ public class Test {
 		double subResult = math.sub(1, 3);
 		System.out.println(subResult);
 		
+		TestHandler testHandler = context.getBean("testHandler", TestHandler.class);
+		testHandler.test();
+		
 		context.close();
 	}
 }

@@ -15,7 +15,7 @@ public class MyLoggerAspect {
 	 * @Before: 将方法指定为前置通知
 	 * 必须设置value, 其值为切入点表达式
 	 */
-	@Before(value = "execution(* com.dragontalker.spring.aop.MathImpl.*(..))")
+	@Before(value = "execution(* com.dragontalker.spring.aop.*.*(..))")
 	public void beforeMethod(JoinPoint joinPoint) {
 		Object[] args = joinPoint.getArgs();
 		String methodName = joinPoint.getSignature().getName();
