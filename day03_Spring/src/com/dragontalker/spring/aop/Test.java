@@ -11,12 +11,8 @@ public class Test {
 		
 		Math math = context.getBean("mathImpl", Math.class);
 		
-		double divResult = math.div(1, 0);
+		double divResult = math.div(6, 2);
 		System.out.println(divResult);
-	
-		
-		TestHandler testHandler = context.getBean("testHandler", TestHandler.class);
-		testHandler.test();
 		
 		context.close();
 	}
