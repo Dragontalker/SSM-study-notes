@@ -5,7 +5,20 @@
   <link rel="self" href="https://spring.io/blog.atom" />
   <id>http://spring.io/blog.atom</id>
   <icon>https://spring.io/favicon.ico</icon>
-  <updated>2021-07-07T16:35:47Z</updated>
+  <updated>2021-07-08T07:00:00Z</updated>
+  <entry>
+    <title>A Bootiful Podcast: Matt Raible</title>
+    <link rel="alternate" href="https://spring.io/blog/2021/07/08/a-bootiful-podcast-matt-raible" />
+    <category term="engineering" label="Engineering" />
+    <author>
+      <name>Josh Long</name>
+    </author>
+    <id>tag:spring.io,2021-07-08:4491</id>
+    <updated>2021-07-08T07:00:00Z</updated>
+    <content type="html">&lt;p&gt;It&amp;rsquo;s Matt Raible! I love talking to Matt Raible, and I&amp;rsquo;ll bet you would too. He&amp;rsquo;s one of the good ones, people. One of the legends of the Java and JavaScript communities. One of the greats. Enjoy!&lt;/p&gt;
+&lt;iframe title="MATT RAIBLE!!" allowtransparency="true" height="150" width="100%" style="border: none; min-width: min(100%, 430px);" scrolling="no" data-name="pb-iframe-player" src="https://www.podbean.com/player-v2/?i=jtybk-1082d8b-pb&amp;from=pb6admin&amp;share=1&amp;download=1&amp;rtl=0&amp;fonts=Arial&amp;skin=1&amp;font-color=&amp;btn-skin=7"&gt;&lt;/iframe&gt;
+&lt;!-- rendered by Sagan Renderer Service --&gt;</content>
+  </entry>
   <entry>
     <title>Spring Cloud Hoxton.SR12 has been released</title>
     <link rel="alternate" href="https://spring.io/blog/2021/07/07/spring-cloud-hoxton-sr12-has-been-released" />
@@ -604,19 +617,6 @@ Artem&lt;/p&gt;
 &lt;p&gt;Detailed changes can be found here: &lt;a href="https://github.com/spring-projects/sts4/wiki/Changelog#2021-06-18-4110-release-incl-language-servers-version-1260"&gt;https://github.com/spring-projects/sts4/wiki/Changelog#2021-06-18-4110-release-incl-language-servers-version-1260&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Spring Tools 4.11.1 is scheduled to be released in early August 2021.&lt;/p&gt;
 &lt;p&gt;Enjoy!&lt;/p&gt;
-&lt;!-- rendered by Sagan Renderer Service --&gt;</content>
-  </entry>
-  <entry>
-    <title>A Bootiful Podcast: Azure Developer Advocate Rory Preddy on Spring, Java, Azure Spring Cloud and more</title>
-    <link rel="alternate" href="https://spring.io/blog/2021/06/17/a-bootiful-podcast-azure-developer-advocate-rory-preddy-on-spring-java-azure-spring-cloud-and-more" />
-    <category term="engineering" label="Engineering" />
-    <author>
-      <name>Josh Long</name>
-    </author>
-    <id>tag:spring.io,2021-06-17:4471</id>
-    <updated>2021-06-17T11:00:00Z</updated>
-    <content type="html">&lt;p&gt;Hi, Spring fans! Welcome to another installment of a Bootiful Podcast! In this installment, Josh Long (@starbuxman) talks to Azure Developer Advocate Rory Preddy (@rorypreddy).&lt;/p&gt;
-&lt;iframe title="Azure Developer Advocate Rory Preddy on Spring, Java, and Azure Spring Cloud" allowtransparency="true" height="150" width="100%" style="border: none; min-width: min(100%, 430px);" scrolling="no" data-name="pb-iframe-player" src="https://www.podbean.com/player-v2/?i=6rfn3-10692c4-pb&amp;from=pb6admin&amp;share=1&amp;download=1&amp;rtl=0&amp;fonts=Arial&amp;skin=1&amp;btn-skin=7"&gt;&lt;/iframe&gt;
 &lt;!-- rendered by Sagan Renderer Service --&gt;</content>
   </entry>
 </feed>
