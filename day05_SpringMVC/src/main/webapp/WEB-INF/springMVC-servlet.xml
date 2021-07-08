@@ -6,4 +6,9 @@
 		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.0.xsd">
 
 	<context:component-scan base-package="com.dragontalker.controller" />
+	
+	<bean id="viewResolver" class="org.springframework.web.servlet.view.InternalResourceViewResolver" >
+		<property name="prefix" value="/WEB-INF/view"/>
+		<property name="suffix" value=".jsp" />
+	</bean>
 </beans>
