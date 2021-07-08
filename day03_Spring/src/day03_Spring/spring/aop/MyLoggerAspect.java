@@ -2,7 +2,9 @@ package day03_Spring.spring.aop;
 
 import org.aspectj.lang.annotation.Aspect;
 import org.aspectj.lang.annotation.Before;
+import org.springframework.stereotype.Component;
 
+@Component
 @Aspect // 标注当前类为切面
 public class MyLoggerAspect {
 
