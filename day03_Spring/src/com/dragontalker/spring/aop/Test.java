@@ -11,11 +11,9 @@ public class Test {
 		
 		Math math = context.getBean("mathImpl", Math.class);
 		
-		double addResult = math.add(1, 3);
-		System.out.println(addResult);
-		
-		double subResult = math.sub(1, 3);
-		System.out.println(subResult);
+		double divResult = math.div(1, 0);
+		System.out.println(divResult);
+	
 		
 		TestHandler testHandler = context.getBean("testHandler", TestHandler.class);
 		testHandler.test();
