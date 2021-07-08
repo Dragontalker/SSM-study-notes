@@ -23,7 +23,8 @@
 		
 		<hr>
 		
-		<form action="testREST" method="POST"> 
+		<form action="testREST/1001" method="POST"> 
+			<input type="hidden" name="_method" value="PUT" />
 			<input type="submit" value="PUT测试" />
 		</form>
 	
