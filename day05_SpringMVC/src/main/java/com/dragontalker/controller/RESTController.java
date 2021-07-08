@@ -9,9 +9,16 @@ import org.springframework.web.bind.annotation.RequestMethod;
 public class RESTController {
 
 	@RequestMapping(value = "/testREST/{id}", method = RequestMethod.GET)
-	public String testREST(@PathVariable Integer id) {
+	public String testGetREST(@PathVariable Integer id) {
 		
 		System.out.println(">> GET: id=" + id);
+		return "test";
+	}
+	
+	@RequestMapping(value = "/testREST", method = RequestMethod.POST)
+	public String testPostREST() {
+		
+		System.out.println(">> POST");
 		return "test";
 	}
 	

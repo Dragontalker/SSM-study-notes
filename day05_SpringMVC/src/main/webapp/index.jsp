@@ -13,7 +13,19 @@
 		
 		<hr>
 		
-		<a href="testREST/1001">Test GET</a>
+		<a href="testREST/1001" method="GET">Test GET</a>
+		
+		<hr>
+		
+		<form action="testREST" method="POST"> 
+			<input type="submit" value="POST测试" />
+		</form>
+		
+		<hr>
+		
+		<form action="testREST" method="POST"> 
+			<input type="submit" value="PUT测试" />
+		</form>
 	
 	</body>
 </html>
