@@ -1,8 +1,5 @@
-package day03_Spring.spring.aop;
+package com.dragontalker.spring.aop;
 
-import org.springframework.stereotype.Component;
-
-@Component
 public interface Math {
 
 	double add(double i, double j);
