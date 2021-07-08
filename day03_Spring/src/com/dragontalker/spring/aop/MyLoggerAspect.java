@@ -1,5 +1,6 @@
 package com.dragontalker.spring.aop;
 
+import org.aspectj.lang.JoinPoint;
 import org.aspectj.lang.annotation.Aspect;
 import org.aspectj.lang.annotation.Before;
 import org.springframework.stereotype.Component;
@@ -13,7 +14,10 @@ public class MyLoggerAspect {
 	 * 必须设置value, 其值为切入点表达式
 	 */
 	@Before(value = "execution(public double com.dragontalker.spring.aop.MathImpl.add(double, double))")
-	public void beforeMethod() {
-		System.out.println(">> 方法执行之前...");
+	public void beforeMethod(JoinPoint joinPoint) {
+		Object[] args = joinPoint.getArgs();
+		String methodName = joinPoint.getSignature().getName();
+		System.out.println(">> Method Name: " + methodName);
+		System.out.println(">> Arugments: " + args.toString());
 	}
 }
