@@ -69,13 +69,17 @@ public class MyLoggerAspect {
 		
 		try {
 			// 前置通知
+			System.out.println("前置通知");
 			joinPoint.proceed(); // 执行方法
 			// 返回通知
+			System.out.println("返回通知");
 		} catch (Throwable e) {
 			e.printStackTrace();
 			// 异常通知
+			System.out.println("异常通知");
 		} finally {
 			// 后置通知
+			System.out.println("后置通知");
 		}
 	}
 }
