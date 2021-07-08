@@ -14,7 +14,13 @@ public class TestController {
 	 * 请求方式： GET(查询) POST(添加) PUT(修改) DELETE(删除)
 	 */
 	@RequestMapping(value = "/test", method = RequestMethod.GET)
-	public String test() {
+	public String testGET() {
+		
+		return "test";
+	}
+	
+	@RequestMapping(value = "/test", method = RequestMethod.POST)
+	public String testPOST() {
 		
 		return "test";
 	}
