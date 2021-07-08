@@ -4,6 +4,7 @@ import java.util.Arrays;
 
 import org.aspectj.lang.JoinPoint;
 import org.aspectj.lang.annotation.After;
+import org.aspectj.lang.annotation.AfterReturning;
 import org.aspectj.lang.annotation.Aspect;
 import org.aspectj.lang.annotation.Before;
 import org.springframework.stereotype.Component;
@@ -31,5 +32,10 @@ public class MyLoggerAspect {
 	@After(value = "execution(* com.dragontalker.spring.aop.*.*(..))")
 	public void afterMethod() {
 		System.out.println(">> afterMethod() called...");
+	}
+	
+	@AfterReturning(value = "execution(* com.dragontalker.spring.aop.*.*(..))")
+	public void afterReturning() {
+		System.out.println(">> afterReturning() called...");
 	}
 }
