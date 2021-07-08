@@ -50,6 +50,10 @@ public class MyLoggerAspect {
 		System.out.println(">> result = " + result);
 	}
 	
+	/**
+	 * @AfterThrowing: 将方法标注为异常通知
+	 * @param exception
+	 */
 	@AfterThrowing(value = "execution(* com.dragontalker.spring.aop.*.*(..))", throwing="exception")
 	public void afterThrowing(Exception exception) {
 		System.out.println(">> afterThrowing() called... the Exception is: " + exception);
