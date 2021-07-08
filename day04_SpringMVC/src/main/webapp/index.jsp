@@ -15,6 +15,6 @@
 		
 		<br>
 		
-		<a href="hello">Hello</a>
+		<a href="hello?username=root&password=root">Hello</a>
 	</body>
 </html>
