@@ -65,14 +65,18 @@ public class MyLoggerAspect {
 	}
 	
 	@Around(value = "execution(* com.dragontalker.spring.aop.*.*(..))")
-	public void aroundMethod(ProceedingJoinPoint joinPoint) {
+	public Object aroundMethod(ProceedingJoinPoint joinPoint) {
+		
+		Object result = null;
 		
 		try {
 			// 前置通知
 			System.out.println("前置通知");
-			joinPoint.proceed(); // 执行方法
+			result = joinPoint.proceed(); // 执行方法
 			// 返回通知
 			System.out.println("返回通知");
+			return result;
+			
 		} catch (Throwable e) {
 			e.printStackTrace();
 			// 异常通知
@@ -81,5 +85,7 @@ public class MyLoggerAspect {
 			// 后置通知
 			System.out.println("后置通知");
 		}
+		
+		return -1;
 	}
 }
