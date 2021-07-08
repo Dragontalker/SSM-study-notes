@@ -10,17 +10,21 @@ import org.aspectj.lang.annotation.AfterThrowing;
 import org.aspectj.lang.annotation.Around;
 import org.aspectj.lang.annotation.Aspect;
 import org.aspectj.lang.annotation.Before;
+import org.aspectj.lang.annotation.Pointcut;
 import org.springframework.stereotype.Component;
 
 @Component
 @Aspect // 标注当前类为切面
 public class MyLoggerAspect {
+	
+	@Pointcut(value = "execution(* com.dragontalker.spring.aop.*.*(..))")
+	public void test() {}
 
 	/**
 	 * @Before: 将方法指定为前置通知
 	 * 必须设置value, 其值为切入点表达式
 	 */
-	@Before(value = "execution(* com.dragontalker.spring.aop.*.*(..))")
+	@Before(value = "test()")
 	public void beforeMethod(JoinPoint joinPoint) {
 		Object[] args = joinPoint.getArgs();
 		String methodName = joinPoint.getSignature().getName();
@@ -32,7 +36,7 @@ public class MyLoggerAspect {
 	 * @After: 将方法标注为后置通知
 	 * 后置通知: 作用于方法的finally语句块, 即不管有没有异常都会执行
 	 */
-	@After(value = "execution(* com.dragontalker.spring.aop.*.*(..))")
+	@After(value = "test()")
 	public void afterMethod() {
 		System.out.println(">> afterMethod() called...");
 	}
@@ -45,7 +49,7 @@ public class MyLoggerAspect {
 	 * 可通过returning设置接收方法返回值的变量名
 	 * 要想在方法中使用, 必须在方法的形参中设置和变量名相同的形参
 	 */
-	@AfterReturning(value = "execution(* com.dragontalker.spring.aop.*.*(..))", returning = "result")
+	@AfterReturning(value = "test()", returning = "result")
 	public void afterReturning(JoinPoint joinPoint, Object result) {
 		
 		System.out.println(">> afterReturning() called...");
@@ -59,12 +63,12 @@ public class MyLoggerAspect {
 	 * 可通过throwing设置接收方法返回的异常信息
 	 * 在参数列表中可通过具体的异常类型, 来对指定的异常信息进行操作
 	 */
-	@AfterThrowing(value = "execution(* com.dragontalker.spring.aop.*.*(..))", throwing="exception")
+	@AfterThrowing(value = "test()", throwing="exception")
 	public void afterThrowing(Exception exception) {
 		System.out.println(">> afterThrowing() called... the Exception is: " + exception);
 	}
 	
-	@Around(value = "execution(* com.dragontalker.spring.aop.*.*(..))")
+	@Around(value = "test()")
 	public Object aroundMethod(ProceedingJoinPoint joinPoint) {
 		
 		Object result = null;
