@@ -24,8 +24,8 @@ public class MyLoggerAspect {
 		System.out.println(">> Arugments: " + Arrays.toString(args));
 	}
 	
-	@After(value = "exection(* com.dragontalker.spring.aop.*.*(..))")
+	@After(value = "execution(* com.dragontalker.spring.aop.*.*(..))")
 	public void afterMethod() {
-		
+		System.out.println(">> afterMethod() called...");
 	}
 }
