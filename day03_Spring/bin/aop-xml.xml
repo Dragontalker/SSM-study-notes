@@ -9,4 +9,9 @@
 
 	<context:component-scan base-package="com.dragontalker.spring.aopxml" />
 	
+	<aop:config>
+		<aop:aspect ref="myLogger">
+			<aop:before method="before" pointcut="execution(* com.dragontalker.spring.aopxml.*.*(..))"/>
+		</aop:aspect>
+	</aop:config>
 </beans>
