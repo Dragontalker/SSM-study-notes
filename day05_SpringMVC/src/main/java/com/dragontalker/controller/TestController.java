@@ -14,7 +14,7 @@ public class TestController {
 	 * 请求方式： GET(查询) POST(添加) PUT(修改) DELETE(删除)
 	 * params: 用来设置请求参数, 支持表达式
 	 */
-	@RequestMapping(value = "/test", method = RequestMethod.GET, params= { "username" })
+	@RequestMapping(value = "/test", method = RequestMethod.GET, params= { "username", "!age" })
 	public String testGET() {
 		
 		return "test";
