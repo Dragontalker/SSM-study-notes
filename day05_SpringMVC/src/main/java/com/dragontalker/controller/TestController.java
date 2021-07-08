@@ -1,6 +1,7 @@
 package com.dragontalker.controller;
 
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
@@ -33,8 +34,14 @@ public class TestController {
 		return "test";
 	}
 	
-	@RequestMapping("testREST")
-	public String testREST() {
+	/**
+	 * 以前: http://localhost:8080/day05_SpringMVC?id=1001&username=admin
+	 * 现在: http://localhost:8080/day05_SpringMVC/1001/admin
+	 */
+	@RequestMapping("testREST/{id}/{username}")
+	public String testREST(@PathVariable("id") Integer id, 
+			@PathVariable("username") String username) {
 		
+		return "test-rest";
 	}
 }
