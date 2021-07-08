@@ -8,6 +8,7 @@
 	<enableImports><![CDATA[false]]></enableImports>
 	<configs>
 		<config>conf/aop.xml</config>
+		<config>conf/aop-xml.xml</config>
 	</configs>
 	<autoconfigs>
 	</autoconfigs>
