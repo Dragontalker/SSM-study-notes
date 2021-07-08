@@ -10,7 +10,8 @@ public class Test {
 				new ClassPathXmlApplicationContext("aop.xml");
 		
 		Math math = context.getBean("mathImpl", Math.class);
-		math.add(1, 2);
+		double result = math.add(1, 2);
+		System.out.println(result);
 		
 		context.close();
 	}
