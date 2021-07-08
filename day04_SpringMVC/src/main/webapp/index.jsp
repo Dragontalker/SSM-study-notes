@@ -10,5 +10,7 @@
 	
 	<body>
 		Day 04 - Spring MVC
+		
+		<a href="hello">Hello</a>
 	</body>
 </html>
