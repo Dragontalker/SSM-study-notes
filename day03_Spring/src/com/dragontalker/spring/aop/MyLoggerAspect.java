@@ -3,6 +3,7 @@ package com.dragontalker.spring.aop;
 import java.util.Arrays;
 
 import org.aspectj.lang.JoinPoint;
+import org.aspectj.lang.ProceedingJoinPoint;
 import org.aspectj.lang.annotation.After;
 import org.aspectj.lang.annotation.AfterReturning;
 import org.aspectj.lang.annotation.AfterThrowing;
@@ -64,7 +65,17 @@ public class MyLoggerAspect {
 	}
 	
 	@Around(value = "execution(* com.dragontalker.spring.aop.*.*(..))")
-	public void aroundMethod() {
+	public void aroundMethod(ProceedingJoinPoint joinPoint) {
 		
+		try {
+			// 前置通知
+			joinPoint.proceed(); // 执行方法
+			// 返回通知
+		} catch (Throwable e) {
+			e.printStackTrace();
+			// 异常通知
+		} finally {
+			// 后置通知
+		}
 	}
 }
