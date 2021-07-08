@@ -3,6 +3,7 @@ package com.dragontalker.spring.aop;
 import java.util.Arrays;
 
 import org.aspectj.lang.JoinPoint;
+import org.aspectj.lang.annotation.After;
 import org.aspectj.lang.annotation.Aspect;
 import org.aspectj.lang.annotation.Before;
 import org.springframework.stereotype.Component;
@@ -21,5 +22,10 @@ public class MyLoggerAspect {
 		String methodName = joinPoint.getSignature().getName();
 		System.out.println(">> Method Name: " + methodName);
 		System.out.println(">> Arugments: " + Arrays.toString(args));
+	}
+	
+	@After(value = "exection()")
+	public void afterMethod() {
+		
 	}
 }
