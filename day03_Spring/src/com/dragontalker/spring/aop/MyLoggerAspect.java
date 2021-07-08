@@ -52,6 +52,6 @@ public class MyLoggerAspect {
 	
 	@AfterThrowing(value = "execution(* com.dragontalker.spring.aop.*.*(..))")
 	public void afterThrowing() {
-		
+		System.out.println(">> afterThrowing() called...");
 	}
 }
