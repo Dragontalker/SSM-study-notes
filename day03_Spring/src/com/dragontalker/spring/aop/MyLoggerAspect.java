@@ -1,5 +1,7 @@
 package com.dragontalker.spring.aop;
 
+import java.util.Arrays;
+
 import org.aspectj.lang.JoinPoint;
 import org.aspectj.lang.annotation.Aspect;
 import org.aspectj.lang.annotation.Before;
@@ -18,6 +20,6 @@ public class MyLoggerAspect {
 		Object[] args = joinPoint.getArgs();
 		String methodName = joinPoint.getSignature().getName();
 		System.out.println(">> Method Name: " + methodName);
-		System.out.println(">> Arugments: " + args.toString());
+		System.out.println(">> Arugments: " + Arrays.toString(args));
 	}
 }
