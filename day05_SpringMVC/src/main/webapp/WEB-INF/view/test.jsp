@@ -13,7 +13,7 @@
 		
 		<hr>
 		
-		<a href="/">Back to Home</a>
+		<a href="testGet/1001">Test GET</a>
 	
 	</body>
 </html>
