@@ -7,6 +7,9 @@ public class TestController {
 
 	/**
 	 * 假设: http://localhost:8080/day04_SpringMVC/hello
-	 * 
 	 */
+	public String hello() {
+		
+		return "hello";
+	}
 }
