@@ -11,7 +11,8 @@
 	
 	<aop:config>
 		<aop:aspect ref="myLogger">
-			<aop:before method="before" pointcut="execution(* com.dragontalker.spring.aopxml.*.*(..))"/>
+			<aop:pointcut expression="* com.dragontalker.spring.aopxml.*.*(..))" id="cut"/>
+			<aop:before method="before" pointcut-ref="cut"/>
 		</aop:aspect>
 	</aop:config>
 </beans>
