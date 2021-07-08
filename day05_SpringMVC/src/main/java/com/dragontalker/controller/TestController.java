@@ -42,6 +42,8 @@ public class TestController {
 	public String testREST(@PathVariable("id") Integer id, 
 			@PathVariable("username") String username) {
 		
-		return "test-rest";
+		System.out.println("id: " + id + ", username: " + username);
+		
+		return "test";
 	}
 }
