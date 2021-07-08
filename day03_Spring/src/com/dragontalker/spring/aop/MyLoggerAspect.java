@@ -34,6 +34,14 @@ public class MyLoggerAspect {
 		System.out.println(">> afterMethod() called...");
 	}
 	
+	/**
+	 * @AfterReturning: 将方法标注为返回通知
+	 * @param joinPoint
+	 * @param result
+	 * 返回通知: 作用于方法执行之后
+	 * 可通过returning设置接收方法返回值的变量名
+	 * 要想在方法中使用, 必须在方法的形参中设置和变量名相同的形参
+	 */
 	@AfterReturning(value = "execution(* com.dragontalker.spring.aop.*.*(..))", returning = "result")
 	public void afterReturning(JoinPoint joinPoint, Object result) {
 		

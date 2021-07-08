@@ -12,6 +12,7 @@ public class Test {
 		Math math = context.getBean("mathImpl", Math.class);
 		
 		double divResult = math.div(6, 0);
+		System.out.println(divResult);
 		
 		context.close();
 	}
