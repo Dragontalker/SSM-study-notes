@@ -11,6 +11,7 @@ import org.aspectj.lang.annotation.Around;
 import org.aspectj.lang.annotation.Aspect;
 import org.aspectj.lang.annotation.Before;
 import org.aspectj.lang.annotation.Pointcut;
+import org.springframework.core.annotation.Order;
 import org.springframework.stereotype.Component;
 
 @Component
@@ -25,6 +26,7 @@ public class MyLoggerAspect {
 	 * 必须设置value, 其值为切入点表达式
 	 */
 	@Before(value = "test()")
+	@Order(2)
 	public void beforeMethod(JoinPoint joinPoint) {
 		Object[] args = joinPoint.getArgs();
 		String methodName = joinPoint.getSignature().getName();
