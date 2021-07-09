@@ -6,7 +6,7 @@
 <mapper namespace="org.mybatis.example.BlogMapper">
 
 	<select id="selectBlog" resultType="Blog">
-		select * from Blog where id = #{id}
+		select * from t_user where uid = #{id}
 	</select>
 	
 </mapper>
