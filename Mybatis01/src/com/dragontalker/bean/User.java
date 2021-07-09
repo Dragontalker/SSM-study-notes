@@ -11,6 +11,16 @@ public class User {
 	private Integer age;
 	
 	private String sex;
+	
+	public User() {}
+
+	public User(Integer id, String username, String password, Integer age, String sex) {
+		this.id = id;
+		this.username = username;
+		this.password = password;
+		this.age = age;
+		this.sex = sex;
+	}
 
 	public Integer getId() {
 		return id;
