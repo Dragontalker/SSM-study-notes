@@ -4,6 +4,10 @@
 	"http://mybatis.org/dtd/mybatis-3-config.dtd">
 
 <configuration>
+
+	<properties>
+		<property name="jdbc.driver" value="com.mysql.jdbc.Driver"/>
+	</properties>
 	
 	<!--
 		<environments>: 设置连接数据库的环境
@@ -22,7 +26,7 @@
 			
 			<!-- type="POOLED|UNPOOLED|JNDI" -->
 			<dataSource type="POOLED">
-				<property name="driver" value="com.mysql.jdbc.Driver" />
+				<property name="driver" value="${jdbc.driver}" />
 				<property name="url" value="jdbc:mysql://localhost:3306/ssm?characterEncoding=latin1" />
 				<property name="username" value="springstudent" />
 				<property name="password" value="springstudent" />
