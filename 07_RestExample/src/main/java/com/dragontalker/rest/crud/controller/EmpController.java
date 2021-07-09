@@ -81,7 +81,7 @@ public class EmpController {
 		
 		map.put("emp", emp);
 		map.put("depts", depts);
-		return "update";
+		return "edit";
 	}
 	
 	@RequestMapping(value = "/emp", method = RequestMethod.PUT)
