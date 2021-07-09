@@ -6,7 +6,7 @@
 	<head>
 		<meta charset="UTF-8">
 		<title>展示员工信息</title>
-		<link rel="stylesheet" href="${ pageContext.servletContext.contextPath }/css/index_like.css" />
+		<link rel="stylesheet" href="${ pageContext.servletContext.contextPath }/css/index_work.css" />
 	</head>
 	
 	<body>
@@ -17,7 +17,7 @@
 				<th>EMAIL</th>
 				<th>GENDER</th>
 				<th>DEPARTMENTNAME</th>
-				<th>OPTION</th>
+				<th>OPTION(<a href="emp">ADD</a>)</th>
 			</tr>
 			
 			<c:forEach items="${ emps }" var="emp">
