@@ -9,6 +9,6 @@ public class TestController {
 	@RequestMapping("/test")
 	public String test() {
 		
-		return "redirect:";
+		return "redirect:/index.jsp";
 	}
 }
