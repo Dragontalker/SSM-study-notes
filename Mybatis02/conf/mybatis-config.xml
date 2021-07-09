@@ -5,11 +5,6 @@
 
 <configuration>
 
-	<!--  
-		<properties>: 设置或引入资源文件
-		resources: 在类路径下访问资源文件
-		url: 在网络路径或磁盘路径下访问资源文件
-	-->
 	<properties resource="jdbc.properties" />
 	
 	<settings>
@@ -17,29 +12,12 @@
 	</settings>
 	
 	<typeAliases>
-		<!-- 
-			为类型设置类型别名
-			type: Java类型, 若只设置type, 默认的别名就是类型, 且不区分大小写
-		-->
 		<typeAlias type="com.dragontalker.bean.User"/>
 	</typeAliases>
 	
-	<!--
-		<environments>: 设置连接数据库的环境
-		default: 设置默认使用的数据库环境
-	-->
 	<environments default="development">
-	
-		<!-- 
-			<environment>: 设置某个数据库的环境
-			id: 数据库环境的唯一标识
-		-->
 		<environment id="development">
-		
-			<!-- type="JDBC|MANAGED" -->
 			<transactionManager type="JDBC" />
-			
-			<!-- type="POOLED|UNPOOLED|JNDI" -->
 			<dataSource type="POOLED">
 				<property name="driver" value="${jdbc.driver}" />
 				<property name="url" value="${jdbc.url}" />
@@ -49,7 +27,6 @@
 		</environment>
 	</environments>
 
-	<!-- 引入映射文件 --> 
 	<mappers>
 		<mapper resource="UserMapper.xml" />
 	</mappers>
