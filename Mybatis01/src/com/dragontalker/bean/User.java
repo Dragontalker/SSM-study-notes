@@ -51,5 +51,11 @@ public class User {
 	public void setSex(String sex) {
 		this.sex = sex;
 	}
+
+	@Override
+	public String toString() {
+		return "User [id=" + id + ", username=" + username + ", password=" + password + ", age=" + age + ", sex=" + sex
+				+ "]";
+	}
 	
 }
