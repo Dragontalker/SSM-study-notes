@@ -44,5 +44,11 @@ public class EmpController {
 		map.put("depts", depts);
 		return "add";
 	}
+	
+	@RequestMapping(value = "/emp", method = RequestMethod.POST)
+	public String addEmp(Employee employee) {
+		employeeDao.save(employee);
+		return "redirect:/emps";
+	}
 
 }
