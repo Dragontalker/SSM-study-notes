@@ -43,7 +43,10 @@
 					<td>DEPARTMENT</td>
 					<td>
 						<select name="">
-							<option>SELECT</option>
+							<option>SELECT DEPARTMENT</option>
+							<c:forEach items="${ depts }" var="dept">
+								<option value="${ dept.id }">${ dept.departmentName }</option>
+							</c:forEach>
 						</select>
 					</td>
 				</tr>
