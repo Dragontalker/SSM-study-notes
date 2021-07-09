@@ -5,6 +5,11 @@
 	
 <mapper namespace="com.dragontalker.mapper.UserMapper">
 
+	<!-- 
+		<select>: 定义查询语句
+		id: 设置SQL语句的唯一标识
+		resultType: 结果类型, 及实体类的全限定名
+	-->
 	<select id="getUserByUid" resultType="com.dragontalker.bean.User">
 		select * from t_user where uid = #{id}
 	</select>
