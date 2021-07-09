@@ -5,9 +5,12 @@
 
 <configuration>
 
-	<properties>
-		<property name="jdbc.driver" value="com.mysql.jdbc.Driver"/>
-	</properties>
+	<!--  
+		<properties>: 设置或引入资源文件
+		resources: 在类路径下访问资源文件
+		url: 在网络路径或磁盘路径下访问资源文件
+	-->
+	<properties resource="jdbc.properties" />
 	
 	<!--
 		<environments>: 设置连接数据库的环境
@@ -27,9 +30,9 @@
 			<!-- type="POOLED|UNPOOLED|JNDI" -->
 			<dataSource type="POOLED">
 				<property name="driver" value="${jdbc.driver}" />
-				<property name="url" value="jdbc:mysql://localhost:3306/ssm?characterEncoding=latin1" />
-				<property name="username" value="springstudent" />
-				<property name="password" value="springstudent" />
+				<property name="url" value="${jdbc.url" />
+				<property name="username" value="${jdbc.username}" />
+				<property name="password" value="${jdbc.password}" />
 			</dataSource>
 		</environment>
 	</environments>
