@@ -12,6 +12,10 @@
 	-->
 	<properties resource="jdbc.properties" />
 	
+	<settings>
+		<setting name="mapUnderscoreToCamelCase" value="true"/>
+	</settings>
+	
 	<!--
 		<environments>: 设置连接数据库的环境
 		default: 设置默认使用的数据库环境
