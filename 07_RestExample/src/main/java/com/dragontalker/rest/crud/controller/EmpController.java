@@ -26,5 +26,10 @@ public class EmpController {
 		map.put("emps", emps);
 		return "list";
 	}
+	
+	@RequestMapping(value = "/index")
+	public String index() {
+		return "index";
+	}
 
 }
