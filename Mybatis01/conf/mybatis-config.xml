@@ -6,10 +6,15 @@
 <configuration>
 	
 	<!--
-		<environment>: 设置连接数据库的环境
+		<environments>: 设置连接数据库的环境
 		default: 设置默认使用的数据库环境
 	-->
 	<environments default="development">
+	
+		<!-- 
+			<environment>: 设置某个数据库的环境
+			id: 数据库环境的唯一标识
+		-->
 		<environment id="development">
 			<transactionManager type="JDBC" />
 			<dataSource type="POOLED">
