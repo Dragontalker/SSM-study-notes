@@ -11,7 +11,7 @@
 		resultType: 结果类型, 及实体类的全限定名
 	-->
 	<select id="getUserByUid" resultType="com.dragontalker.bean.User">
-		select * from t_user where uid = ${value}
+		select * from t_user where uid = #{id}
 	</select>
 	
 </mapper>
