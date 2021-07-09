@@ -8,6 +8,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
+import com.dragontalker.rest.crud.bean.Department;
 import com.dragontalker.rest.crud.bean.Employee;
 import com.dragontalker.rest.crud.dao.DepartmentDao;
 import com.dragontalker.rest.crud.dao.EmployeeDao;
@@ -33,8 +34,14 @@ public class EmpController {
 		return "list";
 	}
 	
+	/**
+	 * 跳转到添加页面
+	 * @return
+	 */
 	@RequestMapping(value = "/emp", method = RequestMethod.GET)
-	public String toAdd() {
+	public String toAdd(Map<String, Object> map) {
+		Collection<Department> depts = departmentDao.getDepartments();
+		map.put("depts", depts);
 		return "add";
 	}
 
