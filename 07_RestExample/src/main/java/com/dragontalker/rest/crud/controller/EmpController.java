@@ -50,6 +50,7 @@ public class EmpController {
 		map.put("genders", genders);
 		map.put("depts", depts);
 		// form标签有自动回显的功能, 会在页面中默认获取request作用域中的command属性的值
+		// 若在<form:form>设置了modelAttribute, 就可以自定义回显对象的属性名
 		map.put("emp", new Employee());
 		return "edit";
 	}
