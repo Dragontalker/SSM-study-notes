@@ -10,6 +10,16 @@
 	</head>
 	
 	<body>
-	
+		
+		<table>
+			<tr>
+				<th colspan="2">添加员工信息</th>
+			</tr>
+			
+			<tr>
+				
+			</tr>
+		</table>
+		
 	</body>
 </html>
