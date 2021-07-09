@@ -55,5 +55,10 @@ public class EmpController {
 		employeeDao.save(employee);
 		return "redirect:/emps";
 	}
+	
+	@RequestMapping(value = "/emp/{id}", method = RequestMethod.GET)
+	public String toUpdate() {
+		return "update";
+	}
 
 }
