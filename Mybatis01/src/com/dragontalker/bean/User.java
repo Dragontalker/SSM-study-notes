@@ -2,7 +2,7 @@ package com.dragontalker.bean;
 
 public class User {
 
-	private Integer id;
+	private Integer uid;
 	
 	private String userName;
 	
@@ -14,20 +14,20 @@ public class User {
 	
 	public User() {}
 
-	public User(Integer id, String userName, String password, Integer age, String sex) {
-		this.id = id;
+	public User(Integer uid, String userName, String password, Integer age, String sex) {
+		this.uid = uid;
 		this.userName = userName;
 		this.password = password;
 		this.age = age;
 		this.sex = sex;
 	}
 
-	public Integer getId() {
-		return id;
+	public Integer getUid() {
+		return uid;
 	}
 
-	public void setId(Integer id) {
-		this.id = id;
+	public void setUid(Integer uid) {
+		this.uid = uid;
 	}
 
 	public String getuserName() {
@@ -64,7 +64,7 @@ public class User {
 
 	@Override
 	public String toString() {
-		return "User [id=" + id + ", userName=" + userName + ", password=" + password + ", age=" + age + ", sex=" + sex
+		return "User [uid=" + uid + ", userName=" + userName + ", password=" + password + ", age=" + age + ", sex=" + sex
 				+ "]";
 	}
 	
