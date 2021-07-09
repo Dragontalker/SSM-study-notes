@@ -45,6 +45,11 @@ public class EmpController {
 		return "add";
 	}
 	
+	/**
+	 * 添加员工信息
+	 * @param employee
+	 * @return
+	 */
 	@RequestMapping(value = "/emp", method = RequestMethod.POST)
 	public String addEmp(Employee employee) {
 		employeeDao.save(employee);
