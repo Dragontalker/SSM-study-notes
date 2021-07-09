@@ -18,6 +18,20 @@
 				<th>DEPARTMENTNAME</th>
 				<th>OPTION</th>
 			</tr>
+			
+			<c:forEach items="${ emps }" var="emp">
+				<tr>
+					<td>${ emp.id }</td>
+					<td>${ emp.lastName }</td>
+					<td>${ emp.email }</td>
+					<td>${ emp.gender }</td>
+					<td>${ emp.department.departmentName }</td>
+					<td>
+						<a href="emp">UPDATE</a>
+						<a href="emp">DELETE</a>
+					</td>
+				</tr>
+			</c:forEach>
 		</table>
 	</body>
 </html>
