@@ -18,6 +18,10 @@
 	<servlet>
 		<servlet-name>springMVC</servlet-name>
 		<servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
+		<init-param>
+			<param-name>contextConfigLocaton</param-name>
+			<param-value>classpath:springMVC.xml</param-value>
+		</init-param>
 	</servlet>
 	
 	<!-- Map all requests to the DispatcherServlet for handling -->
