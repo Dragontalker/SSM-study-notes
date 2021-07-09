@@ -78,7 +78,12 @@ public class EmpController {
 		Employee emp = employeeDao.get(id);
 		// 获取所有的部门信息, 供用户选择
 		Collection<Department> depts = departmentDao.getDepartments();
+		// 存储性别的map集合
+		Map<String, String> genders = new HashMap<>();
+		genders.put("0", "女");
+		genders.put("1", "男");
 		
+		map.put("genders", genders);
 		map.put("emp", emp);
 		map.put("depts", depts);
 		return "edit";
