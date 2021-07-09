@@ -4,6 +4,11 @@
 	"http://mybatis.org/dtd/mybatis-3-config.dtd">
 
 <configuration>
+	
+	<!--
+		<environment>: 设置连接数据库的环境
+		default: 设置默认使用的数据库环境
+	-->
 	<environments default="development">
 		<environment id="development">
 			<transactionManager type="JDBC" />
