@@ -49,6 +49,8 @@ public class EmpController {
 		genders.put("1", "男");
 		map.put("genders", genders);
 		map.put("depts", depts);
+		// form标签有自动回显的功能, 会在页面中默认获取request作用域中的command属性的值
+		map.put("emp", new Employee());
 		return "edit";
 	}
 	

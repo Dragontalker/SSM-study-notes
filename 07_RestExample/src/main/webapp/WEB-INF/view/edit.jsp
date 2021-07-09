@@ -11,8 +11,8 @@
 	</head>
 	
 	<body>
-		
-		<form:form action="${ pageContext.servletContext.contextPath }/emp" method="post">
+		<!-- modelAttribute自定义回显对象的属性名 -->
+		<form:form action="${ pageContext.servletContext.contextPath }/emp" method="post" modelAttribute="emp">
 			<input type="hidden" name="id" value="${ emp.id }" />
 			<input type="hidden" name="_method" value="PUT" />
 			<table>
@@ -44,7 +44,8 @@
 				<tr>
 					<td>DEPARTMENT</td>
 					<td>
-						<form:select path="department.id" items="${ depts }" />
+						<form:select path="department.id" items="${ depts }" 
+							itemLabel="departmentName" itemValue="id"/>
 					</td>
 				</tr>
 				
