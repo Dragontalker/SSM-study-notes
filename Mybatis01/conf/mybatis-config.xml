@@ -16,6 +16,8 @@
 			id: 数据库环境的唯一标识
 		-->
 		<environment id="development">
+		
+			<!-- type="JDBC|MANAGED" -->
 			<transactionManager type="JDBC" />
 			<dataSource type="POOLED">
 				<property name="driver" value="com.mysql.jdbc.Driver" />
