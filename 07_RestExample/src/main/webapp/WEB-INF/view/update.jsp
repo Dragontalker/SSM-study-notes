@@ -12,25 +12,25 @@
 	
 	<body>
 		
-		<form action="${ pageContext.servletContext.contextPath }/emp" method="post">
+		<form:form action="${ pageContext.servletContext.contextPath }/emp" method="post">
 			<input type="hidden" name="id" value="${ emp.id }" />
 			<input type="hidden" name="_method" value="PUT" />
 			<table>
 				<tr>
-					<th colspan="2">修改员工信息</th>
+					<th colspan="2">编辑员工信息</th>
 				</tr>
 				
 				<tr>
 					<td>LASTNAME</td>
 					<td>
-						<input type="text" name="lastName" value="${ emp.lastName }" }/>
+						<form:input path="lastName" />
 					</td>
 				</tr>
 				
 				<tr>
 					<td>EMAIL</td>
 					<td>
-						<input type="text" name="email" value="${ emp.email }"/>
+						<form:input path="email" />
 					</td>
 				</tr>	
 				
@@ -60,6 +60,6 @@
 					</td>
 				</tr>
 			</table>
-		</form>
+		</form:form>
 	</body>
 </html>
