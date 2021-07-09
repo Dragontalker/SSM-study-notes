@@ -20,6 +20,11 @@ public class EmpController {
 	@Autowired
 	private DepartmentDao departmentDao;
 	
+	/**
+	 * 获取所有的员工信息
+	 * @param map
+	 * @return
+	 */
 	@RequestMapping(value = "/emps")
 	public String getAll(Map<String, Object> map) {
 		Collection<Employee> emps = employeeDao.getAll();
