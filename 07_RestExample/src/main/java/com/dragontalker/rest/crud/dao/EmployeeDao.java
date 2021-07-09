@@ -26,5 +26,16 @@ public class EmployeeDao {
 		employees.put(1004, new Employee(1004, "E-DD", "dd@163.com", 0, new Department(104, "D-DD")));
 		employees.put(1005, new Employee(1005, "E-EE", "ee@163.com", 1, new Department(105, "D-EE")));
 	}
+	
+	private static Integer initId = 1006;
+	
+	public void save(Employee employee){
+		if(employee.getId() == null){
+			employee.setId(initId++);
+		}
+		
+		employee.setDepartment(departmentDao.getDepartment(employee.getDepartment().getId()));
+		employees.put(employee.getId(), employee);
+	}
 
 }
