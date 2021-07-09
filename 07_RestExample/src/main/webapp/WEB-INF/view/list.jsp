@@ -4,10 +4,19 @@
 <html>
 	<head>
 		<meta charset="UTF-8">
-		<title>Insert title here</title>
+		<title>展示员工信息</title>
 	</head>
 	
 	<body>
-	
+		<table>
+			<tr>
+				<th>ID</th>
+				<th>LASTNAME</th>
+				<th>EMAIL</th>
+				<th>GENDER</th>
+				<th>DEPARTMENTNAME</th>
+				<th>OPTION</th>
+			</tr>
+		</table>
 	</body>
 </html>
