@@ -12,7 +12,7 @@
 		
 		<hr>
 		
-		<a href="testREST/1001">Test GET</a>
+		<a href="test">Test GET</a>
 		
 		<hr>
 		
