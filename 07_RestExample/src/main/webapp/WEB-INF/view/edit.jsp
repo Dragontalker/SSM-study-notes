@@ -59,7 +59,13 @@
 				
 				<tr>
 					<td colspan="2">
-						<input type="submit" value="EDIT" />
+						<c:if test="${ flag }">
+							<input type="submit" value="ADD" />
+						</c:if>
+						<c:if test="${ !flag }">
+							<input type="submit" value="UPDATE" />
+						</c:if>
+						
 					</td>
 				</tr>
 			</table>
