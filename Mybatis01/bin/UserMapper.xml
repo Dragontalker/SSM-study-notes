@@ -5,7 +5,7 @@
 	
 <mapper namespace="com.dragontalker.mapper.UserMapper">
 
-	<select id="getUserByUid" resultType="User">
+	<select id="getUserByUid" resultType="com.dragontalker.bean.User">
 		select * from t_user where uid = #{id}
 	</select>
 	
