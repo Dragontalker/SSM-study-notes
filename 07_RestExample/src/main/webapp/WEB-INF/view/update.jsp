@@ -11,7 +11,7 @@
 	
 	<body>
 		
-		<form action="emp" method="post">
+		<form action="${ pageContext.servletContext.contextPath }/emp" method="post">
 			<input type="hidden" name="id" value="${ emp.id }" />
 			<input type="hidden" name="_method" value="PUT" />
 			<table>
