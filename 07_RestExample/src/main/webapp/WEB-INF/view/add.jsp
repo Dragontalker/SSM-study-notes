@@ -42,7 +42,9 @@
 				<tr>
 					<td>DEPARTMENT</td>
 					<td>
-						
+						<select name="">
+							<option>SELECT</option>
+						</select>
 					</td>
 				</tr>
 				
