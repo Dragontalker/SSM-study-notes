@@ -61,7 +61,11 @@ public class EmpController {
 	public String toUpdate(@PathVariable("id") Integer id, Map<String, Object> map) {
 		// 获取要修改的员工信息
 		Employee emp = employeeDao.get(id);
+		// 获取所有的部门信息, 供用户选择
+		Collection<Department> depts = departmentDao.getDepartments();
+		
 		map.put("emp", emp);
+		map.put("depts", depts);
 		return "update";
 	}
 
