@@ -34,8 +34,8 @@
 				<tr>
 					<td>GENDER</td>
 					<td>
-						<input type="radio" name="gender" value="1" <c:if test="${ emp.gender == 1 }">checked="checked"</c:if> />男
-						<input type="radio" name="gender" value="0" <c:if test="${ emp.gender == 0 }">checked="checked"</c:if> />女
+						<input type="radio" name="gender" value="1" ${ emp.gender == 1?'checked':'' }/>男
+						<input type="radio" name="gender" value="0" ${ emp.gender == 0?'checked':'' }/>女
 					</td>
 				</tr>
 				
@@ -53,7 +53,7 @@
 				
 				<tr>
 					<td colspan="2">
-						<input type="submit" value="ADD" />
+						<input type="submit" value="UPDATE" />
 					</td>
 				</tr>
 			</table>
