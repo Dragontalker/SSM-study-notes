@@ -2,6 +2,7 @@ package com.dragontalker.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
 
 @Controller
 public class TestController {
@@ -13,9 +14,10 @@ public class TestController {
 	 * JstlView： 转发视图
 	 * RedirectView： 重定向视图
 	 */
-	@RequestMapping("/test")
-	public String test() {
+	@RequestMapping(value="/test", method=RequestMethod.POST)
+	public String test(String username) {
 		
-		return "redirect:/index.jsp";
+		System.out.println(username);
+		return "success";
 	}
 }
