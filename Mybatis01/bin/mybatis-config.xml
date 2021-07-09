@@ -19,6 +19,8 @@
 		
 			<!-- type="JDBC|MANAGED" -->
 			<transactionManager type="JDBC" />
+			
+			<!-- type="POOLED|UNPOOLED|JNDI" -->
 			<dataSource type="POOLED">
 				<property name="driver" value="com.mysql.jdbc.Driver" />
 				<property name="url" value="jdbc:mysql://localhost:3306/ssm?characterEncoding=latin1" />
