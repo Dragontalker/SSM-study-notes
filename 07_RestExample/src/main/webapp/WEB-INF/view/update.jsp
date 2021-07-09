@@ -12,6 +12,7 @@
 	<body>
 		
 		<form action="emp" method="post">
+			<input type="hidden" name="id" value="${ emp.id }" />
 			<table>
 				<tr>
 					<th colspan="2">修改员工信息</th>
