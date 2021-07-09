@@ -28,7 +28,7 @@
 					<td>${ emp.gender==0?'女':'男' }</td>
 					<td>${ emp.department.departmentName }</td>
 					<td>
-						<a href="emp">UPDATE</a>
+						<a href="emp/${ emp.id }">UPDATE</a>
 						<a href="emp">DELETE</a>
 					</td>
 				</tr>
