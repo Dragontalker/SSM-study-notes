@@ -6,6 +6,7 @@
 	<head>
 		<meta charset="UTF-8">
 		<title>展示员工信息</title>
+		<link rel="stylesheet" href="${ pageContext.servletContext.contextPath }/css/index_like.css" />
 	</head>
 	
 	<body>
