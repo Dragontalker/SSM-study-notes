@@ -6,6 +6,7 @@ import java.util.Map;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
 
 import com.dragontalker.rest.crud.bean.Employee;
 import com.dragontalker.rest.crud.dao.DepartmentDao;
@@ -32,9 +33,9 @@ public class EmpController {
 		return "list";
 	}
 	
-	@RequestMapping(value = "/index")
-	public String index() {
-		return "index";
+	@RequestMapping(value = "/emp", method = RequestMethod.GET)
+	public String toAdd() {
+		return "add";
 	}
 
 }
