@@ -57,6 +57,12 @@ public class EmpController {
 		return "redirect:/emps";
 	}
 	
+	/**
+	 * 获取要回显的数据, 跳转到修改页面, 并回显
+	 * @param id
+	 * @param map
+	 * @return
+	 */
 	@RequestMapping(value = "/emp/{id}", method = RequestMethod.GET)
 	public String toUpdate(@PathVariable("id") Integer id, Map<String, Object> map) {
 		// 获取要修改的员工信息
