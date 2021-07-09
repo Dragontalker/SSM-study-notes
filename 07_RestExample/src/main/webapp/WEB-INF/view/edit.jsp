@@ -13,8 +13,12 @@
 	<body>
 		<!-- modelAttribute自定义回显对象的属性名 -->
 		<form:form action="${ pageContext.servletContext.contextPath }/emp" method="post" modelAttribute="emp">
-			<input type="hidden" name="id" value="${ emp.id }" />
-			<input type="hidden" name="_method" value="PUT" />
+			
+			<c:if test="${ not empty emp.id }">
+				<form:hidden path="id" />
+				<input type="hidden" name="_method" value="PUT" />
+			</c:if>
+			
 			<table>
 				<tr>
 					<th colspan="2">编辑员工信息</th>
@@ -51,7 +55,7 @@
 				
 				<tr>
 					<td colspan="2">
-						<input type="submit" value="UPDATE" />
+						<input type="submit" value="EDIT" />
 					</td>
 				</tr>
 			</table>
