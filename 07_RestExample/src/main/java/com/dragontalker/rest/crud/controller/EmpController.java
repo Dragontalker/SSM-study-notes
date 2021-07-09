@@ -5,6 +5,7 @@ import java.util.Map;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
@@ -57,7 +58,10 @@ public class EmpController {
 	}
 	
 	@RequestMapping(value = "/emp/{id}", method = RequestMethod.GET)
-	public String toUpdate() {
+	public String toUpdate(@PathVariable("id") Integer id, Map<String, Object> map) {
+		// 获取要修改的员工信息
+		Employee emp = employeeDao.get(id);
+		map.put("emp", emp);
 		return "update";
 	}
 
