@@ -1,6 +1,7 @@
 package com.dragontalker.rest.crud.controller;
 
 import java.util.Collection;
+import java.util.HashMap;
 import java.util.Map;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -42,8 +43,13 @@ public class EmpController {
 	@RequestMapping(value = "/emp", method = RequestMethod.GET)
 	public String toAdd(Map<String, Object> map) {
 		Collection<Department> depts = departmentDao.getDepartments();
+		// 创建存储性别gender的信息
+		Map<String, String> genders = new HashMap<>();
+		genders.put("0", "女");
+		genders.put("1", "男");
+		map.put("genders", genders);
 		map.put("depts", depts);
-		return "add";
+		return "edit";
 	}
 	
 	/**

@@ -37,20 +37,14 @@
 				<tr>
 					<td>GENDER</td>
 					<td>
-						<input type="radio" name="gender" value="1" ${ emp.gender == 1?'checked':'' }/>男
-						<input type="radio" name="gender" value="0" ${ emp.gender == 0?'checked':'' }/>女
+						<form:radiobuttons path="gender" items="${ genders }" />
 					</td>
 				</tr>
 				
 				<tr>
 					<td>DEPARTMENT</td>
 					<td>
-						<select name="department.id">
-							<option>SELECT DEPARTMENT</option>
-							<c:forEach items="${ depts }" var="dept">
-								<option value="${ dept.id }" ${ dept.id == emp.department.id?'selected':'' }>${ dept.departmentName }</option>
-							</c:forEach>
-						</select>
+						<form:select path="department.id" items="${ depts }" />
 					</td>
 				</tr>
 				
