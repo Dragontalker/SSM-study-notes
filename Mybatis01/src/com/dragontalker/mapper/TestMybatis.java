@@ -26,9 +26,11 @@ public class TestMybatis {
 		// getMapper(): 会通过动态代理来动态生成UserMapper的代理实现类
 		UserMapper mapper = sqlSession.getMapper(UserMapper.class);
 		
+		System.out.println(">> " + mapper.getClass().getName());
+		
 		User user = mapper.getUserByUid("1");
 		
-		System.out.println(user);
+		System.out.println(">> " + user);
 	}
 
 }
