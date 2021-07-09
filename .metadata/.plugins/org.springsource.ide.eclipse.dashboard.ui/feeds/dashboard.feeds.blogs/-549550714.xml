@@ -5,7 +5,63 @@
   <link rel="self" href="https://spring.io/blog.atom" />
   <id>http://spring.io/blog.atom</id>
   <icon>https://spring.io/favicon.ico</icon>
-  <updated>2021-07-08T07:00:00Z</updated>
+  <updated>2021-07-09T14:00:00Z</updated>
+  <entry>
+    <title>Spring Authorization Server 0.1.2 available now</title>
+    <link rel="alternate" href="https://spring.io/blog/2021/07/09/spring-authorization-server-0-1-2-available-now" />
+    <category term="releases" label="Releases" />
+    <author>
+      <name>Joe Grandja</name>
+    </author>
+    <id>tag:spring.io,2021-07-09:4492</id>
+    <updated>2021-07-09T14:00:00Z</updated>
+    <content type="html">&lt;div class="paragraph"&gt;
+&lt;p&gt;On behalf of the team and everyone who has contributed, it is my pleasure to announce the general availability of Spring Authorization Server 0.1.2.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;You can download it from Maven Central by using the module coordinates:&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="listingblock"&gt;
+&lt;div class="content"&gt;
+&lt;pre class="prettyprint highlight"&gt;&lt;code data-lang="groovy"&gt;compile 'org.springframework.security.experimental:spring-security-oauth2-authorization-server:0.1.2'&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;For additional details on this new project, see the &lt;a href="https://spring.io/blog/2020/04/15/announcing-the-spring-authorization-server"&gt;initial announcement&lt;/a&gt; and &lt;a href="https://github.com/spring-projects-experimental/spring-authorization-server"&gt;project page&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;The main features delivered in this release are:&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="ulist"&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Ability to configure a custom Authorization Consent page (&lt;a href="https://github.com/spring-projects-experimental/spring-authorization-server/issues/283"&gt;gh-283&lt;/a&gt;)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;JDBC implementation of &lt;code&gt;RegisteredClientRepository&lt;/code&gt; (&lt;a href="https://github.com/spring-projects-experimental/spring-authorization-server/issues/265"&gt;gh-265&lt;/a&gt;), &lt;code&gt;OAuth2AuthorizationService&lt;/code&gt; (&lt;a href="https://github.com/spring-projects-experimental/spring-authorization-server/issues/245"&gt;gh-245&lt;/a&gt;) and &lt;code&gt;OAuth2AuthorizationConsentService&lt;/code&gt; (&lt;a href="https://github.com/spring-projects-experimental/spring-authorization-server/issues/313"&gt;gh-313&lt;/a&gt;)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Ability to configure the Authorization Endpoint (&lt;a href="https://github.com/spring-projects-experimental/spring-authorization-server/issues/342"&gt;gh-342&lt;/a&gt;)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Ability to configure the Token Endpoint (&lt;a href="https://github.com/spring-projects-experimental/spring-authorization-server/issues/319"&gt;gh-319&lt;/a&gt;)&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;See the &lt;a href="https://github.com/spring-projects-experimental/spring-authorization-server/releases/tag/0.1.2"&gt;release notes&lt;/a&gt; for complete details.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;To get started using Spring Authorization Server, see the &lt;a href="https://github.com/spring-projects-experimental/spring-authorization-server/tree/main/samples/boot/oauth2-integration"&gt;sample&lt;/a&gt; to become familiar with setup and configuration.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;We would love to gather your feedback as we strive to improve and build upon this release.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;&lt;a href="https://github.com/spring-projects-experimental/spring-authorization-server"&gt;Project Page&lt;/a&gt; | &lt;a href="https://github.com/spring-projects-experimental/spring-authorization-server/issues"&gt;GitHub Issues&lt;/a&gt; |  &lt;a href="https://app.zenhub.com/workspaces/authorization-server-5e8f3182b5e8f5841bfc4902/board?repos=248032165"&gt;ZenHub Board&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;!-- rendered by Sagan Renderer Service --&gt;</content>
+  </entry>
   <entry>
     <title>A Bootiful Podcast: Matt Raible</title>
     <link rel="alternate" href="https://spring.io/blog/2021/07/08/a-bootiful-podcast-matt-raible" />
@@ -579,44 +635,6 @@ Artem&lt;/p&gt;
 &lt;div class="paragraph"&gt;
 &lt;p&gt;&lt;a href="http://projects.spring.io/spring-security/"&gt;Project Site&lt;/a&gt; | &lt;a href="http://docs.spring.io/spring-security/site/docs/current/reference/htmlsingle/"&gt;Reference&lt;/a&gt; | &lt;a href="http://stackoverflow.com/questions/tagged/spring-security"&gt;Help&lt;/a&gt;&lt;/p&gt;
 &lt;/div&gt;
-&lt;!-- rendered by Sagan Renderer Service --&gt;</content>
-  </entry>
-  <entry>
-    <title>Spring Tools 4.11.0 released</title>
-    <link rel="alternate" href="https://spring.io/blog/2021/06/21/spring-tools-4-11-0-released" />
-    <category term="releases" label="Releases" />
-    <author>
-      <name>Martin Lippert</name>
-    </author>
-    <id>tag:spring.io,2021-06-21:4472</id>
-    <updated>2021-06-21T17:00:00Z</updated>
-    <content type="html">&lt;p&gt;Dear Spring Community,&lt;/p&gt;
-&lt;p&gt;I am happy to announce the 4.11.0 release of the Spring Tools 4 for Eclipse, Visual Studio Code, and Theia.&lt;/p&gt;&lt;h4&gt;&lt;a href="#major-changes-to-the-spring-tools-4-for-eclipse-distribution" class="anchor" name="major-changes-to-the-spring-tools-4-for-eclipse-distribution"&gt;&lt;/a&gt;major changes to the Spring Tools 4 for Eclipse distribution&lt;/h4&gt;
-&lt;ul&gt;
-  &lt;li&gt;updated to Eclipse 2021-06 release (including support for Java 16) (&lt;a href="https://www.eclipse.org/eclipseide/2021-06/"&gt;new and noteworthy&lt;/a&gt;)&lt;/li&gt;
-  &lt;li&gt;early-access builds for Apple Silicon platform (ARM M1) available&lt;/li&gt;
-&lt;/ul&gt;&lt;h4&gt;&lt;a href="#reminder" class="anchor" name="reminder"&gt;&lt;/a&gt;reminder&lt;/h4&gt;
-&lt;ul&gt;
-  &lt;li&gt;the Eclipse-based distribution of the Spring Tools 4 requires a JDK11 (or newer) to run on&lt;/li&gt;
-  &lt;li&gt;the Eclipse-based distribution ships with an embedded JDK16 runtime, no need to install or configure a specific JDK to run the IDE on anymore&lt;/li&gt;
-&lt;/ul&gt;&lt;h4&gt;&lt;a href="#additional-highlights" class="anchor" name="additional-highlights"&gt;&lt;/a&gt;additional highlights&lt;/h4&gt;
-&lt;ul&gt;
-  &lt;li&gt;&lt;em&gt;(VS Code, Spring Boot)&lt;/em&gt; new: new walkthrough contribution to get started with Spring Boot in VS Code&lt;/li&gt;
-  &lt;li&gt;&lt;em&gt;(VS Code, Spring Boot)&lt;/em&gt; fixed: not work when change LightWeight mode to Standard (&lt;a href="https://github.com/spring-projects/sts4/issues/628"&gt;#628&lt;/a&gt;)&lt;/li&gt;
-  &lt;li&gt;&lt;em&gt;(VS Code, Spring Boot)&lt;/em&gt; fixed: language server processes doesn&amp;rsquo;t get shutdown properly in VSCode (&lt;a href="https://github.com/spring-projects/sts4/issues/636"&gt;#636&lt;/a&gt;)&lt;/li&gt;
-  &lt;li&gt;&lt;em&gt;(VS Code, Spring Boot)&lt;/em&gt; fixed: VSCode extension JDK version (&lt;a href="https://github.com/spring-projects/sts4/issues/612"&gt;#612&lt;/a&gt;)&lt;/li&gt;
-  &lt;li&gt;&lt;em&gt;(Eclipse)&lt;/em&gt; improvement: Boot Dash: flexible and configurable filters (&lt;a href="https://github.com/spring-projects/sts4/issues/614"&gt;#614&lt;/a&gt;)&lt;/li&gt;
-  &lt;li&gt;&lt;em&gt;(Eclipse)&lt;/em&gt; improvement: hide projects without a main class from boot dashboard automatically (&lt;a href="https://github.com/spring-projects/sts4/issues/605"&gt;#605&lt;/a&gt;)&lt;/li&gt;
-  &lt;li&gt;&lt;em&gt;(Concourse)&lt;/em&gt; improvement: VSCode extension doesn&amp;rsquo;t understand glob patterns in group config (&lt;a href="https://github.com/spring-projects/sts4/issues/639"&gt;#639&lt;/a&gt;)&lt;/li&gt;
-  &lt;li&gt;&lt;em&gt;(Concourse)&lt;/em&gt; improvement: Step and properties not recognized (&lt;a href="https://github.com/spring-projects/sts4/issues/633"&gt;#633&lt;/a&gt;)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;To download the distribution for Eclipse and find links to the marketplace entries for Visual Studio Code and Theia, please go visit:&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;Spring Tools 4: &lt;a href="https://spring.io/tools/"&gt;https://spring.io/tools/&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Detailed changes can be found here: &lt;a href="https://github.com/spring-projects/sts4/wiki/Changelog#2021-06-18-4110-release-incl-language-servers-version-1260"&gt;https://github.com/spring-projects/sts4/wiki/Changelog#2021-06-18-4110-release-incl-language-servers-version-1260&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;Spring Tools 4.11.1 is scheduled to be released in early August 2021.&lt;/p&gt;
-&lt;p&gt;Enjoy!&lt;/p&gt;
 &lt;!-- rendered by Sagan Renderer Service --&gt;</content>
   </entry>
 </feed>
