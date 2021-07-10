@@ -2,6 +2,8 @@ package com.dragontalker.mapper;
 
 import java.util.Map;
 
+import org.apache.ibatis.annotations.MapKey;
+
 import com.dragontalker.bean.Emp;
 
 public interface EmpSelectMapper {
@@ -14,4 +16,8 @@ public interface EmpSelectMapper {
 	
 	// 以map集合获取一个员工信息
 	Map<String, Object> getEmpMapByEid(String eid);
+	
+	// 以map集合获取所有员工信息
+	@MapKey("eid")
+	Map<String, Object> getAllEmpMap();
 }
