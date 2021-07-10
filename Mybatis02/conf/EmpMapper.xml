@@ -14,7 +14,11 @@
 	</select>
 	
 	<insert id="addEmp">
-		insert into emp values(null, #{ename}, #{age}, #{sex} )
+		insert into emp values(null, #{ename}, #{age}, #{sex})
 	</insert>
+	
+	<update id="updateEmp">
+		update emp set ename = #{ename}, age= #{age}, sex = #{sex} where eid = #{eid}
+	</update>
 	
 </mapper>
