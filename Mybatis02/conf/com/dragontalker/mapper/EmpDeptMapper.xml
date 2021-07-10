@@ -5,14 +5,16 @@
 	
 <mapper namespace="com.dragontalker.mapper.EmpDeptMapper">
 
-	<resultMap type="com.dragontalker.bean.Emp" id="empMap">
+	<!-- <resultMap type="com.dragontalker.bean.Emp" id="empMap">
 		<id column="eid" property="eid"/>
 		<result column="ename" property="ename"/>
 		<result column="age" property="age"/>
 		<result column="sex" property="sex"/>
 		<result column="did" property="dept.did"/>
 		<result column="dname" property="dept.dname"/>
-	</resultMap>
+	</resultMap> -->
+	
+	<!-- <resultMap>: 自定义映射, 处理复杂的表关系 -->
 
 	<!-- List<Emp> getAllEmp(); -->
 	<select id="getAllEmp" resultMap="empMap">
