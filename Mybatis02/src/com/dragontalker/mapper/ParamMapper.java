@@ -1,5 +1,9 @@
 package com.dragontalker.mapper;
 
-public class ParamMapper {
+import com.dragontalker.bean.Emp;
 
+public interface ParamMapper {
+
+	// 添加员工信息
+	void insertEmp(Emp emp);
 }
