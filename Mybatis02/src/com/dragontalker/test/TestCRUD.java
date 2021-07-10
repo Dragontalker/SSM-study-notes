@@ -60,7 +60,7 @@ public class TestCRUD {
 		
 		EmpMapper empMapper = sqlSession.getMapper(EmpMapper.class);
 		
-		empMapper.addEmp(new Emp(null, "root", 18, "male"));
+		empMapper.addEmp(new Emp(null, "root", 18, "male", null));
 	}
 	
 	@Test
@@ -74,7 +74,7 @@ public class TestCRUD {
 		
 		EmpMapper empMapper = sqlSession.getMapper(EmpMapper.class);
 		
-		empMapper.updateEmp(new Emp(2, "ZhangSanSan", 33, "female"));
+		empMapper.updateEmp(new Emp(2, "ZhangSanSan", 33, "female", null));
 	}
 	
 	@Test
@@ -104,7 +104,7 @@ public class TestCRUD {
 		
 		EmpMapper empMapper = sqlSession.getMapper(EmpMapper.class);
 		
-		empMapper.updateEmp(new Emp(2, "ZhangEr", 33, "female"));
+		empMapper.updateEmp(new Emp(2, "ZhangEr", 33, "female", null));
 	}
 	
 }
