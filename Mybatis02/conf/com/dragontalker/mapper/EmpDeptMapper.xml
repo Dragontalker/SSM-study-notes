@@ -7,6 +7,6 @@
 
 	<!-- List<Emp> getAllEmp(); -->
 	<select id="getAllEmp" resultType="com.dragontalker.bean.Emp">
-		select * from emp e, dept d where e.did = d.did
+		select e.eid, e.ename, e.age, e.sex, e.did, d.dname from emp e left join dept d on e.did = d.did
 	</select>
 </mapper>
