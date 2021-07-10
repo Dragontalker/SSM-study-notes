@@ -6,4 +6,11 @@ public class Dept {
 	
 	private String dname;
 	
+	public Dept() {}
+
+	public Dept(Integer did, String dname) {
+		this.did = did;
+		this.dname = dname;
+	}
+	
 }
