@@ -48,4 +48,18 @@ public class TestCRUD {
 			System.out.println(">> " + emp);
 		}
 	}
+	
+	@Test
+	public void testAddEmp() throws IOException {
+		
+		InputStream is = Resources.getResourceAsStream("mybatis-config.xml");
+		
+		SqlSessionFactory sqlSessionFactory = new SqlSessionFactoryBuilder().build(is);
+		
+		SqlSession sqlSession = sqlSessionFactory.openSession(true);
+		
+		EmpMapper empMapper = sqlSession.getMapper(EmpMapper.class);
+		
+		empMapper.addEmp(new Emp(null, "root", 18, "male"));
+	}
 }
