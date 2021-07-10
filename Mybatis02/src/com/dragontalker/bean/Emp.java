@@ -10,13 +10,16 @@ public class Emp {
 	
 	private String sex;
 	
+	private Dept dept;
+	
 	public Emp() {}
 
-	public Emp(Integer eid, String ename, Integer age, String sex) {
+	public Emp(Integer eid, String ename, Integer age, String sex, Dept dept) {
 		this.eid = eid;
 		this.ename = ename;
 		this.age = age;
 		this.sex = sex;
+		this.dept = dept;
 	}
 
 	public Integer getEid() {
@@ -51,9 +54,17 @@ public class Emp {
 		this.sex = sex;
 	}
 
+	public Dept getDept() {
+		return dept;
+	}
+
+	public void setDept(Dept dept) {
+		this.dept = dept;
+	}
+
 	@Override
 	public String toString() {
-		return "Emp [eid=" + eid + ", ename=" + ename + ", age=" + age + ", sex=" + sex + "]";
+		return "Emp [eid=" + eid + ", ename=" + ename + ", age=" + age + ", sex=" + sex + ", dept=" + dept + "]";
 	}
 
 }
