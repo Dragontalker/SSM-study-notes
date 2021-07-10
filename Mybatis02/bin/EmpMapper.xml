@@ -6,7 +6,11 @@
 <mapper namespace="com.dragontalker.mapper.EmpMapper">
 
 	<select id="getEmpByEid" resultType="Emp">
-		select * from emp where eid = #{id}
+		select * from emp where eid = #{eid}
+	</select>
+	
+	<select id="getAllEmp" resultType="Emp">
+		select * from emp
 	</select>
 	
 </mapper>
