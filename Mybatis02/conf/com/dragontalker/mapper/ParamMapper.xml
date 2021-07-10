@@ -18,5 +18,10 @@
 	<select id="getEmpByEid" resultType="com.dragontalker.bean.Emp">
 		select * from emp where eid = #{eid}
 	</select>
+	
+	<!-- Emp getEmpByEidAndEname(String eid, String ename); -->
+	<select id="getEmpByEidAndEname" resultType="com.dragontalker.bean.Emp">
+		select * from emp where eid = #{param1} and ename = #{param2}
+	</select>
 
 </mapper>
