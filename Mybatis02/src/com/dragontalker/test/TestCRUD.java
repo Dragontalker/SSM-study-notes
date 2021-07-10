@@ -62,4 +62,18 @@ public class TestCRUD {
 		
 		empMapper.addEmp(new Emp(null, "root", 18, "male"));
 	}
+	
+	@Test
+	public void testUpdateEmp() throws IOException {
+		
+		InputStream is = Resources.getResourceAsStream("mybatis-config.xml");
+		
+		SqlSessionFactory sqlSessionFactory = new SqlSessionFactoryBuilder().build(is);
+		
+		SqlSession sqlSession = sqlSessionFactory.openSession(true);
+		
+		EmpMapper empMapper = sqlSession.getMapper(EmpMapper.class);
+		
+		empMapper.updateEmp(new Emp(2, "ZhangSanSan", 33, "female"));
+	}
 }
