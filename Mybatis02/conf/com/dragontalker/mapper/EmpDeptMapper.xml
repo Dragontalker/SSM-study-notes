@@ -5,6 +5,15 @@
 	
 <mapper namespace="com.dragontalker.mapper.EmpDeptMapper">
 
+	<resultMap type="com.dragontalker.bean.Emp" id="empMap">
+		<id column="eid" property="eid"/>
+		<result column="ename" property="ename"/>
+		<result column="age" property="age"/>
+		<result column="sex" property="sex"/>
+		<result column="did" property="dept.did"/>
+		<result column="dname" property="dept.dname"/>
+	</resultMap>
+
 	<!-- List<Emp> getAllEmp(); -->
 	<select id="getAllEmp" resultType="com.dragontalker.bean.Emp">
 		select e.eid, e.ename, e.age, e.sex, e.did, d.dname from emp e left join dept d on e.did = d.did
