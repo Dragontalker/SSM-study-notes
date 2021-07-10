@@ -3,6 +3,9 @@ package com.dragontalker.test;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
+import java.sql.Statement;
+
+import com.dragontalker.bean.Emp;
 
 public class TestJDBC {
 
@@ -15,6 +18,10 @@ public class TestJDBC {
 		ps.setString(2,  "23");
 		ps.setString(3,  "male");
 		ps.executeUpdate();
+		
+		Statement statement = conn.createStatement();
+		Emp emp = new Emp(null, "a", 1, "b");
+		statement.execute("insert into emp values(null, '"+emp.getEname()+"', '"+emp.getAge()+"', '"+emp.getSex()+"')");
 		
 	}
 }
