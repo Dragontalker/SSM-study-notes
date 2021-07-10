@@ -76,4 +76,19 @@ public class TestCRUD {
 		
 		empMapper.updateEmp(new Emp(2, "ZhangSanSan", 33, "female"));
 	}
+	
+	@Test
+	public void testDeleteEmp() throws IOException {
+		
+		InputStream is = Resources.getResourceAsStream("mybatis-config.xml");
+		
+		SqlSessionFactory sqlSessionFactory = new SqlSessionFactoryBuilder().build(is);
+		
+		SqlSession sqlSession = sqlSessionFactory.openSession(true);
+		
+		EmpMapper empMapper = sqlSession.getMapper(EmpMapper.class);
+		
+		empMapper.deleteEmp("11");
+	}
+	
 }
