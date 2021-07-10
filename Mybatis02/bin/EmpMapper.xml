@@ -5,8 +5,8 @@
 	
 <mapper namespace="com.dragontalker.mapper.EmpMapper">
 
-	<select id="getUserByUid" resultType="com.dragontalker.bean.Emp">
-		select * from t_user where uid = #{id}
+	<select id="getEmpByEid" resultType="com.dragontalker.bean.Emp">
+		select * from emp where eid = #{id}
 	</select>
 	
 </mapper>
