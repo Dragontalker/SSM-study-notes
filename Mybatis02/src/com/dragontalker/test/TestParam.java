@@ -2,6 +2,8 @@ package com.dragontalker.test;
 
 import java.io.IOException;
 import java.io.InputStream;
+import java.util.HashMap;
+import java.util.Map;
 
 import org.apache.ibatis.io.Resources;
 import org.apache.ibatis.session.SqlSession;
@@ -62,6 +64,27 @@ public class TestParam {
 		ParamMapper mapper = sqlSession.getMapper(ParamMapper.class);
 		
 		Emp emp = mapper.getEmpByEidAndEname("1", "ZhangSan");
+		
+		System.out.println(">> " + emp);
+
+	}
+	
+	@Test
+	public void testGetEmpByMap() throws IOException {
+		
+		InputStream is = Resources.getResourceAsStream("mybatis-config.xml");
+		
+		SqlSessionFactory sqlSessionFactory = new SqlSessionFactoryBuilder().build(is);
+		
+		SqlSession sqlSession = sqlSessionFactory.openSession(true);
+		
+		ParamMapper mapper = sqlSession.getMapper(ParamMapper.class);
+		
+		Map<String, Object> map = new HashMap<>();
+		map.put("eid", "1");
+		map.put("ename", "ZhangSan");
+		
+		Emp emp = mapper.getEmpByMap(map);
 		
 		System.out.println(">> " + emp);
 
