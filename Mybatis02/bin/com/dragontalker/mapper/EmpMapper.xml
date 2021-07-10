@@ -17,5 +17,9 @@
 		select * from emp where eid = #{eid}
 	</select>
 	
+	<select id="getAllEmpMap" resultType="Emp">
+		select * from emp
+	</select>
+	
 </mapper>
 
