@@ -5,4 +5,8 @@
 	
 <mapper namespace="com.dragontalker.mapper.EmpDeptMapper">
 
+	<!-- List<Emp> getAllEmp(); -->
+	<select id="getAllEmp" resultType="com.dragontalker.bean.Emp">
+		select * from emp e, dept d where e.did = d.did
+	</select>
 </mapper>
