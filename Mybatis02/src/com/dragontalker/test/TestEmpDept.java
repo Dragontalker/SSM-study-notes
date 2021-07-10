@@ -32,4 +32,20 @@ public class TestEmpDept {
 			System.out.println(">> " + emp);
 		}
 	}
+	
+	@Test
+	public void testGetEmpStep() throws IOException {
+		
+		InputStream is = Resources.getResourceAsStream("mybatis-config.xml");
+		
+		SqlSessionFactory sqlSessionFactory = new SqlSessionFactoryBuilder().build(is);
+		
+		SqlSession sqlSession = sqlSessionFactory.openSession(true);
+		
+		EmpDeptMapper mapper = sqlSession.getMapper(EmpDeptMapper.class);
+		
+		Emp emp = mapper.getEmpStep("3");
+		
+		System.out.println(emp);
+	}
 }
