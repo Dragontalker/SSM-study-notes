@@ -5,4 +5,9 @@
 	
 <mapper namespace="com.dragontalker.mapper.ParamMapper">
 
+	<!-- void insertEmp(Emp emp); -->
+	<insert id="insertEmp">
+		insert into emp values(null, #{ename}, #{age}, #{sex})
+	</insert>
+
 </mapper>
