@@ -13,5 +13,10 @@
 	<insert id="insertEmp" useGeneratedKeys="true" keyProperty="eid">
 		insert into emp values(null, #{ename}, #{age}, #{sex})
 	</insert>
+	
+	<!-- Emp getEmpByEid(String eid); -->
+	<select id="getEmpByEid" resultType="com.dragontalker.mapper.Emp">
+		select * from emp where eid = #{eid}
+	</select>
 
 </mapper>
