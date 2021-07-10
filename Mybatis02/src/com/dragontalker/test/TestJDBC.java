@@ -23,6 +23,7 @@ public class TestJDBC {
 		ResultSet rs = ps.getGeneratedKeys();
 		rs.next();
 		int id = rs.getInt(1);
+		System.out.println(id);
 		
 		Statement statement = conn.createStatement();
 		Emp emp = new Emp(null, "a", 1, "b");
