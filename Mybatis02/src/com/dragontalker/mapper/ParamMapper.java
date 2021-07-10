@@ -2,6 +2,8 @@ package com.dragontalker.mapper;
 
 import java.util.Map;
 
+import org.apache.ibatis.annotations.Param;
+
 import com.dragontalker.bean.Emp;
 
 public interface ParamMapper {
@@ -17,4 +19,7 @@ public interface ParamMapper {
 	
 	// 根据map查询员工信息
 	Emp getEmpByMap(Map<String, Object> map);
+	
+	// 根据eid和ename查询员工信息
+	Emp getEmpByEidAndEnameByParam(@Param("eid")String eid, @Param("ename")String ename);
 }
