@@ -9,7 +9,7 @@
 		select * from emp where eid = #{eid}
 	</select>
 	
-	<select id="getAllEmp" resultType="Emp">
+	<select id="getAllEmp" resultType="com.dragontalker.bean.Emp">
 		select * from emp
 	</select>
 	
@@ -26,3 +26,4 @@
 	</delete>
 	
 </mapper>
+
