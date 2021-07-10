@@ -9,6 +9,9 @@ import org.apache.ibatis.session.SqlSessionFactory;
 import org.apache.ibatis.session.SqlSessionFactoryBuilder;
 import org.junit.Test;
 
+import com.dragontalker.bean.Emp;
+import com.dragontalker.mapper.ParamMapper;
+
 public class TestParam {
 
 	@Test
@@ -20,6 +23,9 @@ public class TestParam {
 		
 		SqlSession sqlSession = sqlSessionFactory.openSession(true);
 		
+		ParamMapper mapper = sqlSession.getMapper(ParamMapper.class);
 		
+		mapper.insertEmp(new Emp(null, "admin", 23, "male"));
+
 	}
 }
