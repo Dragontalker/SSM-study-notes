@@ -10,7 +10,9 @@ import org.apache.ibatis.session.SqlSessionFactory;
 import org.apache.ibatis.session.SqlSessionFactoryBuilder;
 import org.junit.Test;
 
+import com.dragontalker.bean.Dept;
 import com.dragontalker.bean.Emp;
+import com.dragontalker.mapper.DeptMapper;
 import com.dragontalker.mapper.EmpDeptMapper;
 
 public class TestEmpDept {
@@ -47,5 +49,21 @@ public class TestEmpDept {
 		Emp emp = mapper.getEmpStep("3");
 		
 		System.out.println(emp);
+	}
+	
+	@Test
+	public void testGetDeptByDid() throws IOException {
+		
+		InputStream is = Resources.getResourceAsStream("mybatis-config.xml");
+		
+		SqlSessionFactory sqlSessionFactory = new SqlSessionFactoryBuilder().build(is);
+		
+		SqlSession sqlSession = sqlSessionFactory.openSession(true);
+		
+		DeptMapper mapper = sqlSession.getMapper(DeptMapper.class);
+		
+		Dept dept = mapper.getDeptByDid("3");
+		
+		System.out.println(dept);
 	}
 }

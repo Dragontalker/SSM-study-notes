@@ -23,19 +23,20 @@ CREATE TABLE emp(
 	`eid` INT PRIMARY KEY AUTO_INCREMENT,
     `ename` VARCHAR(255),
     `age` INT,
-    `sex` VARCHAR(255)
+    `sex` VARCHAR(255),
+    `did` INT
 );
 
-INSERT INTO emp(`ename`, `age`, `sex`) 
+INSERT INTO emp(`ename`, `age`, `sex`, `did`) 
 VALUES
-	("ZhangSan", 23, "male"),
-    ("LiSi", 12, "male"),
-    ("WangWu", 33, "male"),
-    ("ZhaoLiu", 22, "male"),
-    ("TianQi", 11, "male"),
-    ("CuiBa", 55, "male"),
-    ("XiaoMing", 44, "male"),
-    ("XiaoHong", 33, "male");
+	("ZhangSan", 23, "male", 1),
+    ("LiSi", 12, "male", 2),
+    ("WangWu", 33, "male", 3),
+    ("ZhaoLiu", 22, "male", 4),
+    ("TianQi", 11, "male", 1),
+    ("CuiBa", 55, "male", 2),
+    ("XiaoMing", 44, "male", 3),
+    ("XiaoHong", 33, "male", 4);
 
 DROP TABLE IF EXISTS dept;
 

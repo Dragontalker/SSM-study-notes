@@ -22,7 +22,7 @@
 		<result>: 设置非主键的映射关系, column设置字段名, property设置属性名
 	-->
 	
-	<resultMap type="com.dragontalker.bean.Emp" id="empMap">
+	<!-- <resultMap type="com.dragontalker.bean.Emp" id="empMap">
 		<id column="eid" property="eid"/>
 		<result column="ename" property="ename"/>
 		<result column="age" property="age"/>
@@ -31,12 +31,12 @@
 			<id column="did" property="did"/>
 			<result column="dname" property="dname"/>
 		</association>
-	</resultMap>
+	</resultMap> -->
 
 	<!-- List<Emp> getAllEmp(); -->
-	<select id="getAllEmp" resultMap="empMap">
+	<!-- <select id="getAllEmp" resultMap="empMap">
 		select e.eid, e.ename, e.age, e.sex, e.did, d.dname from emp e left join dept d on e.did = d.did
-	</select>
+	</select> -->
 	
 	<resultMap type="com.dragontalker.bean.Emp" id="empMapStep">
 		<id column="eid" property="eid"/>
@@ -51,3 +51,4 @@
 		select eid, ename, age, did sex from emp where eid = #{eid}
 	</select>
 </mapper>
+
