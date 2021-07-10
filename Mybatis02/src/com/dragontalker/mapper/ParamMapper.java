@@ -1,5 +1,7 @@
 package com.dragontalker.mapper;
 
+import java.util.Map;
+
 import com.dragontalker.bean.Emp;
 
 public interface ParamMapper {
@@ -12,4 +14,7 @@ public interface ParamMapper {
 	
 	// 根据eid和ename查询员工信息
 	Emp getEmpByEidAndEname(String eid, String ename);
+	
+	// 根据map查询员工信息
+	Emp getEmpByMap(Map<String, Object> map);
 }
