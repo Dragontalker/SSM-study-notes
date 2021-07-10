@@ -3,9 +3,9 @@
 	PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 	"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 	
-<mapper namespace="com.dragontalker.mapper.UserMapper">
+<mapper namespace="com.dragontalker.mapper.EmpMapper">
 
-	<select id="getUserByUid" resultType="User">
+	<select id="getUserByUid" resultType="com.dragontalker.bean.Emp">
 		select * from t_user where uid = #{id}
 	</select>
 	
