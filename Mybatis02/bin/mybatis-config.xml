@@ -12,7 +12,7 @@
 	</settings>
 	
 	<typeAliases>
-		<typeAlias type="com.dragontalker.bean.User"/>
+		<typeAlias type="com.dragontalker.bean"/>
 	</typeAliases>
 	
 	<environments default="development">
