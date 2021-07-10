@@ -93,4 +93,18 @@ public class TestCRUD {
 		System.out.println(">> deleted " + result + " row");
 	}
 	
+	@Test
+	public void testUpdateEmp1() throws IOException {
+		
+		InputStream is = Resources.getResourceAsStream("mybatis-config.xml");
+		
+		SqlSessionFactory sqlSessionFactory = new SqlSessionFactoryBuilder().build(is);
+		
+		SqlSession sqlSession = sqlSessionFactory.openSession(true);
+		
+		EmpMapper empMapper = sqlSession.getMapper(EmpMapper.class);
+		
+		empMapper.updateEmp(new Emp(2, "ZhangEr", 33, "female"));
+	}
+	
 }
