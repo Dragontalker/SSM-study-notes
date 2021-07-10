@@ -5,7 +5,7 @@
 	
 <mapper namespace="com.dragontalker.mapper.EmpMapper">
 
-	<select id="getEmpByEid" resultType="Emp">
+	<select id="getEmpByEid" resultType="com.dragontalker.bean.Emp">
 		select * from emp where eid = #{eid}
 	</select>
 	
