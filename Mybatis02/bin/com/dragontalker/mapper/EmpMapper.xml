@@ -13,5 +13,9 @@
 		select count(eid) from emp
 	</select>
 	
+	<select id="getEmpMapByEid" resultType="java.util.HashMap">
+		select * from emp where eid = #{eid}
+	</select>
+	
 </mapper>
 
