@@ -32,4 +32,21 @@ public class TestParam {
 		System.out.println(emp.getEid());
 
 	}
+	
+	@Test
+	public void testGetEmpByEid() throws IOException {
+		
+		InputStream is = Resources.getResourceAsStream("mybatis-config.xml");
+		
+		SqlSessionFactory sqlSessionFactory = new SqlSessionFactoryBuilder().build(is);
+		
+		SqlSession sqlSession = sqlSessionFactory.openSession(true);
+		
+		ParamMapper mapper = sqlSession.getMapper(ParamMapper.class);
+		
+		Emp emp = mapper.getEmpByEid("1");
+		
+		System.out.println(">> " + emp);
+
+	}
 }

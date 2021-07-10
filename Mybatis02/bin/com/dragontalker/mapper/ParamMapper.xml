@@ -15,7 +15,7 @@
 	</insert>
 	
 	<!-- Emp getEmpByEid(String eid); -->
-	<select id="getEmpByEid" resultType="com.dragontalker.mapper.Emp">
+	<select id="getEmpByEid" resultType="com.dragontalker.bean.Emp">
 		select * from emp where eid = #{eid}
 	</select>
 
