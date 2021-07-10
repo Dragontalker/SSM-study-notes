@@ -88,7 +88,9 @@ public class TestCRUD {
 		
 		EmpMapper empMapper = sqlSession.getMapper(EmpMapper.class);
 		
-		empMapper.deleteEmp("11");
+		Integer result = empMapper.deleteEmp("10");
+		
+		System.out.println(">> deleted " + result + " row");
 	}
 	
 }
