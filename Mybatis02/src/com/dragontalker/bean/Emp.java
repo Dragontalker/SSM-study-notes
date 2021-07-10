@@ -51,4 +51,9 @@ public class Emp {
 		this.sex = sex;
 	}
 
+	@Override
+	public String toString() {
+		return "Emp [eid=" + eid + ", ename=" + ename + ", age=" + age + ", sex=" + sex + "]";
+	}
+
 }
