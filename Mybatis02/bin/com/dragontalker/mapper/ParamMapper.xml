@@ -29,4 +29,10 @@
 		select * from emp where eid = #{eid} and ename = #{ename}
 	</select>
 
+	<!-- 	
+		Emp getEmpByEidAndEnameByParam(@Param("eid")String eid, @Param("ename")String ename);
+	-->
+	<select id="getEmpByEidAndEnameByParam" resultType="com.dragontalker.bean.Emp">
+		select * from emp where eid = #{eid} and ename = #{ename}
+	</select>
 </mapper>
