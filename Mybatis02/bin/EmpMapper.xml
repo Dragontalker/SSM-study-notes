@@ -13,4 +13,8 @@
 		select * from emp
 	</select>
 	
+	<insert id="addEmp">
+		insert into emp values(null, #{ename}, #{age}, #{sex} )
+	</insert>
+	
 </mapper>
