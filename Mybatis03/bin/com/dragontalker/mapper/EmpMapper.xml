@@ -16,8 +16,12 @@
 		<if test="ename != null and ename !=''">
 			and ename = #{ename}
 		</if>
-		and age = #{age}
-		and sex = #{sex}
+		<if test="age != null">
+			and age = #{age}
+		</if>
+		<if test="sex == 'male' or sex == 'female'">
+			and sex = #{sex}
+		</if>
 	</select>
 	
 </mapper>
