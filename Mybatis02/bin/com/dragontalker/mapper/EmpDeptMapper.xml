@@ -7,7 +7,7 @@
 
 	<!-- List<Emp> getAllEmp(); -->
 	<select id="getAllEmp" resultType="Emp">
-		
+		select e.eid, e.ename, e.age, e.sex, e.did, d.dname from emp e left join dept d on e.did = d.did
 	</select>
 	
 </mapper>
