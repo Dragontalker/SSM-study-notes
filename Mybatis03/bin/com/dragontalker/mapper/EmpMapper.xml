@@ -53,6 +53,16 @@
 		</trim>
 	</select>
 	
+	<!-- 
+		<choose>: 选择某一个when或otherwise执行
+			<when test=""></when>: 通过test表达式拼接SQL
+			.
+			.
+			.
+			<otherwise></otherwise>: 当when都不符合条件, 就会选择otherwise拼接SQL
+		</choose>
+	 -->
+	
 	<!-- List<Emp> getEmpListByChoose(Emp emp); -->
 	<select id="getEmpListByChoose" resultType="Emp">
 		select eid, ename, age, sex from emp
