@@ -33,6 +33,6 @@ public class TestCRUD {
 		//System.out.println(list);
 		
 		// 测试: 添加员工信息
-		empMapper.addEmp(null);
+		empMapper.addEmp(new Emp(null, "admin", 23, "female"));
 	}
 }
