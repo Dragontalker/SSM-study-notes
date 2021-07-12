@@ -25,7 +25,9 @@ public class TestEmpDept {
 		//System.out.println(emp);
 		
 		Emp emp = mapper.getEmpStep("3");
-		System.out.println(emp);
+		System.out.println(emp.getEname());
+		System.out.println("==================");
+		System.out.println(emp.getDept());
 	}
 	
 }

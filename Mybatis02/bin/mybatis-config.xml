@@ -13,7 +13,7 @@
 		<!-- 开始延迟加载 -->
 		<setting name="lazyLoadingEnabled" value="true"/>
 		<!-- 是否查询所有数据 -->
-		<setting name="aggressiveLazyLloading" value="false"/>
+		<setting name="aggressiveLazyLoading" value="false"/>
 	</settings>
 	
 	<typeAliases>
