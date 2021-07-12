@@ -7,6 +7,7 @@
 
 	<!-- 
 		<if test=""></if>: 通过test表达式, 拼接SQL
+		<where>: 添加where关键字, 同时去掉多余的and
 	 -->
 
 	<!-- List<Emp> getEmpListByMoreTJ(Emp emp); -->
