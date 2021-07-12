@@ -10,6 +10,9 @@
 		select eid, ename, age, sex, did from emp 
 		where
 		eid = #{eid}
+		and ename = #{ename}
+		and age = #{age}
+		and sex = #{sex}
 	</select>
 	
 </mapper>
