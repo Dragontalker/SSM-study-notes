@@ -15,4 +15,9 @@
 		select eid, ename, age, sex from emp
 	</select>
 	
+	<!-- void addEmp(Emp emp); -->
+	<insert id="addEmp">
+		insert into emp values(null, #{ename}, #{age}, #{sex})
+	</insert>
+	
 </mapper>
