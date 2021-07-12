@@ -16,6 +16,8 @@
 	
 	<!-- 
 		<resultMap>: 自定义映射, 处理复杂的表关系
+		<id>: 设置主键的映射关系, column设置字段名, property设置属性名
+		<result>: 设置非主键的映射关系, column设置字段名, property设置属性名
 	 -->
 
 	<!-- List<Emp> getAllEmp(); -->
