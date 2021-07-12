@@ -10,4 +10,9 @@
 		select eid, ename, age, sex from emp where eid = #{eid}
 	</select>
 	
+	<!-- List<Emp> getAllEmp(); -->
+	<select id="getAllEmp" resultType="Emp">
+		select eid, ename, age, sex from emp
+	</select>
+	
 </mapper>
