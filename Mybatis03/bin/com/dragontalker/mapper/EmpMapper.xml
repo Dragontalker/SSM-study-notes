@@ -9,10 +9,10 @@
 		<if test=""></if>: 通过test表达式, 拼接SQL
 		<where>: 添加where关键字, 同时去掉多余的and
 		<trim>: 截取并拼接
-		prefix: 
-		suffix:
-		prefixOverrides:
-		suffixOverrides:
+		prefix: 在操作的SQL语句前加入某些内容
+		suffix: 在操作的SQL语句后加入某些内容
+		prefixOverrides: 把操作的SQL语句前的某些内容去掉
+		suffixOverrides: 把操作的SQL语句后的某些内容去掉
 	 -->
 
 	<!-- List<Emp> getEmpListByMoreTJ(Emp emp); -->
