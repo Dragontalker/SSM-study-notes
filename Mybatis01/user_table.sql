@@ -4,9 +4,9 @@ CREATE DATABASE ssm;
 
 USE ssm;
 
-DROP TABLE IF EXISTS t_user;
+DROP TABLE IF EXISTS user;
 
-CREATE TABLE t_user(
+CREATE TABLE user(
 	`uid` INT PRIMARY KEY AUTO_INCREMENT,
     `user_name` VARCHAR(255),
     `password` VARCHAR(255),
@@ -14,7 +14,7 @@ CREATE TABLE t_user(
     `sex` VARCHAR(255)
 );
 
-INSERT t_user(`user_name`, `password`, `age`, `sex`) 
+INSERT user(`user_name`, `password`, `age`, `sex`) 
 VALUES("admin", "123456", 23, "male");
 
 DROP TABLE IF EXISTS emp;
@@ -24,19 +24,19 @@ CREATE TABLE emp(
     `ename` VARCHAR(255),
     `age` INT,
     `sex` VARCHAR(255),
-    `did` INT
+	`did` INT
 );
 
 INSERT INTO emp(`ename`, `age`, `sex`, `did`) 
 VALUES
-	("ZhangSan", 23, "male", 1),
-    ("LiSi", 12, "male", 2),
-    ("WangWu", 33, "male", 3),
-    ("ZhaoLiu", 22, "male", 4),
-    ("TianQi", 11, "male", 1),
-    ("CuiBa", 55, "male", 2),
-    ("XiaoMing", 44, "male", 3),
-    ("XiaoHong", 33, "male", 4);
+	("ZhangSan", 23, "1", 1),
+    ("LiSi", 12, "1", 2),
+    ("WangWu", 33, "1", 2),
+    ("ZhaoLiu", 22, "1", 3),
+    ("TianQi", 11, "0", 3),
+    ("CuiBa", 55, "0", 4),
+    ("XiaoMing", 44, "0", 1),
+    ("XiaoHong", 33, "0", 2);
 
 DROP TABLE IF EXISTS dept;
 

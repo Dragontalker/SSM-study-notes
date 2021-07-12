@@ -24,7 +24,7 @@ public class TestSQL {
 		Emp emp = new Emp();
 		
 		emp.setEid(1);
-		//emp.setEname("ZhangSan");
+		emp.setEname("ZhangSan");
 		emp.setAge(23);
 		emp.setSex("male");
 		
