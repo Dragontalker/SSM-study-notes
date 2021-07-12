@@ -11,4 +11,7 @@ public interface EmpMapper {
 	
 	// 根据eid, ename, age, sex中的其中一个查询一个员工信息
 	List<Emp> getEmpListByChoose(Emp emp);
+	
+	// 添加员工信息, 将0|1 --> 女|男
+	void insertEmp(Emp emp);
 }
