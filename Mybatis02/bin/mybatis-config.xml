@@ -8,9 +8,11 @@
 	<properties resource="jdbc.properties" />
 	
 	<settings>
-		<!-- 将下划线映射成驼峰, user_name ==> userName -->
+		<!-- 将下划线映射成驼峰, user_name映射为userName -->
 		<setting name="mapUnderscoreToCamelCase" value="true"/>
+		<!-- 开始延迟加载 -->
 		<setting name="lazyLoadingEnabled" value="true"/>
+		<!-- 是否查询所有数据 -->
 		<setting name="aggressiveLazyLloading" value="false"/>
 	</settings>
 	
