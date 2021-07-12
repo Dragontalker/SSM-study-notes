@@ -19,6 +19,17 @@
 		<id>: 设置主键的映射关系, column设置字段名, property设置属性名
 		<result>: 设置非主键的映射关系, column设置字段名, property设置属性名
 	 -->
+	 
+	 <resultMap type="Emp" id="empMap">
+	 	<id column="eid" property="eid"/>
+		<result column="ename" property="ename"/>
+		<result column="age" property="age"/>
+		<result column="sex" property="sex"/>
+		<association property="dept" javaType="Dept">
+			<id column="did" property="did"/>
+			<result column="dname" property="dname"/>
+		</association>
+	 </resultMap>
 
 	<!-- List<Emp> getAllEmp(); -->
 	<select id="getAllEmp" resultMap="empMap">
