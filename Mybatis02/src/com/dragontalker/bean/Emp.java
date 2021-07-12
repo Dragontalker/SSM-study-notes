@@ -9,6 +9,8 @@ public class Emp {
 	private Integer age;
 	
 	private String sex;
+	
+	private Dept dept;
 
 	public Emp() {
 		
@@ -53,9 +55,17 @@ public class Emp {
 		this.sex = sex;
 	}
 
+	public Dept getDept() {
+		return dept;
+	}
+
+	public void setDept(Dept dept) {
+		this.dept = dept;
+	}
+
 	@Override
 	public String toString() {
-		return "Emp [eid=" + eid + ", ename=" + ename + ", age=" + age + ", sex=" + sex + "]";
+		return "Emp [eid=" + eid + ", ename=" + ename + ", age=" + age + ", sex=" + sex + ", dept=" + dept + "]";
 	}
 
 }
