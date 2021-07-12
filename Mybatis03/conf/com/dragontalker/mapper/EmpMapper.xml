@@ -64,6 +64,12 @@
 			<when test="ename != null and ename != ''">
 				ename = #{ename}
 			</when>
+			<when test="age != null">
+				age = #{age}
+			</when>
+			<otherwise>
+				sex = #{sex}	
+			</otherwise>
 		</choose>
 	</select>
 	
