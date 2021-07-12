@@ -42,7 +42,8 @@
 		<result column="age" property="age"/>
 		<result column="sex" property="sex"/>
 		<!-- 
-			select: 分布查询的SQL的id, 即接口的全限定名, 方法名或namespace.SQL的id
+			select: 分步查询的SQL的id, 即接口的全限定名, 方法名或namespace.SQL的id
+			column: 分步查询的条件, 注意: 此条件必须是从数据库查询过的
 		 -->
 		<association property="dept" select="com.dragontalker.mapper.DeptMapper.getDeptByDid" column="did"></association>
 	</resultMap>
