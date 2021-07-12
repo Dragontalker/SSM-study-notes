@@ -20,4 +20,9 @@
 		insert into emp values(null, #{ename}, #{age}, #{sex})
 	</insert>
 	
+	<!-- void updateEmp(Emp emp); -->
+	<update id="updateEmp">
+		update emp set ename = #{ename}, age = #{age}, sex = #{sex} where eid = #{eid}
+	</update>
+	
 </mapper>
