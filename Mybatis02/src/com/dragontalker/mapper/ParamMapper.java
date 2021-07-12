@@ -17,4 +17,7 @@ public interface ParamMapper {
 	
 	// 根据map查询员工信息
 	Emp getEmpByMap(Map<String, Object> map);
+	
+	// 根据eid和ename查询员工信息
+	Emp getEmpByEidAndEnameByParam(String eid, String ename);
 }
