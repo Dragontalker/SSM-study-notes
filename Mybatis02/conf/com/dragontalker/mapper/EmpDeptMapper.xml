@@ -74,6 +74,9 @@
 	</select>
 	
 	<!-- Dept getOnlyDeptByDid(String did); -->
+	<select id="getOnlyDeptByDid" resultMap="">
+		select did, dname from dpet where did = #{did}
+	</select>
 	
 	<!-- List<Emp> getEmpListByDid(String did); -->
 	
