@@ -37,7 +37,7 @@
 	
 	<select id="getEmpListByMoreTJ" resultType="Emp">
 		select eid, ename, age, sex, did from emp 
-		<trim prefix="">
+		<trim prefix="where" suffixOverrides="and">
 			<if test="eid != null">
 				eid = #{eid} and
 			</if>
@@ -47,7 +47,7 @@
 			<if test="age != null">
 				age = #{age} and
 			</if>
-			<if test="sex == '1' or sex == '0'">
+			<if test="sex != null">
 				sex = #{sex}
 			</if>
 		</trim>
