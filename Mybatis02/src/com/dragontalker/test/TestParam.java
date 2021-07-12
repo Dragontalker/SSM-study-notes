@@ -36,10 +36,13 @@ public class TestParam {
 		//Emp emp = mapper.getEmpByEidAndEname("1", "ZhangSan");
 		//System.out.println(emp);
 		
-		Map<String, Object> map = new HashMap<>();
-		map.put("eid", "1");
-		map.put("ename", "ZhangSan");
-		Emp emp = mapper.getEmpByMap(map);
+		//Map<String, Object> map = new HashMap<>();
+		//map.put("eid", "1");
+		//map.put("ename", "ZhangSan");
+		//Emp emp = mapper.getEmpByMap(map);
+		//System.out.println(emp);
+		
+		Emp emp = mapper.getEmpByEidAndEnameByParam("1", "ZhangSan");
 		System.out.println(emp);
 	}
 	
