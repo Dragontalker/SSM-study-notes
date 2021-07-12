@@ -5,6 +5,10 @@
 	
 <mapper namespace="com.dragontalker.mapper.EmpMapper">
 
+	<!-- 
+		<if test=""></if>: 通过test表达式, 拼接SQL
+	 -->
+
 	<!-- List<Emp> getEmpListByMoreTJ(Emp emp); -->
 	<!-- 多条件查询: 若页面中没有设置此条件, SQL语句中一定不能有该条件 -->
 	<select id="getEmpListByMoreTJ" resultType="Emp">
