@@ -6,8 +6,10 @@
 <mapper namespace="com.dragontalker.mapper.EmpDeptMapper">
 
 	<resultMap type="Emp" id="empMap">
-		<id />
-		<result/>
+		<id column="eid" property="eid"/>
+		<result column="ename" property="ename"/>
+		<result column="age" property="age"/>
+		<result column="sex" property="sex"/>
 	</resultMap>
 
 	<!-- List<Emp> getAllEmp(); -->
