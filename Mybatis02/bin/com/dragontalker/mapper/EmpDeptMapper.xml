@@ -73,4 +73,8 @@
 		select d.did, d.dname, e.eid, e.ename, e.age, e.sex from dept d left join emp e on d.did = e.did where d.did = #{did}
 	</select>
 	
+	<!-- Dept getOnlyDeptByDid(String did); -->
+	
+	<!-- List<Emp> getEmpListByDid(String did); -->
+	
 </mapper>
