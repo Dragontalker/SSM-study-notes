@@ -32,6 +32,6 @@
 		<!-- <mapper resource="EmpMapper.xml" /> -->
 		<!-- <mapper resource="DeptMapper.xml" /> -->
 		<!-- 此种写法要求mapper接口和mapper映射文件必须在同一个包下 -->
-		<package name="mapper"/>
+		<package name="com.dragontalker.mapper"/>
 	</mappers>
 </configuration>
