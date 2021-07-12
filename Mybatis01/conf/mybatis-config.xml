@@ -16,8 +16,8 @@
 		<package name="com.dragontalker.bean"/>
 	</typeAliases>
 	
-	<environments default="development">
-		<environment id="development">
+	<environments default="mysql">
+		<environment id="mysql">
 			<transactionManager type="JDBC" />
 			<dataSource type="POOLED">
 				<property name="driver" value="${jdbc.driver}" />
