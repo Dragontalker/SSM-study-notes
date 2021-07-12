@@ -10,6 +10,8 @@
 		<result column="ename" property="ename"/>
 		<result column="age" property="age"/>
 		<result column="sex" property="sex"/>
+		<result column="did" property="dept.did"/>
+		<result column="dname" property="dept.dname"/>
 	</resultMap>
 
 	<!-- List<Emp> getAllEmp(); -->
