@@ -11,5 +11,5 @@ public interface EmpDeptMapper {
 	
 	Emp getEmpStep(String eid);
 	
-	Dept getDeptByDid(String did);
+	Dept getDeptEmpsByDid(String did);
 }
