@@ -7,4 +7,6 @@ import com.dragontalker.bean.Emp;
 public interface EmpDeptMapper {
 
 	List<Emp> getAllEmp();
+	
+	Emp getEmpStep(String eid);
 }
