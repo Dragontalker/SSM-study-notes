@@ -41,12 +41,12 @@
 		<result column="ename" property="ename"/>
 		<result column="age" property="age"/>
 		<result column="sex" property="sex"/>
-		<association property="dept" select=""></association>
+		<association property="dept" select="com.dragontalker.mapper.DeptMapper.getDeptByDid" column="did"></association>
 	</resultMap>
 	
 	<!-- Emp getEmpStep(String eid); -->
 	<select id="getEmpStep" resultMap="">
-		select eid, ename, age, sex from emp where eid = #{eid}
+		select eid, ename, age, sex, did from emp where eid = #{eid}
 	</select>
 	
 </mapper>
