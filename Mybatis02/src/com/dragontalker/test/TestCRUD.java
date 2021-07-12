@@ -29,7 +29,10 @@ public class TestCRUD {
 		//System.out.println(emp);
 		
 		// 测试: 获取所有的员工信息
-		List<Emp> list = empMapper.getAllEmp();
-		System.out.println(list);
+		//List<Emp> list = empMapper.getAllEmp();
+		//System.out.println(list);
+		
+		// 测试: 添加员工信息
+		empMapper.addEmp(null);
 	}
 }
