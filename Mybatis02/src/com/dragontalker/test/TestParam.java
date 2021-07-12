@@ -2,6 +2,8 @@ package com.dragontalker.test;
 
 import java.io.IOException;
 import java.io.InputStream;
+import java.util.HashMap;
+import java.util.Map;
 
 import org.apache.ibatis.io.Resources;
 import org.apache.ibatis.session.SqlSession;
@@ -31,7 +33,13 @@ public class TestParam {
 		//Emp emp = mapper.getEmpByEid("1");
 		//System.out.println(emp);
 		
-		Emp emp = mapper.getEmpByEidAndEname("1", "ZhangSan");
+		//Emp emp = mapper.getEmpByEidAndEname("1", "ZhangSan");
+		//System.out.println(emp);
+		
+		Map<String, Object> map = new HashMap<>();
+		map.put("eid", "1");
+		map.put("ename", "ZhangSan");
+		Emp emp = mapper.getEmpByMap(map);
 		System.out.println(emp);
 	}
 	
