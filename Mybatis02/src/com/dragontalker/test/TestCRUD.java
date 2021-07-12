@@ -2,7 +2,6 @@ package com.dragontalker.test;
 
 import java.io.IOException;
 import java.io.InputStream;
-import java.util.List;
 
 import org.apache.ibatis.io.Resources;
 import org.apache.ibatis.session.SqlSession;
@@ -34,5 +33,6 @@ public class TestCRUD {
 		
 		// 测试: 添加员工信息
 		empMapper.addEmp(new Emp(null, "admin", 23, "female"));
+		sqlSession.commit();
 	}
 }
