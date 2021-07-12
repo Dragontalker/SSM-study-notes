@@ -21,7 +21,7 @@
 	</insert>
 	
 	<!-- void updateEmp(Emp emp); -->
-	<update id="updateEmp">
+	<update id="updateEmp" parameterType="Emp">
 		update emp set ename = #{ename}, age = #{age}, sex = #{sex} where eid = #{eid}
 	</update>
 	

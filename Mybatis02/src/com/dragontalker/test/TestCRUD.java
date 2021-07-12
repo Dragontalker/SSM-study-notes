@@ -9,6 +9,7 @@ import org.apache.ibatis.session.SqlSessionFactory;
 import org.apache.ibatis.session.SqlSessionFactoryBuilder;
 import org.junit.Test;
 
+import com.dragontalker.bean.Emp;
 import com.dragontalker.mapper.EmpMapper;
 
 public class TestCRUD {
@@ -36,11 +37,11 @@ public class TestCRUD {
 		sqlSession.commit(); // 提交事务*/
 		
 		// 测试: 修改员工信息
-		//empMapper.updateEmp(new Emp(2, "ZhangSanSan", 33, "female"));
+		empMapper.updateEmp(new Emp(2, "ZhangEr", 33, "female"));
 		
 		// 测试: 删除员工信息
-		Boolean i =  empMapper.deleteEmp("2");
-		System.out.println("result: " + i);
+		//Boolean i =  empMapper.deleteEmp("2");
+		//System.out.println("result: " + i);
 	}
 	
 }
