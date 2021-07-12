@@ -33,7 +33,9 @@ public class TestEmpDept {
 		//System.out.println(dept);
 		
 		Dept dept = mapper.getOnlyDeptByDid("1");
-		System.out.println(dept);
+		System.out.println(dept.getDname());
+		System.out.println("==================");
+		System.out.println(dept.getEmps());
 	}
 	
 }

@@ -76,7 +76,7 @@
 	<resultMap type="Dept" id="deptMapStep">
 		<id column="did" property="did" />
 		<result column="dname" property="dname" />
-		<collection property="emps" select="com.dragontalker.mapper.EmpDeptMapper.getEmpListByDid" column="did"></collection>
+		<collection property="emps" select="com.dragontalker.mapper.EmpDeptMapper.getEmpListByDid" column="{did = did}" fetchType="eager"></collection>
 	</resultMap>
 	
 	<!-- Dept getOnlyDeptByDid(String did); -->
