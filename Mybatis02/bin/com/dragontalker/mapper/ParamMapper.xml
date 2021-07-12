@@ -23,7 +23,7 @@
 	
 	<!-- Emp getEmpByEidAndEname(String eid, String ename); -->
 	<select id="getEmpByEidAndEname" resultType="Emp">
-		select eid, ename, age, sex from emp where eid = #{eid} and ename = #{ename}
+		select eid, ename, age, sex from emp where eid = #{0} and ename = #{1}
 	</select>
 	
 </mapper>
