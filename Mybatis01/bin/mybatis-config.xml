@@ -12,7 +12,8 @@
 	</settings>
 	
 	<typeAliases>
-		<typeAlias type="com.dragontalker.bean.User" alias="User"/>
+		<!-- <typeAlias type="com.dragontalker.bean.User" alias="User"/> -->
+		<package name="com.dragontalker.bean"/>
 	</typeAliases>
 	
 	<environments default="development">
