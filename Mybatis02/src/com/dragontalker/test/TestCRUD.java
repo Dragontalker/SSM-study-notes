@@ -39,7 +39,8 @@ public class TestCRUD {
 		//empMapper.updateEmp(new Emp(2, "ZhangSanSan", 33, "female"));
 		
 		// 测试: 删除员工信息
-		empMapper.deleteEmp("5");
+		Integer i =  empMapper.deleteEmp("5");
+		System.out.println("result: " + i);
 	}
 	
 }
