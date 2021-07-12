@@ -54,7 +54,7 @@
 	</select>
 	
 	<!-- Dept getDeptEmpsByDid(String did); -->
-	<select id="getDeptEmpsByDid" resultMap="">
+	<select id="getDeptEmpsByDid" resultType="Dept">
 		select d.did, d.dname, e.eid, e.ename, e.age, e.sex from dept d left join emp e on d.did = e.did where d.did = #{did}
 	</select>
 	
