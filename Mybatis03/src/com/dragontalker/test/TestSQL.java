@@ -14,6 +14,26 @@ import com.dragontalker.bean.Emp;
 import com.dragontalker.mapper.EmpMapper;
 
 public class TestSQL {
+	
+	@Test
+	public void testChoose() throws IOException {
+		SqlSessionFactory sqlSessionFactory = getSqlSessionFactory();
+		SqlSession sqlSession = sqlSessionFactory.openSession(true);
+		EmpMapper mapper = sqlSession.getMapper(EmpMapper.class);
+		
+		Emp emp = new Emp();
+		
+		emp.setEid(1);
+		emp.setEname("ZhangSan");
+		emp.setAge(23);
+		emp.setSex("1");
+		
+		List<Emp> list = mapper.getEmpListByChoose(emp);
+		
+		for (Emp e :list) {
+			System.out.println(e);
+		}
+	}
 
 	@Test
 	public void testIf() throws IOException {
