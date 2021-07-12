@@ -56,6 +56,10 @@
 	<resultMap type="Dept" id="deptMap">
 		<id column="did" property="did" />
 		<result column="dname" property="dname" />
+		<!-- 
+			<collection>: 处理一对多和多对多的关系
+			ofType: 指集合中的类型, 不需要指定JavaType
+		 -->
 		<collection property="emps" ofType="Emp">
 			<id column="eid" property="eid"/>
 			<result column="ename" property="ename"/>
