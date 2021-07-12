@@ -13,19 +13,21 @@
 	<!-- 多条件查询: 若页面中没有设置此条件, SQL语句中一定不能有该条件 -->
 	<select id="getEmpListByMoreTJ" resultType="Emp">
 		select eid, ename, age, sex, did from emp 
-		where 1 = 1
-		<if test="eid != null">
-			eid = #{eid}
-		</if>
-		<if test="ename != null and ename !=''">
-			and ename = #{ename}
-		</if>
-		<if test="age != null">
-			and age = #{age}
-		</if>
-		<if test="sex == '1' or sex == '0'">
-			and sex = #{sex}
-		</if>
+		<where>
+			<if test="eid != null">
+				eid = #{eid}
+			</if>
+			<if test="ename != null and ename !=''">
+				and ename = #{ename}
+			</if>
+			<if test="age != null">
+				and age = #{age}
+			</if>
+			<if test="sex == '1' or sex == '0'">
+				and sex = #{sex}
+			</if>
+		</where>
+		
 	</select>
 	
 </mapper>
