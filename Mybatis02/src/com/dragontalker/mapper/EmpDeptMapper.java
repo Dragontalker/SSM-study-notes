@@ -14,4 +14,6 @@ public interface EmpDeptMapper {
 	Dept getDeptEmpsByDid(String did);
 	
 	Dept getOnlyDeptByDid(String did);
+	
+	List<Emp> getEmpListByDid(String did);
 }
