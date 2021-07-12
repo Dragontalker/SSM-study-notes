@@ -8,7 +8,7 @@
 	<!-- void insertEmp(Emp emp); -->
 	<insert id="insertEmp">
 		<!-- insert into emp values(null, #{ename}, #{age}, #{sex}) -->
-		insert into emp values(null, ${ename}, ${age}, ${sex})
+		insert into emp values(null, '${ename}', ${age}, '${sex}')
 	</insert>
 	
 </mapper>
