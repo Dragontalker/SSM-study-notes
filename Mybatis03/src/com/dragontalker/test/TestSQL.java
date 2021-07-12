@@ -11,8 +11,8 @@ import org.junit.Test;
 public class TestSQL {
 
 	@Test
-	public void testIf() {
-		
+	public void testIf() throws IOException {
+		SqlSessionFactory sqlSessionFactory = getSqlSessionFactory();
 	}
 	
 	public SqlSessionFactory getSqlSessionFactory() throws IOException {
