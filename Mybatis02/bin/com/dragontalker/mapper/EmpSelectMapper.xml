@@ -11,7 +11,7 @@
 	</select>
 	
 	<!-- Integer getCount(); -->
-	<select id="getCount" resultType="Ingeter">
+	<select id="getCount" resultType="Integer">
 		select count(eid) from emp
 	</select>
 	
