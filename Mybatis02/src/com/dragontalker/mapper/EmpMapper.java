@@ -13,6 +13,7 @@ public interface EmpMapper {
 	List<Emp> getAllEmp();
 	
 	// 添加员工信息
+	void addEmp(Emp emp);
 	
 	// 修改员工信息
 	
