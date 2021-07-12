@@ -5,7 +5,7 @@
 	
 <mapper namespace="com.dragontalker.mapper.UserMapper">
 
-	<select id="getUserByUid" resultType="User">
+	<select id="getUserByUid" resultType="com.dragontalker.bean.User">
 		select uid, user_name, password, age, sex from user where uid = ${value}
 	</select>
 	
