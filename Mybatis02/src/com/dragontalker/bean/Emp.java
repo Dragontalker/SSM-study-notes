@@ -10,6 +10,17 @@ public class Emp {
 	
 	private String sex;
 
+	public Emp() {
+		
+	}
+	
+	public Emp(Integer eid, String ename, Integer age, String sex) {
+		this.eid = eid;
+		this.ename = ename;
+		this.age = age;
+		this.sex = sex;
+	}
+
 	public Integer getEid() {
 		return eid;
 	}
