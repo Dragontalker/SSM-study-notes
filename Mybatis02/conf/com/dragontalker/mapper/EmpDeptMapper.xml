@@ -36,6 +36,14 @@
 		select e.eid, e.ename, e.age, e.sex, e.did, d.dname from emp e left join dept d on e.did = d.did
 	</select>
 	
+	<resultMap type="Emp" id="empMapStep">
+		<id column="eid" property="eid"/>
+		<result column="ename" property="ename"/>
+		<result column="age" property="age"/>
+		<result column="sex" property="sex"/>
+		<association property="dept" select=""></association>
+	</resultMap>
+	
 	<!-- Emp getEmpStep(String eid); -->
 	<select id="getEmpStep" resultMap="">
 		select eid, ename, age, sex from emp where eid = #{eid}
