@@ -33,7 +33,11 @@ public class TestSelect {
 		//System.out.println(i);
 		
 		// 以map获取单个emp
-		Map<String, Object> map = mapper.getEmpMapByEid("6");
+		//Map<String, Object> map = mapper.getEmpMapByEid("6");
+		//System.out.println(map);
+		
+		// 以map获取所有emp
+		Map<String, Object> map = mapper.getAllEmpMap();
 		System.out.println(map);
 	}
 	
