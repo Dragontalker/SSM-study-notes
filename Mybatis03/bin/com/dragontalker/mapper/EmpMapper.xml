@@ -12,7 +12,7 @@
 
 	<!-- List<Emp> getEmpListByMoreTJ(Emp emp); -->
 	<!-- 多条件查询: 若页面中没有设置此条件, SQL语句中一定不能有该条件 -->
-	<select id="getEmpListByMoreTJ" resultType="Emp">
+	<select id="getEmpListByMoreTJ1" resultType="Emp">
 		select eid, ename, age, sex, did from emp 
 		<where>
 			<if test="eid != null">
@@ -28,7 +28,24 @@
 				sex = #{sex}
 			</if>
 		</where>
-		
+	</select>
+	
+	<select id="getEmpListByMoreTJ" resultType="Emp">
+		select eid, ename, age, sex, did from emp 
+		<trim prefix="">
+			<if test="eid != null">
+				eid = #{eid} and
+			</if>
+			<if test="ename != null and ename !=''">
+				ename = #{ename} and
+			</if>
+			<if test="age != null">
+				age = #{age} and
+			</if>
+			<if test="sex == '1' or sex == '0'">
+				sex = #{sex}
+			</if>
+		</trim>
 	</select>
 	
 </mapper>
