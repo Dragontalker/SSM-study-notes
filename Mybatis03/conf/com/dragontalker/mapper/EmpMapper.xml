@@ -6,6 +6,7 @@
 <mapper namespace="com.dragontalker.mapper.EmpMapper">
 
 	<!-- List<Emp> getEmpListByMoreTJ(Emp emp); -->
+	<!-- 多条件查询: 若页面中没有设置此条件, SQL语句中一定不能有该条件 -->
 	<select id="getEmpListByMoreTJ" resultType="Emp">
 		select eid, ename, age, sex, did from emp 
 		where
