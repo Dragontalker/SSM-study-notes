@@ -9,4 +9,7 @@ public interface ParamMapper {
 	
 	// 根据eid获取员工信息
 	Emp getEmpByEid(String eid);
+	
+	// 根据eid和ename查询员工信息
+	Emp getEmpByEidAndEname(String eid, String ename);
 }
