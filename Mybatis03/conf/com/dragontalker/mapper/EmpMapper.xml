@@ -18,13 +18,13 @@
 				eid = #{eid}
 			</if>
 			<if test="ename != null and ename !=''">
-				and ename = #{ename}
+				ename = #{ename}
 			</if>
 			<if test="age != null">
-				and age = #{age}
+				age = #{age}
 			</if>
 			<if test="sex == '1' or sex == '0'">
-				and sex = #{sex}
+				sex = #{sex}
 			</if>
 		</where>
 		
