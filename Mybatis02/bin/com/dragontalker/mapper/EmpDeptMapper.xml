@@ -15,7 +15,7 @@
 	</resultMap>
 
 	<!-- List<Emp> getAllEmp(); -->
-	<select id="getAllEmp" resultType="Emp">
+	<select id="getAllEmp" resultMap="empMap">
 		select e.eid, e.ename, e.age, e.sex, e.did, d.dname from emp e left join dept d on e.did = d.did
 	</select>
 	
