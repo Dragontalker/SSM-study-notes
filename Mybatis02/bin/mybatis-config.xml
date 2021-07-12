@@ -29,7 +29,8 @@
 	</environments>
 
 	<mappers>
-		<mapper resource="EmpMapper.xml" />
-		<mapper resource="DeptMapper.xml" />
+		<!-- <mapper resource="EmpMapper.xml" /> -->
+		<!-- <mapper resource="DeptMapper.xml" /> -->
+		<package name=""/>
 	</mappers>
 </configuration>
