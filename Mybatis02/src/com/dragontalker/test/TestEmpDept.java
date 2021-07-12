@@ -9,7 +9,7 @@ import org.apache.ibatis.session.SqlSessionFactory;
 import org.apache.ibatis.session.SqlSessionFactoryBuilder;
 import org.junit.Test;
 
-import com.dragontalker.bean.Emp;
+import com.dragontalker.bean.Dept;
 import com.dragontalker.mapper.EmpDeptMapper;
 
 public class TestEmpDept {
@@ -24,10 +24,13 @@ public class TestEmpDept {
 		//List<Emp> emp = mapper.getAllEmp();
 		//System.out.println(emp);
 		
-		Emp emp = mapper.getEmpStep("3");
-		System.out.println(emp.getEname());
-		System.out.println("==================");
-		System.out.println(emp.getDept());
+		//Emp emp = mapper.getEmpStep("3");
+		//System.out.println(emp.getEname());
+		//System.out.println("==================");
+		//System.out.println(emp.getDept());
+		
+		Dept dept = mapper.getDeptEmpsByDid("2");
+		System.out.println(dept);
 	}
 	
 }

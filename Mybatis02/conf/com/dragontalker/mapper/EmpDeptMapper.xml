@@ -53,6 +53,17 @@
 		select eid, ename, age, sex, did from emp where eid = #{eid}
 	</select>
 	
+	<resultMap type="Dept" id="deptMap">
+		<id column="did" property="did" />
+		<result column="dname" property="dname" />
+		<collection property="emps" ofType="Emp">
+			<id column="eid" property="eid"/>
+			<result column="ename" property="ename"/>
+			<result column="age" property="age"/>
+			<result column="sex" property="sex"/>
+		</collection>
+	</resultMap>
+	
 	<!-- Dept getDeptEmpsByDid(String did); -->
 	<select id="getDeptEmpsByDid" resultType="Dept">
 		select d.did, d.dname, e.eid, e.ename, e.age, e.sex from dept d left join emp e on d.did = e.did where d.did = #{did}
