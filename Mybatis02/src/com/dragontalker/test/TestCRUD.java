@@ -9,6 +9,7 @@ import org.apache.ibatis.session.SqlSessionFactory;
 import org.apache.ibatis.session.SqlSessionFactoryBuilder;
 import org.junit.Test;
 
+import com.dragontalker.bean.Emp;
 import com.dragontalker.mapper.EmpMapper;
 
 public class TestCRUD {
@@ -22,5 +23,8 @@ public class TestCRUD {
 		
 		EmpMapper empMapper = sqlSession.getMapper(EmpMapper.class);
 		
+		// 测试: 根据eid获取员工信息
+		Emp emp = empMapper.getEmpByEid("3");
+		System.out.println(">> " + emp);
 	}
 }
