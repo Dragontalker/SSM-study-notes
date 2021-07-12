@@ -24,7 +24,10 @@ public class TestParam {
 		
 		ParamMapper mapper = sqlSession.getMapper(ParamMapper.class);
 		
-		mapper.insertEmp(new Emp(null, "admin", 23, "male"));
+		Emp emp = new Emp(null, "admin", 23, "male");
+		mapper.insertEmp(emp);
+		
+		System.out.println(emp.getEid());
 	}
 	
 }
