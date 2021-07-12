@@ -73,8 +73,14 @@
 		select d.did, d.dname, e.eid, e.ename, e.age, e.sex from dept d left join emp e on d.did = e.did where d.did = #{did}
 	</select>
 	
+	<resultMap type="Dept" id="deptMapStep">
+		<id column="did" property="did" />
+		<result column="dname" property="dname" />
+		<collection property="emps" select="com.dragontalker.mapper.EmpDeptMapper.getEmpListByDid" column="did"></collection>
+	</resultMap>
+	
 	<!-- Dept getOnlyDeptByDid(String did); -->
-	<select id="getOnlyDeptByDid" resultMap="">
+	<select id="getOnlyDeptByDid" resultMap="deptMapStep">
 		select did, dname from dpet where did = #{did}
 	</select>
 	
