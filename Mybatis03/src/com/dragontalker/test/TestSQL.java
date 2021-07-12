@@ -24,8 +24,8 @@ public class TestSQL {
 		Emp emp = new Emp();
 		
 		emp.setEid(1);
-		emp.setEname("ZhangSan");
-		emp.setAge(23);
+		//emp.setEname("ZhangSan");
+		//emp.setAge(23);
 		emp.setSex("1");
 		
 		List<Emp> list = mapper.getEmpListByMoreTJ(emp);
