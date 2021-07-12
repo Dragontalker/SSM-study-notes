@@ -1,5 +1,7 @@
 package com.dragontalker.mapper;
 
+import java.util.List;
+
 import com.dragontalker.bean.Emp;
 
 public interface EmpMapper {
@@ -8,6 +10,7 @@ public interface EmpMapper {
 	Emp getEmpByEid(String eid);
 	
 	// 获取所有员工信息
+	List<Emp> getAllEmp();
 	
 	// 添加员工信息
 	
