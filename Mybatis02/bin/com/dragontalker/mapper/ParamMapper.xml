@@ -26,4 +26,9 @@
 		select eid, ename, age, sex from emp where eid = #{param1} and ename = #{param2}
 	</select>
 	
+	<!-- Emp getEmpByMap(Map<String, Object> map); -->
+	<select id="getEmpByMap" resultType="Emp">
+		select eid, ename, age, sex from emp where eid = ${eid} and ename = ${ename}
+	</select>
+	
 </mapper>
