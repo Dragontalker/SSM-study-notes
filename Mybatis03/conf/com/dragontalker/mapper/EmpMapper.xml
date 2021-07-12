@@ -83,4 +83,18 @@
 		</choose>
 	</select>
 	
+	<!-- void insertEmp(Emp emp); -->
+	<insert id="insertEmp">
+		insert into emp values(
+			null,
+			#{ename},
+			#{age},
+			<choose>
+				<when test="sex == 0">female</when>
+				<when test="sex == 1">male</when>
+				<otherwise>unknown</otherwise>
+			</choose>
+		)
+	</insert>
+	
 </mapper>
