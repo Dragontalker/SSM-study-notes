@@ -16,6 +16,7 @@ public interface EmpMapper {
 	void addEmp(Emp emp);
 	
 	// 修改员工信息
+	void updateEmp(Emp emp);
 	
 	// 删除员工信息
 	
