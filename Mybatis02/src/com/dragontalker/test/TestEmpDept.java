@@ -29,7 +29,10 @@ public class TestEmpDept {
 		//System.out.println("==================");
 		//System.out.println(emp.getDept());
 		
-		Dept dept = mapper.getDeptEmpsByDid("2");
+		//Dept dept = mapper.getDeptEmpsByDid("2");
+		//System.out.println(dept);
+		
+		Dept dept = mapper.getOnlyDeptByDid("1");
 		System.out.println(dept);
 	}
 	

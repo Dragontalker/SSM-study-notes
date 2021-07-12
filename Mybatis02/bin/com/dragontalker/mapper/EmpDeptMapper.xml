@@ -81,7 +81,7 @@
 	
 	<!-- Dept getOnlyDeptByDid(String did); -->
 	<select id="getOnlyDeptByDid" resultMap="deptMapStep">
-		select did, dname from dpet where did = #{did}
+		select did, dname from dept where did = #{did}
 	</select>
 	
 	<!-- List<Emp> getEmpListByDid(String did); -->
