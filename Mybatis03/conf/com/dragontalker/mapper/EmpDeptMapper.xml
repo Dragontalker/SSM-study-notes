@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+	PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+	"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+	
+<mapper namespace="com.dragontalker.mapper.EmpDeptMapper">
+
+	<!-- <resultMap type="Emp" id="empMap">
+		<id column="eid" property="eid"/>
+		<result column="ename" property="ename"/>
+		<result column="age" property="age"/>
+		<result column="sex" property="sex"/>
+		<result column="did" property="dept.did"/>
+		<result column="dname" property="dept.dname"/>
+	</resultMap> -->
+	
+	<!-- 
+		<resultMap>: 自定义映射, 处理复杂的表关系
+		<id>: 设置主键的映射关系, column设置字段名, property设置属性名
+		<result>: 设置非主键的映射关系, column设置字段名, property设置属性名
+	 -->
+	 
+	 <resultMap type="Emp" id="empMap">
+	 	<id column="eid" property="eid"/>
+		<result column="ename" property="ename"/>
+		<result column="age" property="age"/>
+		<result column="sex" property="sex"/>
+		<association property="dept" javaType="Dept">
+			<id column="did" property="did"/>
+			<result column="dname" property="dname"/>
+		</association>
+	 </resultMap>
+
+	<!-- List<Emp> getAllEmp(); -->
+	<select id="getAllEmp" resultMap="empMap">
+		select e.eid, e.ename, e.age, e.sex, e.did, d.dname from emp e left join dept d on e.did = d.did
+	</select>
+	
+	<resultMap type="Emp" id="empMapStep">
+		<id column="eid" property="eid"/>
+		<result column="ename" property="ename"/>
+		<result column="age" property="age"/>
+		<result column="sex" property="sex"/>
+		<!-- 
+			select: 分步查询的SQL的id, 即接口的全限定名, 方法名或namespace.SQL的id
+			column: 分步查询的条件, 注意: 此条件必须是从数据库查询过的
+		 -->
+		<association property="dept" select="com.dragontalker.mapper.DeptMapper.getDeptByDid" column="did"></association>
+	</resultMap>
+	
+	<!-- Emp getEmpStep(String eid); -->
+	<select id="getEmpStep" resultMap="empMapStep">
+		select eid, ename, age, sex, did from emp where eid = #{eid}
+	</select>
+	
+	<resultMap type="Dept" id="deptMap">
+		<id column="did" property="did" />
+		<result column="dname" property="dname" />
+		<!-- 
+			<collection>: 处理一对多和多对多的关系
+			ofType: 指集合中的类型, 不需要指定JavaType
+		 -->
+		<collection property="emps" ofType="Emp">
+			<id column="eid" property="eid"/>
+			<result column="ename" property="ename"/>
+			<result column="age" property="age"/>
+			<result column="sex" property="sex"/>
+		</collection>
+	</resultMap>
+	
+	<!-- Dept getDeptEmpsByDid(String did); -->
+	<select id="getDeptEmpsByDid" resultMap="deptMap">
+		select d.did, d.dname, e.eid, e.ename, e.age, e.sex from dept d left join emp e on d.did = e.did where d.did = #{did}
+	</select>
+	
+	<resultMap type="Dept" id="deptMapStep">
+		<id column="did" property="did" />
+		<result column="dname" property="dname" />
+		<collection property="emps" select="com.dragontalker.mapper.EmpDeptMapper.getEmpListByDid" column="{did = did}" fetchType="eager"></collection>
+	</resultMap>
+	
+	<!-- Dept getOnlyDeptByDid(String did); -->
+	<select id="getOnlyDeptByDid" resultMap="deptMapStep">
+		select did, dname from dept where did = #{did}
+	</select>
+	
+	<!-- List<Emp> getEmpListByDid(String did); -->
+	<select id="getEmpListByDid" resultType="Emp">
+		select eid, ename, age, sex from emp where did = #{did}
+	</select>
+	
+</mapper>

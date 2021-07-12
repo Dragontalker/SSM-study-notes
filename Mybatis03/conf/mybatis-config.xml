@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration
+	PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+	"http://mybatis.org/dtd/mybatis-3-config.dtd">
+
+<configuration>
+
+	<properties resource="jdbc.properties" />
+	
+	<settings>
+		<!-- 将下划线映射成驼峰, user_name映射为userName -->
+		<setting name="mapUnderscoreToCamelCase" value="true"/>
+		<!-- 开始延迟加载 -->
+		<setting name="lazyLoadingEnabled" value="true"/>
+		<!-- 是否查询所有数据 -->
+		<setting name="aggressiveLazyLoading" value="false"/>
+	</settings>
+	
+	<typeAliases>
+		<!-- <typeAlias type="com.dragontalker.bean.User" alias="User"/> -->
+		<package name="com.dragontalker.bean"/>
+	</typeAliases>
+	
+	<environments default="mysql">
+		<environment id="mysql">
+			<transactionManager type="JDBC" />
+			<dataSource type="POOLED">
+				<property name="driver" value="${jdbc.driver}" />
+				<property name="url" value="${jdbc.url}" />
+				<property name="username" value="${jdbc.username}" />
+				<property name="password" value="${jdbc.password}" />
+			</dataSource>
+		</environment>
+	</environments>
+
+	<mappers>
+		<!-- <mapper resource="EmpMapper.xml" /> -->
+		<!-- <mapper resource="DeptMapper.xml" /> -->
+		<!-- 此种写法要求mapper接口和mapper映射文件必须在同一个包下 -->
+		<package name="com.dragontalker.mapper"/>
+	</mappers>
+</configuration>
