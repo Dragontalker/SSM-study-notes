@@ -53,4 +53,15 @@
 		</trim>
 	</select>
 	
+	<!-- List<Emp> getEmpListByChoose(Emp emp); -->
+	<select id="getEmpListByChoose" resultType="Emp">
+		select eid, ename, age, sex from emp
+		where
+		<choose>
+			<when test="eid != null">
+				eid = #{eid}
+			</when>
+		</choose>
+	</select>
+	
 </mapper>
