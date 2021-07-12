@@ -28,7 +28,10 @@ public class TestParam {
 		//mapper.insertEmp(emp);
 		//System.out.println(emp.getEid());
 		
-		Emp emp = mapper.getEmpByEid("1");
+		//Emp emp = mapper.getEmpByEid("1");
+		//System.out.println(emp);
+		
+		Emp emp = mapper.getEmpByEidAndEname("1", "ZhangSan");
 		System.out.println(emp);
 	}
 	
