@@ -21,6 +21,6 @@ public class TestJDBC {
 		
 		Statement statement = conn.createStatement();
 		Emp emp = new Emp(null, "a", 1, "b");
-		statement.executeQuery("insert into emp values(null, '"+emp.getEname()+ "', '"+emp.getAge()+"', '"+emp.getSex()+"'");
+		statement.executeUpdate("insert into emp values(null, '"+emp.getEname()+ "', '"+emp.getAge()+"', '"+emp.getSex()+"'");
 	}
 }

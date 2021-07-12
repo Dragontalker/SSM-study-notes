@@ -10,7 +10,6 @@ import org.apache.ibatis.session.SqlSessionFactoryBuilder;
 import org.junit.Test;
 
 import com.dragontalker.bean.Emp;
-import com.dragontalker.mapper.EmpMapper;
 import com.dragontalker.mapper.ParamMapper;
 
 public class TestParam {
