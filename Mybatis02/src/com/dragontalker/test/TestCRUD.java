@@ -19,7 +19,8 @@ public class TestCRUD {
 		InputStream is = Resources.getResourceAsStream("mybatis-config.xml");
 		
 		SqlSessionFactory sqlSessionFactory = new SqlSessionFactoryBuilder().build(is);
-		SqlSession sqlSession = sqlSessionFactory.openSession();
+		//SqlSession sqlSession = sqlSessionFactory.openSession(); // 需要手动处理事务
+		SqlSession sqlSession = sqlSessionFactory.openSession(true); // 自动处理事务
 		
 		EmpMapper empMapper = sqlSession.getMapper(EmpMapper.class);
 		
@@ -32,7 +33,11 @@ public class TestCRUD {
 		//System.out.println(list);
 		
 		// 测试: 添加员工信息
-		empMapper.addEmp(new Emp(null, "admin", 23, "female"));
-		sqlSession.commit();
+		/*empMapper.addEmp(new Emp(null, "admin", 23, "female"));
+		sqlSession.commit(); // 提交事务*/
+		
+		// 测试: 修改员工信息
+		empMapper.updateEmp(new Emp(2, "ZhangSanSan", 33, "female"));
 	}
+	
 }
