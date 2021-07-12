@@ -2,6 +2,7 @@ package com.dragontalker.test;
 
 import java.io.IOException;
 import java.io.InputStream;
+import java.util.List;
 
 import org.apache.ibatis.io.Resources;
 import org.apache.ibatis.session.SqlSession;
@@ -24,7 +25,11 @@ public class TestCRUD {
 		EmpMapper empMapper = sqlSession.getMapper(EmpMapper.class);
 		
 		// 测试: 根据eid获取员工信息
-		Emp emp = empMapper.getEmpByEid("3");
-		System.out.println(">> " + emp);
+		//Emp emp = empMapper.getEmpByEid("3");
+		//System.out.println(">> " + emp);
+		
+		// 测试: 获取所有的员工信息
+		List<Emp> list = empMapper.getAllEmp();
+		System.out.println(list);
 	}
 }
