@@ -6,4 +6,7 @@ public interface EmpSelectMapper {
 
 	// 根据eid查询一个员工信息
 	Emp getEmpByEid(String eid);
+	
+	// 获取所有的员工的数量
+	Integer getCount();
 }
