@@ -5,5 +5,9 @@
 	
 <mapper namespace="com.dragontalker.mapper.EmpMapper">
 
+	<!-- Emp getEmpByEid(String eid); -->
+	<select id="getEmpByEid" resultType="com.dragontalker.bean.Emp">
+	
+	</select>
 	
 </mapper>
