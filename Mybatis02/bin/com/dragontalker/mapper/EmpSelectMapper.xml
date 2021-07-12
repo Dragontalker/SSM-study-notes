@@ -20,4 +20,9 @@
 		select eid, ename, age, sex from emp where eid = #{eid}
 	</select>
 	
+	<!-- Map<String, Object> getAllEmpMap(); -->
+	<select id="getAllEmpMap" resultType="Emp">
+		select eid, ename, age, sex from emp
+	</select>
+	
 </mapper>
