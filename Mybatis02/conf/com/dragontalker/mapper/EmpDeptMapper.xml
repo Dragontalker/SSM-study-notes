@@ -5,5 +5,9 @@
 	
 <mapper namespace="com.dragontalker.mapper.EmpDeptMapper">
 
+	<!-- List<Emp> getAllEmp(); -->
+	<select id="getAllEmp" resultType="Emp">
+		
+	</select>
 	
 </mapper>
