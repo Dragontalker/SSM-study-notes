@@ -26,7 +26,7 @@ public class TestCRUD {
 		
 		// 测试: 根据eid获取员工信息
 		//Emp emp = empMapper.getEmpByEid("3");
-		//System.out.println(">> " + emp);
+		//System.out.println(emp);
 		
 		// 测试: 获取所有的员工信息
 		List<Emp> list = empMapper.getAllEmp();
