@@ -5,29 +5,11 @@
 	
 <mapper namespace="com.dragontalker.mapper.EmpMapper">
 
-	<!-- Emp getEmpByEid(String eid); -->
-	<select id="getEmpByEid" resultType="Emp">
-		select eid, ename, age, sex from emp where eid = #{eid}
+	<!-- List<Emp> getEmpListByMoreTJ(Emp emp); -->
+	<select id="getEmpListByMoreTJ" resultType="Emp">
+		select eid, ename, age, sex, did from emp 
+		where
+		eid = #{eid}
 	</select>
-	
-	<!-- List<Emp> getAllEmp(); -->
-	<select id="getAllEmp" resultType="Emp">
-		select eid, ename, age, sex from emp
-	</select>
-	
-	<!-- void addEmp(Emp emp); -->
-	<insert id="addEmp">
-		insert into emp values(null, #{ename}, #{age}, #{sex})
-	</insert>
-	
-	<!-- void updateEmp(Emp emp); -->
-	<update id="updateEmp" parameterType="Emp">
-		update emp set ename = #{ename}, age = #{age}, sex = #{sex} where eid = #{eid}
-	</update>
-	
-	<!-- void deleteEmp(String eid); -->
-	<delete id="deleteEmp">
-		delete from emp where eid = #{eid}
-	</delete>
 	
 </mapper>
