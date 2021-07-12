@@ -19,7 +19,7 @@
 		<if test="age != null">
 			and age = #{age}
 		</if>
-		<if test="sex == 'male' or sex == 'female'">
+		<if test="sex == '1' or sex == '0'">
 			and sex = #{sex}
 		</if>
 	</select>
