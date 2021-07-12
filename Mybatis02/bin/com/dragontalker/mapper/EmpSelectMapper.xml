@@ -10,4 +10,9 @@
 		select, eid, ename, age, sex from emp where eid = #{eid}
 	</select>
 	
+	<!-- Integer getCount(); -->
+	<select id="getCount" resultType="Ingeter">
+		select count(eid) from emp
+	</select>
+	
 </mapper>
