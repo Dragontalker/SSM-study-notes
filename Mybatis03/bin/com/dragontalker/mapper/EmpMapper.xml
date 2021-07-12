@@ -10,8 +10,12 @@
 	<select id="getEmpListByMoreTJ" resultType="Emp">
 		select eid, ename, age, sex, did from emp 
 		where
-		eid = #{eid}
-		and ename = #{ename}
+		<if test="eid != null">
+			eid = #{eid}
+		</if>
+		<if test="ename != null and ename !=''">
+			and ename = #{ename}
+		</if>
 		and age = #{age}
 		and sex = #{sex}
 	</select>
