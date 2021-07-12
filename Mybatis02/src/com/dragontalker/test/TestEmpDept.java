@@ -12,7 +12,6 @@ import org.junit.Test;
 
 import com.dragontalker.bean.Emp;
 import com.dragontalker.mapper.EmpDeptMapper;
-import com.dragontalker.mapper.ParamMapper;
 
 public class TestEmpDept {
 
