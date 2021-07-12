@@ -2,6 +2,7 @@ package com.dragontalker.test;
 
 import java.io.IOException;
 import java.io.InputStream;
+import java.util.Map;
 
 import org.apache.ibatis.io.Resources;
 import org.apache.ibatis.session.SqlSession;
@@ -28,8 +29,12 @@ public class TestSelect {
 		//System.out.println(emp);
 		
 		// 获取员工总记录数
-		Integer i = mapper.getCount();
-		System.out.println(i);
+		//Integer i = mapper.getCount();
+		//System.out.println(i);
+		
+		// 以map获取单个emp
+		Map<String, Object> map = mapper.getEmpMapByEid("6");
+		System.out.println(map);
 	}
 	
 }
