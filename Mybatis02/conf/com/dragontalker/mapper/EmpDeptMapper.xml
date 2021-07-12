@@ -45,7 +45,7 @@
 	</resultMap>
 	
 	<!-- Emp getEmpStep(String eid); -->
-	<select id="getEmpStep" resultMap="">
+	<select id="getEmpStep" resultMap="empMapStep">
 		select eid, ename, age, sex, did from emp where eid = #{eid}
 	</select>
 	

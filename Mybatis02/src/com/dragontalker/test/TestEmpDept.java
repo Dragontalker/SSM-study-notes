@@ -2,7 +2,6 @@ package com.dragontalker.test;
 
 import java.io.IOException;
 import java.io.InputStream;
-import java.util.List;
 
 import org.apache.ibatis.io.Resources;
 import org.apache.ibatis.session.SqlSession;
@@ -22,7 +21,10 @@ public class TestEmpDept {
 		SqlSession sqlSession = sqlSessionFactory.openSession(true); 
 		
 		EmpDeptMapper mapper = sqlSession.getMapper(EmpDeptMapper.class);
-		List<Emp> emp = mapper.getAllEmp();
+		//List<Emp> emp = mapper.getAllEmp();
+		//System.out.println(emp);
+		
+		Emp emp = mapper.getEmpStep("3");
 		System.out.println(emp);
 	}
 	
