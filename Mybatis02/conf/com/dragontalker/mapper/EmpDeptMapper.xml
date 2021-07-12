@@ -79,5 +79,8 @@
 	</select>
 	
 	<!-- List<Emp> getEmpListByDid(String did); -->
+	<select id="getEmpListByDid" resultType="Emp">
+		select eid, ename, age, sex from emp where did = #{did}
+	</select>
 	
 </mapper>
