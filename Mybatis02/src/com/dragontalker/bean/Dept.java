@@ -1,10 +1,14 @@
 package com.dragontalker.bean;
 
+import java.util.List;
+
 public class Dept {
 	
 	private Integer did;
 	
 	private String dname;
+	
+	private List<Emp> emps;
 
 	public Integer getDid() {
 		return did;
@@ -22,9 +26,17 @@ public class Dept {
 		this.dname = dname;
 	}
 
+	public List<Emp> getEmps() {
+		return emps;
+	}
+
+	public void setEmps(List<Emp> emps) {
+		this.emps = emps;
+	}
+
 	@Override
 	public String toString() {
-		return "Dept [did=" + did + ", dname=" + dname + "]";
+		return "Dept [did=" + did + ", dname=" + dname + ", emps=" + emps + "]";
 	}
 
 }
