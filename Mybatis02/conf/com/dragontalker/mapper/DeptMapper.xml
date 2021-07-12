@@ -5,5 +5,9 @@
 	
 <mapper namespace="com.dragontalker.mapper.DeptMapper">
 
+	<!-- Dept getDeptByDid(String did); -->
+	<select id="getDeptByDid" resultType="Dept">
+		select did, dname from dept where did = #{did}
+	</select>
 	
 </mapper>
