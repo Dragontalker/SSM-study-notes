@@ -2,6 +2,7 @@ package com.dragontalker.test;
 
 import java.io.IOException;
 import java.io.InputStream;
+import java.util.List;
 
 import org.apache.ibatis.io.Resources;
 import org.apache.ibatis.session.SqlSession;
@@ -10,6 +11,7 @@ import org.apache.ibatis.session.SqlSessionFactoryBuilder;
 import org.junit.Test;
 
 import com.dragontalker.bean.Emp;
+import com.dragontalker.mapper.EmpDeptMapper;
 import com.dragontalker.mapper.ParamMapper;
 
 public class TestEmpDept {
@@ -19,9 +21,10 @@ public class TestEmpDept {
 		InputStream is = Resources.getResourceAsStream("mybatis-config.xml");
 		SqlSessionFactory sqlSessionFactory = new SqlSessionFactoryBuilder().build(is);
 		SqlSession sqlSession = sqlSessionFactory.openSession(true); 
-		ParamMapper mapper = sqlSession.getMapper(ParamMapper.class);
 		
-		
+		EmpDeptMapper mapper = sqlSession.getMapper(EmpDeptMapper.class);
+		List<Emp> emp = mapper.getAllEmp();
+		System.out.println(emp);
 	}
 	
 }
