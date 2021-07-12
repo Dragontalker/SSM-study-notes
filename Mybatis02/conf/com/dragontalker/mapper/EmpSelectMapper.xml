@@ -15,4 +15,9 @@
 		select count(eid) from emp
 	</select>
 	
+	<!-- Map<String, Object> getEmpMapByEid(String eid); -->
+	<select id="getEmpMapByEid" resultType="java.util.HashMap">
+		select eid, ename, age, sex from emp where eid = #{eid}
+	</select>
+	
 </mapper>
