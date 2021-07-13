@@ -160,4 +160,11 @@ public class Emp {
     public void setDid(Integer did) {
         this.did = did;
     }
+
+	@Override
+	public String toString() {
+		return "Emp [eid=" + eid + ", ename=" + ename + ", age=" + age + ", sex=" + sex + ", did=" + did + "]";
+	}
+    
+    
 }
