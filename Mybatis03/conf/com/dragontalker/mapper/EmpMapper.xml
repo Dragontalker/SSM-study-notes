@@ -12,6 +12,11 @@
 	<sql id="empColumns">
 		select eid, ename, age, sex, did from emp 
 	</sql>
+	
+	<!-- Emp getEmpByEid(String eid); -->
+	<select id="getEmpByEid" resultType="Emp">
+		<include refid="empColumns" /> where eid = #{eid}
+	</select>
 
 	<!-- 
 		<if test=""></if>: 通过test表达式, 拼接SQL
