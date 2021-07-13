@@ -5,7 +5,7 @@
  <diskStore path="D:\dragontalker\ehcache" />
  
  <defaultCache 
-   maxElementsInMemory="1000" 
+   maxElementsInMemory="1" 
    maxElementsOnDisk="10000000"
    eternal="false" 
    overflowToDisk="true" 

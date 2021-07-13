@@ -56,24 +56,41 @@ public class TestCache {
 		
 		SqlSession sqlSession = sqlSessionFactory.openSession(true);
 		EmpMapper mapper1 = sqlSession.getMapper(EmpMapper.class);
-		Emp emp1 = mapper1.getEmpByEid("13");
+		Emp emp1 = mapper1.getEmpByEid("11");
 		System.out.println(emp1);
 		
 		sqlSession.commit();
-		mapper1.deleteMoreEmp("1");
 		
 		System.out.println("==========================");
 		
 		//SqlSession sqlSession2 = sqlSessionFactory.openSession(true);
 		EmpMapper mapper2 = sqlSession.getMapper(EmpMapper.class);
-		Emp emp2 = mapper2.getEmpByEid("13");
+		Emp emp2 = mapper2.getEmpByEid("12");
 		System.out.println(emp2);
+		
+		sqlSession.commit();
 		
 		System.out.println("==========================");
 		
 		EmpMapper mapper3 = sqlSession.getMapper(EmpMapper.class);
 		Emp emp3 = mapper3.getEmpByEid("13");
 		System.out.println(emp3);
+		
+		sqlSession.commit();
+		
+		System.out.println("==========================");
+		
+		EmpMapper mapper4 = sqlSession.getMapper(EmpMapper.class);
+		Emp emp4 = mapper4.getEmpByEid("9");
+		System.out.println(emp4);
+		
+		sqlSession.commit();
+		
+		System.out.println("==========================");
+		
+		EmpMapper mapper5 = sqlSession.getMapper(EmpMapper.class);
+		Emp emp5 = mapper5.getEmpByEid("12");
+		System.out.println(emp5);
 	}
 
 	
