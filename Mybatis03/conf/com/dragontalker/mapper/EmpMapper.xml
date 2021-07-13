@@ -43,7 +43,7 @@
 	</select>
 	
 	<select id="getEmpListByMoreTJ" resultType="Emp">
-		select eid, ename, age, sex, did from emp 
+		<include refid="empColumns"></include>
 		<trim prefix="where" suffixOverrides="and|or">
 			<if test="eid != null">
 				eid = #{eid} and
