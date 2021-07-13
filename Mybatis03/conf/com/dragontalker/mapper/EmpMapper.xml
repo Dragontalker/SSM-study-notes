@@ -99,7 +99,7 @@
 	
 	<!-- void deleteMoreEmp(String eids); -->
 	<delete id="deleteMoreEmp">
-		delete from emp where eid in (#{eids})
+		delete from emp where eid in (${value})
 	</delete>
 	
 </mapper>

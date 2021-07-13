@@ -21,7 +21,7 @@ public class TestSQL {
 		SqlSession sqlSession = sqlSessionFactory.openSession(true);
 		EmpMapper mapper = sqlSession.getMapper(EmpMapper.class);
 		
-		String eids = "1, 3, 4";
+		String eids = "3, 4, 6";
 		mapper.deleteMoreEmp(eids);
 	}
 	
