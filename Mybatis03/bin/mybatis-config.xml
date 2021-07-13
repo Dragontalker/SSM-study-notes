@@ -24,7 +24,7 @@
 	</typeAliases>
 	
 	<plugins>
-		<plugin interceptor="com.github.pagehelper.PageHelper"></plugin>
+		<plugin interceptor="com.github.pagehelper.PageInterceptor"></plugin>
 	</plugins>
 	
 	<environments default="mysql">

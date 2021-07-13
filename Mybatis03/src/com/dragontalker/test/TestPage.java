@@ -11,6 +11,7 @@ import org.junit.Test;
 
 import com.dragontalker.bean.Emp;
 import com.dragontalker.mapper.EmpMapper;
+import com.github.pagehelper.PageHelper;
 
 
 public class TestPage {
@@ -22,6 +23,8 @@ public class TestPage {
 		SqlSession sqlSession = sqlSessionFactory.openSession(true);
 		
 		EmpMapper mapper = sqlSession.getMapper(EmpMapper.class);
+		
+		PageHelper.startPage(2, 2);
 		
 		List<Emp> list = mapper.getAllEmp();
 		
