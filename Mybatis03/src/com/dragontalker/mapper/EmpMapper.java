@@ -28,4 +28,7 @@ public interface EmpMapper {
 	
 	// 批量修改
 	void updateMoreByArray(@Param("emps")Emp[] emps);
+	
+	// 根据eid查询员工信息
+	Emp getEmpByEid(String eid);
 }
