@@ -13,6 +13,11 @@ import org.mybatis.generator.internal.DefaultShellCallback;
 public class TestSQL {
 	
 	@Test
+	public void testCRUD() {
+		
+	}
+	
+	@Test
 	public void testMBG() throws Exception {
 		
 		List<String> warnings = new ArrayList<String>();
