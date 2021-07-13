@@ -109,6 +109,7 @@
 		close: 设置循环体的结束内容
 		open: 设置循环体的开始内容
 		separator: 设置每一次循环之间的分隔符
+		index: 若遍历的是list, index代表下标, 若遍历的是map, index代表键
 	 -->
 	
 	<!-- void deleteMoreByList(List<Integer> eids); -->
