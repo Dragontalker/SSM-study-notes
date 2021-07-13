@@ -119,7 +119,7 @@
 			#{eid}
 		</foreach> -->
 		delete from emp where
-		<foreach collection="list" item = "eid" separator=" or ">
+		<foreach collection="eids" item = "eid" separator=" or ">
 			eid = #{eid}
 		</foreach>
 	</delete>

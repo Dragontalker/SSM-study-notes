@@ -2,6 +2,8 @@ package com.dragontalker.mapper;
 
 import java.util.List;
 
+import org.apache.ibatis.annotations.Param;
+
 import com.dragontalker.bean.Emp;
 
 public interface EmpMapper {
@@ -19,5 +21,5 @@ public interface EmpMapper {
 	void deleteMoreEmp(String eids);
 	
 	// 通过list集合实现批量删除
-	void deleteMoreByList(List<Integer> eids);
+	void deleteMoreByList(@Param("eids")List<Integer> eids);
 }
