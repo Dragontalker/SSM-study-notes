@@ -22,14 +22,17 @@ public class TestCache {
 	@Test
 	public void testCache() throws IOException {
 		SqlSessionFactory sqlSessionFactory = getSqlSessionFactory();
-		SqlSession sqlSession = sqlSessionFactory.openSession(true);
 		
-		EmpMapper mapper = sqlSession.getMapper(EmpMapper.class);
-		
-		Emp emp1 = mapper.getEmpByEid("13");
+		SqlSession sqlSession1 = sqlSessionFactory.openSession(true);
+		EmpMapper mapper1 = sqlSession1.getMapper(EmpMapper.class);
+		Emp emp1 = mapper1.getEmpByEid("13");
 		System.out.println(emp1);
 		
-		Emp emp2 = mapper.getEmpByEid("13");
+		System.out.println("==========================");
+		
+		SqlSession sqlSession2 = sqlSessionFactory.openSession(true);
+		EmpMapper mapper2 = sqlSession2.getMapper(EmpMapper.class);
+		Emp emp2 = mapper2.getEmpByEid("13");
 		System.out.println(emp2);
 	}
 
