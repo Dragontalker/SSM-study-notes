@@ -4,6 +4,8 @@ import java.io.Serializable;
 
 public class Emp implements Serializable{
 	
+	private static final long serialVersionUID = -4385215067131639025L;
+
 	private Integer eid;
 	
 	private String ename;
