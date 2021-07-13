@@ -11,6 +11,9 @@ import org.junit.Test;
 
 public class TestCache {
 	
+	/**
+	 * mybatis中的一级缓存默认开启, 是SqlSession级别的
+	 */
 	@Test
 	public void testCache() throws IOException {
 		SqlSessionFactory sqlSessionFactory = getSqlSessionFactory();
