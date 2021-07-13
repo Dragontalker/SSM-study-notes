@@ -37,7 +37,7 @@ public class TestCache {
 		sqlSession1.clearCache();
 		System.out.println("==========================");
 		
-		SqlSession sqlSession2 = sqlSessionFactory.openSession(true);
+		//SqlSession sqlSession2 = sqlSessionFactory.openSession(true);
 		EmpMapper mapper2 = sqlSession1.getMapper(EmpMapper.class);
 		Emp emp2 = mapper2.getEmpByEid("13");
 		System.out.println(emp2);
