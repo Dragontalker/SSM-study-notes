@@ -1,8 +1,14 @@
 package com.dragontalker.test;
 
+import com.dragontalker.bean.Emp;
+import com.github.pagehelper.PageInfo;
+
 /**
  * 首页 上一页 1 2 3 4 5 下一页 末页
  */
 public class PageUtil {
 
+	public void getPageInfo(PageInfo<Emp> pageInfo) {
+		
+	}
 }
