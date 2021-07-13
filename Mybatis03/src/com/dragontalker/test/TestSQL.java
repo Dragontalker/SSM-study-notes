@@ -12,17 +12,9 @@ import org.junit.Test;
 public class TestSQL {
 	
 	@Test
-	public void testMore() throws IOException {
-		SqlSessionFactory sqlSessionFactory = getSqlSessionFactory();
-		SqlSession sqlSession = sqlSessionFactory.openSession(true);
+	public void testMBG() throws IOException {
 		
-		sqlSession.close();
 
 	}
 	
-	public SqlSessionFactory getSqlSessionFactory() throws IOException {
-		InputStream is = Resources.getResourceAsStream("mybatis-config.xml");
-		SqlSessionFactory sqlSessionFactory = new SqlSessionFactoryBuilder().build(is);
-		return sqlSessionFactory;
-	}
 }
