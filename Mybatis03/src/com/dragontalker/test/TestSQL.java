@@ -22,12 +22,21 @@ public class TestSQL {
 		SqlSession sqlSession = sqlSessionFactory.openSession(true);
 		EmpMapper mapper = sqlSession.getMapper(EmpMapper.class);
 		
-		List<Integer> eids = new ArrayList<>();
-		eids.add(7);
-		eids.add(8);
-		eids.add(10);
+		//List<Integer> eids = new ArrayList<>();
+		//eids.add(7);
+		//eids.add(8);
+		//eids.add(10);
 		
-		mapper.deleteMoreByList(eids);
+		//Emp[] emps = new Emp[];
+		//Emp[] emps = new Emp[] {};
+		
+		Emp emp1 = new Emp(null, "a", 23, "male");
+		Emp emp2 = new Emp(null, "aa", 23, "male");
+		Emp emp3 = new Emp(null, "aaa", 23, "male");
+		Emp[] emps = {emp1, emp2, emp3};
+		
+		
+		mapper.insertMoreByArray(emps);
 	}
 	
 	@Test
