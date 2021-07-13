@@ -37,7 +37,7 @@ public class TestSQL {
 		c1.andEnameLike("%a%");
 		c1.andSexEqualTo("male");
 		
-		List<Emp> list = mapper.selectByExample(example);
+		List<Emp> list = mapper.selectByExample(null);
 		
 		for (Emp emp : list) {
 			System.out.println(emp);
