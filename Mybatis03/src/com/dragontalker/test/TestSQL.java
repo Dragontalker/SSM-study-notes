@@ -34,10 +34,15 @@ public class TestSQL {
 		EmpExample example = new EmpExample();
 		
 		Criteria c1 = example.createCriteria();
-		c1.andEnameLike("%a%");
+		c1.andEnameLike("%Zhang%");
 		c1.andSexEqualTo("male");
 		
-		List<Emp> list = mapper.selectByExample(null);
+		Criteria c2 = example.createCriteria();
+		c2.andDidEqualTo(2);
+		
+		example.or(c2);
+		
+		List<Emp> list = mapper.selectByExample(example);
 		
 		for (Emp emp : list) {
 			System.out.println(emp);
