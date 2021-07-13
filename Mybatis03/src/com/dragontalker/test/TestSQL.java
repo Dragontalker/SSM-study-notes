@@ -2,6 +2,7 @@ package com.dragontalker.test;
 
 import java.io.IOException;
 import java.io.InputStream;
+import java.util.ArrayList;
 import java.util.List;
 
 import org.apache.ibatis.io.Resources;
@@ -16,13 +17,17 @@ import com.dragontalker.mapper.EmpMapper;
 public class TestSQL {
 	
 	@Test
-	public void testDeleteMore() throws IOException {
+	public void testMore() throws IOException {
 		SqlSessionFactory sqlSessionFactory = getSqlSessionFactory();
 		SqlSession sqlSession = sqlSessionFactory.openSession(true);
 		EmpMapper mapper = sqlSession.getMapper(EmpMapper.class);
 		
-		String eids = "3, 4, 6";
-		mapper.deleteMoreEmp(eids);
+		List<Integer> eids = new ArrayList<>();
+		eids.add(7);
+		eids.add(8);
+		eids.add(10);
+		
+		mapper.deleteMoreByList(eids);
 	}
 	
 	@Test
