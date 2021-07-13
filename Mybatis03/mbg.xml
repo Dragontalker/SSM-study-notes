@@ -5,11 +5,11 @@
 
 <generatorConfiguration>
 
-  <context id="DB2Tables" targetRuntime="MyBatis3Simple">
-    <jdbcConnection driverClass="COM.ibm.db2.jdbc.app.DB2Driver"
-        connectionURL="jdbc:db2:TEST"
-        userId="db2admin"
-        password="db2admin">
+  <context id="DB2Tables" targetRuntime="MyBatis3">
+    <jdbcConnection driverClass="com.mysql.jdbc.Driver"
+        connectionURL="jdbc:mysql://localhost:3306/ssm?characterEncoding=latin1"
+        userId="springstudent"
+        password="springstudent">
     </jdbcConnection>
 
     <javaTypeResolver >
