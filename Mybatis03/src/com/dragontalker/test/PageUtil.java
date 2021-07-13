@@ -10,5 +10,6 @@ public class PageUtil {
 
 	public void getPageInfo(PageInfo<Emp> pageInfo) {
 		
+		StringBuilder builder = new StringBuilder();
 	}
 }
