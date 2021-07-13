@@ -124,4 +124,13 @@
 		</foreach>
 	</delete>
 	
+	<!-- 
+		delete: 
+			delete from emp where eid in ();
+			delete from emp where eid = 1 or eid = 2 or eid = 3; 
+		select:
+		update:
+		insert:
+	 -->
+	
 </mapper>
