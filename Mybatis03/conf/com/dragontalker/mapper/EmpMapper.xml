@@ -102,6 +102,15 @@
 		delete from emp where eid in (${value})
 	</delete>
 	
+	<!-- 
+		<foreach>: 对一个数组或集合进行遍历
+		collection: 指定要遍历的集合或数组
+		item: 设置别名
+		close: 设置循环体的结束内容
+		open: 设置循环体的开始内容
+		separator: 设置每一次循环之间的分隔符
+	 -->
+	
 	<!-- void deleteMoreByList(List<Integer> eids); -->
 	<delete id="deleteMoreByList">
 		delete from emp where eid in 
