@@ -143,7 +143,7 @@
 	<insert id="insertMoreByArray">
 		insert into emp values
 		<foreach collection="emps" item="emp" separator=",">
-			(#{eid}, #{ename}, #{age}, #{sex}, #{did})
+			(null, #{emp.ename}, #{emp.age}, #{emp.sex}, 1)
 		</foreach>
 	</insert>
 </mapper>
