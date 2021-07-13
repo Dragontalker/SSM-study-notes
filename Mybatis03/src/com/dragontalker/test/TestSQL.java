@@ -15,19 +15,15 @@ import org.mybatis.generator.config.Configuration;
 import org.mybatis.generator.config.xml.ConfigurationParser;
 import org.mybatis.generator.internal.DefaultShellCallback;
 
-import com.dragontalker.bean.Emp;
-import com.dragontalker.mapper.EmpMapper;
 
 public class TestSQL {
 	
 	@Test
-	public void testCRUD() {
+	public void testCRUD() throws Exception{
 		
 		SqlSessionFactory sqlSessionFactory = getSqlSessionFactory();
 		SqlSession sqlSession = sqlSessionFactory.openSession(true);
 		
-		EmpMapper mapper = sqlSession.getMapper(EmpMapper.class);
-		List<Emp> list = mapper.selectByExample(null)
 	}
 	
 	@Test
