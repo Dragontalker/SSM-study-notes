@@ -136,6 +136,7 @@
 			update emp set ... where eid in ();
 			update emp set ... where eid = 1 or eid = 2 or eid = 3; 
 		insert:
+			insert into emp values(), (), ();
 	 -->
 	
 </mapper>
