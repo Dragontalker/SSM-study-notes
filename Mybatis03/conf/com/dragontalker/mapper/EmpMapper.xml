@@ -133,6 +133,8 @@
 			select * from emp where eid = 1 or eid = 2 or eid = 3; 
 		update:
 			把每条数据修改为相同内容: 
+			update emp set ... where eid in ();
+			update emp set ... where eid = 1 or eid = 2 or eid = 3; 
 		insert:
 	 -->
 	
