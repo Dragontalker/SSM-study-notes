@@ -1,6 +1,7 @@
 package com.dragontalker.test;
 
 import java.io.InputStream;
+import java.util.Arrays;
 import java.util.List;
 
 import org.apache.ibatis.io.Resources;
@@ -12,6 +13,7 @@ import org.junit.Test;
 import com.dragontalker.bean.Emp;
 import com.dragontalker.mapper.EmpMapper;
 import com.github.pagehelper.PageHelper;
+import com.github.pagehelper.PageInfo;
 
 
 public class TestPage {
@@ -24,9 +26,12 @@ public class TestPage {
 		
 		EmpMapper mapper = sqlSession.getMapper(EmpMapper.class);
 		
-		PageHelper.startPage(2, 2);
+		PageHelper.startPage(4, 1);
 		
 		List<Emp> list = mapper.getAllEmp();
+		
+		PageInfo<Emp> pageInfo = new PageInfo<Emp>(list);
+		System.out.println(Arrays.toString(pageInfo.getNavigatepageNums()));
 		
 		for (Emp emp : list) {
 			System.out.println(emp);
