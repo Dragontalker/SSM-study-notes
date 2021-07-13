@@ -146,4 +146,11 @@
 			(null, #{emp.ename}, #{emp.age}, #{emp.sex}, 1)
 		</foreach>
 	</insert>
+	
+	<!-- void updateMoreByArray(@Param("emps")Emp[] emps); -->
+	<update id="updateMoreByArray">
+		<foreach collection="emps" item="emp">
+			update emp set ename = #{emp.ename}, age = #{emp.age}, sex = #{emp.sex} where eid = #{emp.eid};
+		</foreach>
+	</update>
 </mapper>
