@@ -29,14 +29,22 @@ CREATE TABLE emp(
 
 INSERT INTO emp(`ename`, `age`, `sex`, `did`) 
 VALUES
-	("ZhangSan", 23, "1", 1),
-    ("LiSi", 12, "1", 2),
-    ("WangWu", 33, "1", 2),
-    ("ZhaoLiu", 22, "1", 3),
-    ("TianQi", 11, "0", 3),
-    ("CuiBa", 55, "0", 4),
-    ("XiaoMing", 44, "0", 1),
-    ("XiaoHong", 33, "0", 2);
+	("a1", 23, "male", 1),
+    ("a2", 12, "male", 2),
+    ("a3", 33, "male", 2),
+    ("a4", 22, "male", 3),
+    ("a5", 11, "female", 3),
+    ("a6", 55, "female", 4),
+    ("a7", 44, "female", 1),
+    ("a8", 33, "female", 2),
+    ("a9", 23, "male", 1),
+    ("a10", 12, "male", 2),
+    ("a11", 33, "male", 2),
+    ("a12", 22, "male", 3),
+    ("a13", 11, "female", 3),
+    ("a14", 55, "female", 4),
+    ("a15", 44, "female", 1),
+    ("a16", 33, "female", 2);
 
 DROP TABLE IF EXISTS dept;
 
