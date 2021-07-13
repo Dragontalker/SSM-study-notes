@@ -16,6 +16,16 @@ import com.dragontalker.mapper.EmpMapper;
 public class TestSQL {
 	
 	@Test
+	public void testDeleteMore() throws IOException {
+		SqlSessionFactory sqlSessionFactory = getSqlSessionFactory();
+		SqlSession sqlSession = sqlSessionFactory.openSession(true);
+		EmpMapper mapper = sqlSession.getMapper(EmpMapper.class);
+		
+		String eids = "1, 3, 4";
+		mapper.deleteMoreEmp(eids);
+	}
+	
+	@Test
 	public void testChoose() throws IOException {
 		SqlSessionFactory sqlSessionFactory = getSqlSessionFactory();
 		SqlSession sqlSession = sqlSessionFactory.openSession(true);
