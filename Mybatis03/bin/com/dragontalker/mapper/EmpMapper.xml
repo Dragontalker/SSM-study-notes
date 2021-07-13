@@ -135,6 +135,7 @@
 			把每条数据修改为相同内容: 
 			update emp set ... where eid in ();
 			update emp set ... where eid = 1 or eid = 2 or eid = 3; 
+			把每条数据修改为对应内容, 注意: 必须在连接地址(url)后加参数allowMultiQueries
 		insert:
 			insert into emp values(), (), ();
 	 -->
