@@ -21,7 +21,7 @@
       <property name="trimStrings" value="true" />
     </javaModelGenerator>
 
-    <sqlMapGenerator targetPackage="test.xml"  targetProject="\MBGTestProject\src">
+    <sqlMapGenerator targetPackage="com.dragontalker.mapper"  targetProject=".\conf">
       <property name="enableSubPackages" value="true" />
     </sqlMapGenerator>
 
