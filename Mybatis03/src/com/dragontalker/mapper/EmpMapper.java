@@ -22,4 +22,7 @@ public interface EmpMapper {
 	
 	// 通过list集合实现批量删除
 	void deleteMoreByList(@Param("eids")List<Integer> eids);
+	
+	// 批量添加
+	void insertMoreByArray(Emp[] emps);
 }
