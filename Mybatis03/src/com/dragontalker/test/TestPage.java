@@ -1,6 +1,7 @@
 package com.dragontalker.test;
 
 import java.io.InputStream;
+import java.util.List;
 
 import org.apache.ibatis.io.Resources;
 import org.apache.ibatis.session.SqlSession;
@@ -8,6 +9,7 @@ import org.apache.ibatis.session.SqlSessionFactory;
 import org.apache.ibatis.session.SqlSessionFactoryBuilder;
 import org.junit.Test;
 
+import com.dragontalker.bean.Emp;
 import com.dragontalker.mapper.EmpMapper;
 
 
@@ -21,6 +23,11 @@ public class TestPage {
 		
 		EmpMapper mapper = sqlSession.getMapper(EmpMapper.class);
 		
+		List<Emp> list = mapper.getAllEmp();
+		
+		for (Emp emp : list) {
+			System.out.println(emp);
+		}
 		
 	}
 	

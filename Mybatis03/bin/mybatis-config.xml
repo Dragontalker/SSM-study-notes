@@ -23,9 +23,7 @@
 		<package name="com.dragontalker.bean"/>
 	</typeAliases>
 	
-	<plugins>
-		<plugin interceptor="com.github.pagehelper.PageHelper"></plugin>
-	</plugins>
+	
 	
 	<environments default="mysql">
 		<environment id="mysql">
