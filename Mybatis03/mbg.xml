@@ -25,7 +25,7 @@
       <property name="enableSubPackages" value="true" />
     </sqlMapGenerator>
 
-    <javaClientGenerator type="XMLMAPPER" targetPackage="com.dragontalker.mapper"  targetProject=".\">
+    <javaClientGenerator type="XMLMAPPER" targetPackage="com.dragontalker.mapper"  targetProject=".\src">
       <property name="enableSubPackages" value="true" />
     </javaClientGenerator>
 
