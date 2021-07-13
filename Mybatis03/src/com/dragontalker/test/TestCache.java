@@ -29,7 +29,7 @@ public class TestCache {
 		System.out.println(emp1);
 		
 		System.out.println("==========================");
-		mapper1.deleteMoreEmp("1");
+		sqlSession1.clearCache();
 		System.out.println("==========================");
 		
 		SqlSession sqlSession2 = sqlSessionFactory.openSession(true);
