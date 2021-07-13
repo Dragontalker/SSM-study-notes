@@ -16,7 +16,7 @@
 	</sql>
 	
 	<!-- Emp getEmpByEid(String eid); -->
-	<select id="getEmpByEid" resultType="Emp" useCache="false">
+	<select id="getEmpByEid" resultType="Emp">
 		<include refid="empColumns" /> where eid = #{eid}
 	</select>
 
