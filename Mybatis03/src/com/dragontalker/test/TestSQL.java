@@ -2,7 +2,6 @@ package com.dragontalker.test;
 
 import java.io.IOException;
 import java.io.InputStream;
-import java.util.ArrayList;
 import java.util.List;
 
 import org.apache.ibatis.io.Resources;
@@ -30,13 +29,13 @@ public class TestSQL {
 		//Emp[] emps = new Emp[];
 		//Emp[] emps = new Emp[] {};
 		
-		Emp emp1 = new Emp(null, "a", 23, "male");
-		Emp emp2 = new Emp(null, "aa", 23, "male");
-		Emp emp3 = new Emp(null, "aaa", 23, "male");
+		Emp emp1 = new Emp(17, "a1", 233, "female");
+		Emp emp2 = new Emp(18, "aa1", 233, "female");
+		Emp emp3 = new Emp(19, "aaa1", 233, "female");
 		Emp[] emps = {emp1, emp2, emp3};
 		
 		
-		mapper.insertMoreByArray(emps);
+		mapper.updateMoreByArray(emps);
 	}
 	
 	@Test
