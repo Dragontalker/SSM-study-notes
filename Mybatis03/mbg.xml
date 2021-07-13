@@ -16,7 +16,7 @@
       <property name="forceBigDecimals" value="false" />
     </javaTypeResolver>
 
-    <javaModelGenerator targetPackage="test.model" targetProject="\MBGTestProject\src">
+    <javaModelGenerator targetPackage="com.dragontalker.bean" targetProject=".\src">
       <property name="enableSubPackages" value="true" />
       <property name="trimStrings" value="true" />
     </javaModelGenerator>
