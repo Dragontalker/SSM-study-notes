@@ -60,6 +60,7 @@ public class TestCache {
 		System.out.println(emp1);
 		
 		sqlSession.commit();
+		mapper1.deleteMoreEmp("1");
 		
 		System.out.println("==========================");
 		
