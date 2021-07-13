@@ -4,9 +4,8 @@
   "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd">
 
 <generatorConfiguration>
-  <classPathEntry location="/Program Files/IBM/SQLLIB/java/db2java.zip" />
 
-  <context id="DB2Tables" targetRuntime="MyBatis3">
+  <context id="DB2Tables" targetRuntime="MyBatis3Simple">
     <jdbcConnection driverClass="COM.ibm.db2.jdbc.app.DB2Driver"
         connectionURL="jdbc:db2:TEST"
         userId="db2admin"
