@@ -25,4 +25,7 @@ public interface EmpMapper {
 	
 	// 批量添加
 	void insertMoreByArray(@Param("emps")Emp[] emps);
+	
+	// 批量修改
+	void updateMoreByArray(@Param("emps")Emp[] emps);
 }
