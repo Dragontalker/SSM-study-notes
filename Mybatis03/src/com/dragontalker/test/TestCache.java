@@ -18,6 +18,11 @@ public class TestCache {
 	 * MyBatis中的一级缓存默认开启, 是SqlSession级别的
 	 * 即同一个SqlSession对于一个SQL语句, 执行之后就会存储在缓存中, 
 	 * 下次执行相同的SQL, 直接从缓存中取 
+	 * 
+	 * 一级缓存失效的情况:
+	 * 	- 同一个SqlSession但是查询条件不同
+	 *  - 同一个SqlSession两次查询期间执行了任何一次增删改操作, 会自动将缓存清空
+	 *  - 同一个SqlSession两次查询期间清空了缓存
 	 */
 	@Test
 	public void testCache() throws IOException {
