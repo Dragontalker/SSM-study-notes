@@ -24,5 +24,5 @@ public interface EmpMapper {
 	void deleteMoreByList(@Param("eids")List<Integer> eids);
 	
 	// 批量添加
-	void insertMoreByArray(Emp[] emps);
+	void insertMoreByArray(@Param("emps")Emp[] emps);
 }

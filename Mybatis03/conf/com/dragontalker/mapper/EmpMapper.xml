@@ -139,4 +139,11 @@
 			insert into emp values(), (), ();
 	 -->
 	
+	<!-- void insertMoreByArray(Emp[] emps); -->
+	<insert id="insertMoreByArray">
+		insert into emp values
+		<foreach collection="emps" item="emp" separator=",">
+			(#{eid}, #{ename}, #{age}, #{sex}, #{did})
+		</foreach>
+	</insert>
 </mapper>
