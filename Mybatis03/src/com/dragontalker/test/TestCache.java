@@ -29,6 +29,8 @@ public class TestCache {
 		System.out.println(emp1);
 		
 		System.out.println("==========================");
+		mapper1.deleteMoreEmp("1");
+		System.out.println("==========================");
 		
 		SqlSession sqlSession2 = sqlSessionFactory.openSession(true);
 		EmpMapper mapper2 = sqlSession1.getMapper(EmpMapper.class);
