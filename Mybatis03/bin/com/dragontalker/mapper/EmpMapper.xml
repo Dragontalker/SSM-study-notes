@@ -102,4 +102,10 @@
 		delete from emp where eid in (${value})
 	</delete>
 	
+	<!-- void deleteMoreByList(List<Integer> eids); -->
+	<delete id="deleteMoreByList">
+		delete from emp where eid in 
+		<foreach collection="" item="" close="" open=""></foreach>
+	</delete>
+	
 </mapper>
