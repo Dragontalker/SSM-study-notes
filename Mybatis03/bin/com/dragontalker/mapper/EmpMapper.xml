@@ -115,11 +115,9 @@
 	<!-- void deleteMoreByList(List<Integer> eids); -->
 	<delete id="deleteMoreByList">
 		delete from emp where eid in 
-		(
-		<foreach collection="list" item="eid" separator=",">
+		<foreach collection="list" item="eid" separator="," open="(" close=")">
 			#{eid}
 		</foreach>
-		)
 	</delete>
 	
 </mapper>
