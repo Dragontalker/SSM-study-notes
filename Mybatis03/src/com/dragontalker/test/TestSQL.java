@@ -24,15 +24,17 @@ public class TestSQL {
 		Emp emp = new Emp();
 		
 		//emp.setEid(1);
-		//emp.setEname("ZhangSan");
-		//emp.setAge(23);
-		emp.setSex("1");
+		emp.setEname("ZhangSan");
+		emp.setAge(23);
+		emp.setSex("123");
 		
-		List<Emp> list = mapper.getEmpListByChoose(emp);
+		mapper.insertEmp(emp);
 		
-		for (Emp e :list) {
-			System.out.println(e);
-		}
+		//List<Emp> list = mapper.getEmpListByChoose(emp);
+		
+		//for (Emp e :list) {
+			//System.out.println(e);
+		//}
 	}
 
 	@Test

@@ -14,4 +14,7 @@ public interface EmpMapper {
 	
 	// 添加员工信息, 将0|1 --> 女|男
 	void insertEmp(Emp emp);
+	
+	// 通过eid所组成的字符串实现批量删除
+	void deleteMoreEmp(String eids);
 }
